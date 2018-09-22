@@ -1,7 +1,6 @@
 homeassistant:
   auth_providers:
     - type: homeassistant
-    - type: trusted_networks
     - type: legacy_api_password
   name: Home
   unit_system: metric
@@ -14,8 +13,7 @@ homeassistant:
 http:
   api_password: !secret http_password
   base_url: !secret http_url
-  trusted_proxies: !include secrets/trusted_proxies.yaml
-  trusted_networks: !include secrets/trusted_networks.yaml
+  trusted_proxies: !secret trusted_proxy
   use_x_forwarded_for: true
   login_attempts_threshold: 3
 
