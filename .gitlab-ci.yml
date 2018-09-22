@@ -3,5 +3,7 @@ stages:
 test_config:
   stage: test
   image: homeassistant/amd64-homeassistant
+  before_script:
+    - mv ./secrets.template.yaml ./secrets.yaml
   script:
     - hass --script check_config -c .
