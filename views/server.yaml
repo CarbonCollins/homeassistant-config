@@ -23,7 +23,7 @@
         entities:
           - entity: !secret sensor_ha
             icon: mdi:ip
-            name: url_ha
+            name: !secret url_ha
           - entity: sensor.myipopendnscom
             icon: mdi:ip
             name: External IP
