@@ -36,6 +36,7 @@ secrets/
 .homekit.state
 .ios.conf
 .spotify-token-cache
+ip_bans.yaml
 
 home-assistant.env
 home-assistant.*
