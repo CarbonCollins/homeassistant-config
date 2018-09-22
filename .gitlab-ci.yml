@@ -1,9 +1,7 @@
-image: python:3.5-alpine
 stages:
   - test
-before_script:
-  - pip install homeassistant
 test_config:
   stage: test
+  image: homeassistant/amd64-homeassistant
   script:
-    - hass -c . --script check_config
+    - hass --script check_config -c .
