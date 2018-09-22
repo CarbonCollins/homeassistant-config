@@ -1,0 +1,29 @@
+  - icon: mdi:server-network
+    theme: dark-mode
+    title: Network
+    cards:
+      - type: entity-filter
+        entities:
+          - entity: binary_sensor.apollo
+            icon: mdi:server-security
+          - entity: binary_sensor.firewall
+            icon: mdi:server-security
+          - entity: binary_sensor.router
+            icon: mdi:router-wireless
+          - entity: binary_sensor.google_dns
+            icon: mdi:server-network
+        state_filter:
+          - 'on'
+          - 'off'
+        card:
+          type: glance
+          title: Internet Route
+      - type: entities
+        title: DNS Resolutions
+        entities:
+          - entity: !secret sensor_ha
+            icon: mdi:ip
+            name: url_ha
+          - entity: sensor.myipopendnscom
+            icon: mdi:ip
+            name: External IP

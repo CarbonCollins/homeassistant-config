@@ -1,0 +1,5 @@
+- platform: unifi
+  site_id: LabSE
+  host: !secret ip_unifi
+  username: !secret unifi_username
+  password: !secret unifi_password

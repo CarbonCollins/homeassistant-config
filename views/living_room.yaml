@@ -1,0 +1,69 @@
+- icon: mdi:sofa
+  theme: dark-mode
+  title: Living Room
+  cards:
+    - type: entities
+      title: Environment
+      entities:
+        - entity: sensor.living_room_temperature
+          icon: mdi:thermometer-lines
+          name: Temperature
+        - entity: sensor.living_room_light_level
+          icon: mdi:lightbulb-on-outline
+          name: Light Level
+        - entity: sensor.living_room_motion_sensor
+          icon: mdi:run-fast
+          name: Motion
+    - type: entities
+      title: Lights
+      entities:
+        - entity: light.living_room_lamp_1
+          icon: mdi:floor-lamp
+          name: Floor Lamp
+        - entity: switch.butt_plug_lamp
+          icon: mdi:lava-lamp
+          name: Butt Plug Lamp
+        - entity: light.living_room_ceiling_1
+          icon: mdi:ceiling-light
+          name: Ceiling 1
+        - entity: light.living_room_ceiling_2
+          icon: mdi:ceiling-light
+          name: Ceiling 2
+    - type: entities
+      title: Scenes
+      entities:
+        - type: call-service
+          icon: mdi:weather-sunset
+          name: Vaporwave
+          action_name: Time to go retro
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.vaporwave_living_room
+        - type: call-service
+          icon: mdi:gender-transgender
+          name: Bi Pride
+          action_name: Bi Bi Bi
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.bi_pride_living_room
+        - type: call-service
+          icon: mdi:water
+          name: Under Da Sea
+          action_name: Sploosh
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.under_da_sea_living_room
+        - type: call-service
+          icon: mdi:leaf
+          name: Autumn
+          action_name: Let it Fall
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.autumn_living_room
+        - type: call-service
+          icon: mdi:flower-tulip-outline
+          name: Tulip Fields
+          action_name: Dutch Spring
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.tulip_fields_living_room

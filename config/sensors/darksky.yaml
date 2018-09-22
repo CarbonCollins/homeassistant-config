@@ -1,0 +1,24 @@
+- platform: darksky
+  api_key: !secret dark_sky_key
+  language: en
+  latitude: !secret latitude
+  longitude: !secret longitude
+  monitored_conditions:
+    - precip_type
+    - precip_intensity
+    - wind_speed
+    - wind_bearing
+    - cloud_cover
+    - humidity
+    - uv_index
+    - hourly_summary
+    - daily_summary
+    - temperature_max
+    - temperature_min
+  units: si
+  update_interval:
+    days: 0
+    hours: 0
+    minutes: 1
+    seconds: 30
+    milliseconds: 0

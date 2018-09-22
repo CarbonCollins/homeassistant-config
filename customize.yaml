@@ -1,0 +1,146 @@
+sensor.dark_sky_cloud_coverage_1:
+  hidden: true
+sensor.dark_sky_cloud_coverage_2:
+  hidden: true
+sensor.dark_sky_cloud_coverage_3:
+  hidden: true
+sensor.dark_sky_cloud_coverage_4:
+  hidden: true
+sensor.dark_sky_cloud_coverage_5:
+  hidden: true
+sensor.dark_sky_cloud_coverage_6:
+  hidden: true
+sensor.dark_sky_cloud_coverage_7:
+  hidden: true
+sensor.dark_sky_daily_high_temperature_1:
+  hidden: true
+sensor.dark_sky_daily_high_temperature_2:
+  hidden: true
+sensor.dark_sky_daily_high_temperature_3:
+  hidden: true
+sensor.dark_sky_daily_high_temperature_4:
+  hidden: true
+sensor.dark_sky_daily_high_temperature_5:
+  hidden: true
+sensor.dark_sky_daily_high_temperature_6:
+  hidden: true
+sensor.dark_sky_daily_high_temperature_7:
+  hidden: true
+sensor.dark_sky_daily_low_temperature_1:
+  hidden: true
+sensor.dark_sky_daily_low_temperature_2:
+  hidden: true
+sensor.dark_sky_daily_low_temperature_3:
+  hidden: true
+sensor.dark_sky_daily_low_temperature_4:
+  hidden: true
+sensor.dark_sky_daily_low_temperature_5:
+  hidden: true
+sensor.dark_sky_daily_low_temperature_6:
+  hidden: true
+sensor.dark_sky_daily_low_temperature_7:
+  hidden: true
+sensor.dark_sky_humidity_1:
+  hidden: true
+sensor.dark_sky_humidity_2:
+  hidden: true
+sensor.dark_sky_humidity_3:
+  hidden: true
+sensor.dark_sky_humidity_4:
+  hidden: true
+sensor.dark_sky_humidity_5:
+  hidden: true
+sensor.dark_sky_humidity_6:
+  hidden: true
+sensor.dark_sky_humidity_7:
+  hidden: true
+sensor.dark_sky_precip_1:
+  hidden: true
+sensor.dark_sky_precip_2:
+  hidden: true
+sensor.dark_sky_precip_3:
+  hidden: true
+sensor.dark_sky_precip_4:
+  hidden: true
+sensor.dark_sky_precip_5:
+  hidden: true
+sensor.dark_sky_precip_6:
+  hidden: true
+sensor.dark_sky_precip_7:
+  hidden: true
+sensor.dark_sky_precip_intensity_1:
+  hidden: true
+sensor.dark_sky_precip_intensity_2:
+  hidden: true
+sensor.dark_sky_precip_intensity_3:
+  hidden: true
+sensor.dark_sky_precip_intensity_4:
+  hidden: true
+sensor.dark_sky_precip_intensity_5:
+  hidden: true
+sensor.dark_sky_precip_intensity_6:
+  hidden: true
+sensor.dark_sky_precip_intensity_7:
+  hidden: true
+sensor.dark_sky_uv_index_1:
+  hidden: true
+sensor.dark_sky_uv_index_2:
+  hidden: true
+sensor.dark_sky_uv_index_3:
+  hidden: true
+sensor.dark_sky_uv_index_4:
+  hidden: true
+sensor.dark_sky_uv_index_5:
+  hidden: true
+sensor.dark_sky_uv_index_6:
+  hidden: true
+sensor.dark_sky_uv_index_7:
+  hidden: true
+sensor.dark_sky_wind_bearing_1:
+  hidden: true
+sensor.dark_sky_wind_bearing_2:
+  hidden: true
+sensor.dark_sky_wind_bearing_3:
+  hidden: true
+sensor.dark_sky_wind_bearing_4:
+  hidden: true
+sensor.dark_sky_wind_bearing_5:
+  hidden: true
+sensor.dark_sky_wind_bearing_6:
+  hidden: true
+sensor.dark_sky_wind_bearing_7:
+  hidden: true
+sensor.dark_sky_wind_speed_1:
+  hidden: true
+sensor.dark_sky_wind_speed_2:
+  hidden: true
+sensor.dark_sky_wind_speed_3:
+  hidden: true
+sensor.dark_sky_wind_speed_4:
+  hidden: true
+sensor.dark_sky_wind_speed_5:
+  hidden: true
+sensor.dark_sky_wind_speed_6:
+  hidden: true
+sensor.dark_sky_wind_speed_7:
+  hidden: true
+sensor.yr_symbol:
+  hidden: true
+sensor.quark_battery_state:
+  hidden: true
+sensor.kelseys_iphone_battery_state:
+  hidden: true
+sensor.quark_battery_level:
+  hidden: true
+sensor.kelseys_iphone_battery_level:
+  hidden: true
+sensor.sun:
+  hidden: true
+sensor.dark_sky_daily_summary:
+  hidden: true
+sensor.dark_sky_hourly_summary:
+  hidden: true
+sensor.kitchen_motion_sensor:
+  device_class: motion
+sensor.living_room_motion_sensor:
+  device_class: motion

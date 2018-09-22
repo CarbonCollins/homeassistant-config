@@ -1,0 +1,34 @@
+push:
+  categories:
+    - name: Alarm
+      identifier: 'alarm'
+      actions:
+        - identifier: 'SOUND_ALARM'
+          title: 'Sound Alarm'
+          activationMode: 'background'
+          authenticationRequired: no
+          destructive: yes
+          behavior: 'default'
+        - identifier: 'SILENCE_ALARM'
+          title: 'Silence Alarm'
+          activationMode: 'background'
+          authenticationRequired: no
+          destructive: no
+          behavior: 'textInput'
+          textInputButtonTitle: 'Silencio!'
+          textInputPlaceholder: 'Placeholder'
+    - name: Rebel
+      identifier: 'rebel'
+      actions:
+        - identifier: 'PRESS_YES'
+          title: 'Yes'
+          activationMode: 'background'
+          authenticationRequired: no
+          destructive: yes
+          behavior: 'default'
+        - identifier: 'PRESS_NO'
+          title: 'No'
+          activationMode: 'background'
+          authenticationRequired: no
+          destructive: no
+          behavior: 'default'

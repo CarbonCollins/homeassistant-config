@@ -1,0 +1,4 @@
+bridges:
+  - host: !secret ip_hue_bridge_1
+    allow_hue_groups: false
+    allow_unreachable: true

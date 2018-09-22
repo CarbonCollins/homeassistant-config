@@ -1,0 +1,29 @@
+kitchen_lights_fast_on:
+  alias: Turn on kitchen lights
+  sequence:
+  - data:
+      entity_id: light.kitchen
+      brightness: 255
+    service: light.turn_on
+kitchen_lights_fast_off:
+  alias: Turn off kitchen lights
+  sequence:
+  - data:
+      entity_id: light.kitchen
+    service: light.turn_off
+
+kitchen_lights_slow_on:
+  alias: Turn on kitchen lights slowly
+  sequence:
+  - service: light.turn_on
+    data:
+      entity_id: light.kitchen
+      brightness: 255
+      transition: 5
+kitchen_lights_slow_off:
+  alias: Turn off kitchen lights slowly
+  sequence:
+  - service: light.turn_off
+    data:
+      entity_id: light.kitchen
+      transition: 5

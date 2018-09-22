@@ -1,0 +1,24 @@
+- platform: ping
+  host: !secret ip_apollo
+  count: 2
+  scan_interval: 30
+  name: Apollo
+  device_class: connectivity
+- platform: ping
+  host: !secret ip_firewall
+  count: 2
+  scan_interval: 30
+  name: Firewall
+  device_class: connectivity
+- platform: ping
+  host: !secret ip_router
+  count: 2
+  scan_interval: 30
+  name: Router
+  device_class: connectivity
+- platform: ping
+  host: 8.8.8.8
+  count: 2
+  scan_interval: 30
+  name: Google DNS
+  device_class: connectivity

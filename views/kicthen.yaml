@@ -1,0 +1,25 @@
+- icon: mdi:fridge
+  theme: dark-mode
+  title: Kitchen
+  cards:
+    - type: entities
+      title: Environment
+      entities:
+        - entity: sensor.kitchen_temperature
+          icon: mdi:thermometer-lines
+          name: Temperature
+        - entity: sensor.kitchen_light_level
+          icon: mdi:lightbulb-on-outline
+          name: Light Level
+        - entity: sensor.kitchen_motion_sensor
+          icon: mdi:run-fast
+          name: Motion
+    - type: entities
+      title: Lights
+      entities:
+        - entity: light.kitchen_lamp
+          icon: mdi:lamp
+          name: Desk Lamp
+        - entity: light.kitchen_ceiling
+          icon: mdi:ceiling-light
+          name: Ceiling

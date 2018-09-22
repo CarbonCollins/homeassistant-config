@@ -1,0 +1,27 @@
+# experimenting with this currently
+- id: slave_response
+  alias: Slave response
+  trigger:
+  - event_data:
+      actionName: PRESS_YES
+    event_type: ios.notification_action_fired
+    platform: event
+  condition: []
+  action:
+  - data:
+      message: You are now a slave to your robot overlords
+      title: Slave
+    service: notify.ios_steven
+- id: rebel_response
+  alias: Rebel Response
+  trigger:
+  - event_data:
+      actionName: PRESS_NO
+    event_type: ios.notification_action_fired
+    platform: event
+  condition: []
+  action:
+  - data:
+      message: I like you
+      title: You're a rebel
+    service: notify.ios_steven

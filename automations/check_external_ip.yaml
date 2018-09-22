@@ -1,0 +1,8 @@
+- id: check_external_ip
+  alias: Check External IP Address
+  trigger:
+  - entity_id: sensor.myipopendnscom
+    platform: state
+  condition: []
+  action:
+  - service: script.message_ip_change

@@ -1,0 +1,23 @@
+  - name: Home
+    latitude: !secret latitude
+    longitude: !secret longitude
+    radius: 100
+    icon: mdi:home
+
+  - name: Work
+    latitude: !secret work_latitude
+    longitude: !secret work_longitude
+    radius: 100
+    icon: mdi:domain
+
+  - name: Shopping Center
+    latitude: !secret sc_latitude
+    longitude: !secret sc_longitude
+    radius: 100
+    icon: mdi:cart
+
+  - name: University
+    latitude: !secret uni_latitude
+    longitude: !secret uni_longitude
+    radius: 100
+    icon: mdi:school

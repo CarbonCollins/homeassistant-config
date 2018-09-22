@@ -1,0 +1,10 @@
+- platform: trafikverket_weatherstation
+  name: Road Temp
+  api_key: !secret trafikverket_key
+  station: !secret trafikverket_station
+  type: road
+- platform: trafikverket_weatherstation
+  name: Air Temp
+  api_key: !secret trafikverket_key
+  station: !secret trafikverket_station
+  type: air

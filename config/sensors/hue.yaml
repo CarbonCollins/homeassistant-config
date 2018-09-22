@@ -1,0 +1,25 @@
+- platform: hue
+  ip_address: !secret ip_hue_bridge_1
+  token: !secret hue_user
+- platform: template
+  sensors:
+    living_room_temperature:
+      friendly_name: 'Living room temperature'
+      value_template: '{{states.sensor.living_room_motion_sensor.attributes.temperature}}'
+      unit_of_measurement: °C
+      device_class: temperature
+    living_room_light_level:
+      friendly_name: 'Living room light level'
+      value_template: '{{states.sensor.living_room_motion_sensor.attributes.lx}}'
+      unit_of_measurement: lux
+      device_class: illuminance
+    kitchen_temperature:
+      friendly_name: 'Kitchen temperature'
+      value_template: '{{states.sensor.kitchen_motion_sensor.attributes.temperature}}'
+      unit_of_measurement: °C
+      device_class: temperature
+    kitchen_light_level:
+      friendly_name: 'Kitchen light level'
+      value_template: '{{states.sensor.kitchen_motion_sensor.attributes.lx}}'
+      unit_of_measurement: lux
+      device_class: illuminance

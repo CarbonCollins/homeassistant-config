@@ -1,0 +1,3 @@
+- platform: dnsip
+- platform: dnsip
+  hostname: !secret url_ha

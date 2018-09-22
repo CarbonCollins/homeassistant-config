@@ -1,0 +1,4 @@
+exclude:
+  domains:
+    - history_graph
+    - dark_sky

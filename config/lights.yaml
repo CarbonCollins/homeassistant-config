@@ -1,0 +1,23 @@
+- platform: template
+  lights:
+    butt_plug_lamp:
+      friendly_name: "Butt Plug Lamp"
+      value_template: '{{ states.switch.butt_plug_lamp.state }}'
+      turn_on:
+        service: switch.turn_on
+        entity_id: switch.butt_plug_lamp
+      turn_off:
+        service: switch.turn_off
+        entity_id: switch.butt_plug_lamp
+- platform: group
+  name: Living Room
+  entities:
+    - light.living_room_ceiling_1
+    - light.living_room_ceiling_2
+    - light.living_room_lamp_1
+    - light.butt_plug_lamp
+- platform: group
+  name: Kitchen
+  entities:
+    - light.kitchen_ceiling
+    - light.kitchen_lamp

@@ -1,0 +1,59 @@
+homeassistant:
+  auth_providers:
+    - type: homeassistant
+    - type: trusted_networks
+    - type: legacy_api_password
+  name: Home
+  unit_system: metric
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  time_zone: !secret timezone
+  customize: !include customize.yaml
+
+http:
+  api_password: !secret http_password
+  base_url: !secret http_url
+  trusted_proxies: !include secrets/trusted_proxies.yaml
+  trusted_networks: !include secrets/trusted_networks.yaml
+  use_x_forwarded_for: true
+  login_attempts_threshold: 3
+
+updater:
+custom_updater:
+  component_urls:
+    - https://raw.githubusercontent.com/robmarkcole/Hue-sensors-HASS/master/custom_updater.json
+
+# Frontend
+frontend:
+  javascript_version: latest
+config:
+map:
+
+# Base
+automation: !include_dir_merge_list automations
+sensor: !include_dir_merge_list config/sensors
+script: !include_dir_merge_named scripts
+scene: !include_dir_merge_list scenes
+
+# Other
+#alexa: !include config/alexa.yaml
+#homekit: !include config/homekit.yaml
+#weather: !include config/weather.yaml
+binary_sensor: !include config/binary_sensors.yaml
+cloud: !include config/cloud.yaml
+device_tracker: !include config/device_trackers.yaml
+group: !include config/groups.yaml
+history: !include config/history.yaml
+history_graph: !include config/history_graphs.yaml
+hue: !include config/hue.yaml
+ios: !include config/ios.yaml
+light: !include config/lights.yaml
+logbook: !include config/logbook.yaml
+media_player: !include config/media_players.yaml
+sun:
+switch: !include config/switches.yaml
+zone: !include config/zones.yaml
+
+
+

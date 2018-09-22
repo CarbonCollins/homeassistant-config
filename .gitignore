@@ -1,0 +1,49 @@
+# Logs
+logs
+*.log
+
+# Python
+__pycache__
+*.pyc
+
+# Sensitive Data
+*.uuid
+*.conf
+*.db
+*.db-journal
+*.noload
+*.txt
+*.sqlite
+*.xml
+*.backup
+*.bak
+*.token
+*.state
+
+.cloud/
+.storage/
+tts/
+deps/
+components/
+www/faces/
+www/icons/
+www/floorplans/
+downloads/
+icloud/
+old/
+secrets/
+
+.homekit.state
+.ios.conf
+.spotify-token-cache
+
+home-assistant.env
+home-assistant.*
+secrets.yaml
+known_devices.yaml
+entity_registry.yaml
+
+# Linux
+.directory
+
+# Other

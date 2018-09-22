@@ -1,0 +1,20 @@
+message_ip_change:
+  alias: Message IP Change to Steven
+  sequence:
+  - service: notify.ios_steven
+    data:
+      message: The public IP address has changed
+      title: Public IP Change
+message_button_test:
+  alias: Message action test
+  sequence:
+  - service: notify.ios_steven
+    data:
+      message: Press Yes
+      title: Time to choose
+      data:
+        action_data:
+          entity_id: light.test
+          my_custom_data: foo_bar
+        push:
+          category: rebel

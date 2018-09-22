@@ -1,0 +1,15 @@
+- platform: broadlink
+  host: !secret ip_butt_plug_lamp
+  mac: !secret mac_butt_plug_lamp
+  friendly_name: Butt Plug Lamp
+  type: sp3
+- platform: broadlink
+  host: !secret ip_bed_room_heater
+  mac: !secret mac_bed_room_heater
+  friendly_name: Bedroom Heater
+  type: sp3
+- platform: broadlink
+  host: !secret ip_spare_room_heater
+  mac: !secret mac_spare_room_heater
+  friendly_name: Spare Room Heater
+  type: sp3
