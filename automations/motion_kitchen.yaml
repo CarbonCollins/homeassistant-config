@@ -7,7 +7,7 @@
     to: 'on'
   condition: []
   action:
-  - service: script.kitchen_lights_fast_on
+    - service: script.kitchen_lights_fast_on
 - id: no_detect_motion_kitchen
   alias: No motion detected in kitchen
   trigger:
@@ -17,6 +17,5 @@
     to: 'off'
   condition: []
   action:
-  - delay:
-    second: 5
-  - service: script.kitchen_lights_slow_off_min_condition
+    - delay: '00:00:10'
+    - service: script.kitchen_lights_slow_off_min_condition
