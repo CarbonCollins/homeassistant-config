@@ -15,9 +15,14 @@
     - light.living_room_ceiling_1
     - light.living_room_ceiling_2
     - light.living_room_lamp_1
-    - light.butt_plug_lamp
 - platform: group
   name: Kitchen
   entities:
     - light.kitchen_ceiling
     - light.kitchen_lamp
+- platform: group
+  name: Bedroom
+  entities:
+    - light.bedroom_ceiling_1
+    - light.bedroom_ceiling_2
+

@@ -1,0 +1,25 @@
+- icon: mdi:hotel
+  theme: dark-mode
+  title: Bedroom
+  cards:
+    - type: entities
+      title: Environment
+      entities:
+        - entity: sensor.bedroom_temperature
+          icon: mdi:thermometer-lines
+          name: Temperature
+        - entity: sensor.bedroom_light_level
+          icon: mdi:lightbulb-on-outline
+          name: Light Level
+        - entity: sensor.bedroom_motion_sensor
+          icon: mdi:run-fast
+          name: Motion
+    - type: entities
+      title: Lights
+      entities:
+        - entity: light.bedroom_ceiling_1
+          icon: mdi:ceiling-light
+          name: Ceiling
+        - entity: light.bedroom_ceiling_2
+          icon: mdi:ceiling-light
+          name: Ceiling

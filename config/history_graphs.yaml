@@ -6,14 +6,16 @@ gr1:
     - sensor.air_temp
     - sensor.road_temp
     - sensor.living_room_temperature
-    - sensor.Kitchen_temperature
+    - sensor.kitchen_temperature
+    - sensor.bedroom_temperature
 gr2:
   name: Light Level
   hours_to_show: 24
   refresh: 90
   entities:
     - sensor.living_room_light_level
-    - sensor.Kitchen_light_level
+    - sensor.kitchen_light_level
+    - sensor.bedroom_light_level
 gr3:
   name: Internet
   hours_to_show: 24
