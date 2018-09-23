@@ -17,4 +17,6 @@
     to: 'off'
   condition: []
   action:
-  - service: script.kitchen_lights_slow_off
+  - delay:
+    second: 5
+  - service: script.kitchen_lights_slow_off_min_condition
