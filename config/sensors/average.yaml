@@ -1,0 +1,7 @@
+- platform: template
+  sensors:
+    house_average_temprature:
+      friendly_name: "Average Temperature"
+      unit_of_measurement: "°C"
+      value_template: >-
+        {{ ((float(states.kitchen_temperature.state) + float(states.living_room_temperature.state) + float(states.bedroom_temperature.state)) / 3) | round(2) }}

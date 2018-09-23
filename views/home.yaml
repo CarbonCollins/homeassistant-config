@@ -20,6 +20,9 @@
         - entity: light.kitchen
           icon: mdi:fridge
           name: Kitchen
+        - entity: light.bedroom
+          icon: mdi:hotel
+          name: Bedroom
     - type: entities
       title: Room Temperatures
       entities:
@@ -29,6 +32,9 @@
         - entity: sensor.kitchen_temperature
           icon: mdi:fridge
           name: Kicthen
+        - entity: sensor.bedroom_temperature
+          icon: mdi:hotel
+          name: Bedroom
     - type: entities
       title: Motion
       entities:
@@ -38,6 +44,9 @@
         - entity: sensor.kitchen_motion_sensor
           icon: mdi:fridge
           name: Kitchen
+        - entity: sensor.bedroom_motion_sensor
+          icon: mdi:hotel
+          name: Bedroom
     - type: entities
       title: Light Levels
       entities:
@@ -47,6 +56,9 @@
         - entity: sensor.kitchen_light_level
           icon: mdi:fridge
           name: Kitchen
+        - entity: sensor.bedroom_light_level
+          icon: mdi:hotel
+          name: Bedroom
     - type: media-control  
       title: Spotify
       entity: media_player.spotify

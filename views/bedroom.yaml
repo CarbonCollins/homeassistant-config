@@ -19,7 +19,7 @@
       entities:
         - entity: light.bedroom_ceiling_1
           icon: mdi:ceiling-light
-          name: Ceiling
+          name: Ceiling 1
         - entity: light.bedroom_ceiling_2
           icon: mdi:ceiling-light
-          name: Ceiling
+          name: Ceiling 2
