@@ -2,6 +2,13 @@
   sensors:
     house_average_temprature:
       friendly_name: "Average Temperature"
+      value_template: '{{ ((float(states.kitchen_temperature.state) + float(states.living_room_temperature.state) + float(states.bedroom_temperature.state)) / 3) | round(2) }}'
       unit_of_measurement: "°C"
-      value_template: >-
-        {{ ((float(states.kitchen_temperature.state) + float(states.living_room_temperature.state) + float(states.bedroom_temperature.state)) / 3) | round(2) }}
+      device_class: temperature
+- platform: template
+  sensors:
+    house_average_light_level:
+      friendly_name: "Average Light Level"
+      value_template: '{{ ((float(states.kitchen_light_level.state) + float(states.living_room_light_level.state) + float(states.bedroom_light_level.state)) / 3) | round(2) }}'
+      unit_of_measurement: "lux"
+      device_class: illuminance
