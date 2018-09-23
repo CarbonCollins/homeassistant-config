@@ -29,8 +29,8 @@ kitchen_lights_slow_off:
       transition: 5
 kitchen_lights_slow_off_min_condition:
   alias: Turn off kitchen lights slowly
-  condition: {{ (as_timestamp(now()) - as_timestamp(states.sensor.kitchen_motion_sensor.last_updated)) > 10000 }}
   sequence:
+  - condition: {{ (as_timestamp(now()) - as_timestamp(states.sensor.kitchen_motion_sensor.last_updated)) | int > 10000 }}
   - service: light.turn_off
     data:
       entity_id: light.kitchen
