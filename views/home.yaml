@@ -26,6 +26,9 @@
     - type: entities
       title: Room Temperatures
       entities:
+        - entity: sensor.home_average_temperature
+          icon: mdi:home-assistant
+          name: Average
         - entity: sensor.living_room_temperature
           icon: mdi:sofa
           name: Living Room
@@ -50,6 +53,9 @@
     - type: entities
       title: Light Levels
       entities:
+        - entity: sensor.home_average_light_level
+          icon: mdi:home-assistant
+          name: Average
         - entity: sensor.living_room_light_level
           icon: mdi:sofa
           name: Living Room
