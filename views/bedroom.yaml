@@ -23,3 +23,9 @@
         - entity: light.bedroom_ceiling_2
           icon: mdi:ceiling-light
           name: Ceiling 2
+    - type: entities
+      title: Heating
+      entities:
+        - entity: sensor.bedroom_temperature
+          icon: mdi:thermometer-lines
+          name: Current
