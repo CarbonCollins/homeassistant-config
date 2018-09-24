@@ -1,6 +1,0 @@
-- platform: template
-  sensors:
-    seconds_since_motion_kitchen:
-      friendly_name: "Seconds Since Motion"
-      value_template: '{{ float(as_timestamp(now()) - as_timestamp(states.sensor.kitchen_motion_sensor.last_updated)) }}'
-      unit_of_measurement: "seconds"
