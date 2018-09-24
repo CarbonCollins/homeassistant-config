@@ -30,7 +30,7 @@
           icon: mdi:thermometer-lines
           name: Current
         - entity: divider
-        - entity: input_number.target_kitchen_temperature
+        - entity: input_number.target_bedroom_temperature
           icon: mdi:target
           name: Target
         - entity: sensor.bedroom_temperature_delta
