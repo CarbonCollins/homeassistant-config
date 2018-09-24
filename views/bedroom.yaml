@@ -26,9 +26,9 @@
     - type: entities
       title: Heating
       entities:
-        - entity: sensor.bedroom_temperature
-          icon: mdi:thermometer-lines
-          name: Current
+        - entity: switch.bedroom_heater
+          icon: mdi:radiator
+          name: Heating
         - type: divider
         - entity: input_number.target_bedroom_temperature
           icon: mdi:target
