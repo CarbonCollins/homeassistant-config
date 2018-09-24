@@ -1,4 +1,4 @@
-box1:
+target_kitchen_temperature:
   name: Target Kitchen Temperature
   initial: 18
   min: 15

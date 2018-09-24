@@ -27,5 +27,8 @@
       title: Heating
       entities:
         - entity: sensor.bedroom_temperature
-          icon: mdi:thermometer-lines
+          icon: mdi:thermometer
           name: Current
+        - entity: input_number.target_kitchen_temperature
+          icon: mdi:thermometer-lines
+          name: Target
