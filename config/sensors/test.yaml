@@ -1,0 +1,7 @@
+- platform: template
+  sensors:
+    seconds_since_motion_kitchen:
+      friendly_name: "Seconds Since Motion"
+      value_template: '{{ ((float(states.sensor.kitchen_motion_sensor.attributes.lx) + float(states.sensor.living_room_motion_sensor.attributes.lx) + float(states.sensor.bedroom_motion_sensor.attributes.lx)) / 3) | round(2) }}'
+      unit_of_measurement: "lux"
+      device_class: illuminance
