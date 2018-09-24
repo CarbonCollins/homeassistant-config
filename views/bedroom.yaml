@@ -28,12 +28,9 @@
       show_header_toggle: false
       entities:
         - entity: switch.bedroom_heater
-          icon_template: >
-            {% if is_state('switch.bedroom_heater', 'on') %}
-              mdi:radiator
-            {% else %}
-              mdi:radiator-disabled
-            {% endif %}
+          icon: >
+            if (state === 'on') return 'mdi:radiator';
+            return 'mdi:radiator-disabled';
           name: Heating
         - type: divider
         - entity: input_number.target_bedroom_temperature
