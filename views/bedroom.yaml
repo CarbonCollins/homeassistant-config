@@ -25,9 +25,10 @@
           name: Ceiling 2
     - type: entities
       title: Heating
+      show_header_toggle: false
       entities:
         - entity: switch.bedroom_heater
-          icon: mdi:radiator
+          icon: "if (state === 'on') return mdi:radiator; else return mdi:radiator-disabled;"
           name: Heating
         - type: divider
         - entity: input_number.target_bedroom_temperature
