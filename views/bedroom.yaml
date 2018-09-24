@@ -29,7 +29,7 @@
         - entity: sensor.bedroom_temperature
           icon: mdi:thermometer-lines
           name: Current
-        - entity: divider
+        - type: divider
         - entity: input_number.target_bedroom_temperature
           icon: mdi:target
           name: Target
