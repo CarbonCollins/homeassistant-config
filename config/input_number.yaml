@@ -1,5 +1,5 @@
-target_kitchen_temperature:
-  name: Target Kitchen Temperature
+target_bedroom_temperature:
+  name: Target Bedroom Temperature
   initial: 18
   min: 15
   max: 25
