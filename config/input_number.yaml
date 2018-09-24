@@ -4,4 +4,5 @@ target_kitchen_temperature:
   min: 15
   max: 25
   step: 0.5
-  mode: box
+  mode: slider
+  unit_of_measurement: °C
