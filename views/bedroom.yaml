@@ -22,6 +22,7 @@
     - type: entities
       title: Environment
       show_header_toggle: false
+      entities:
         - entity: sensor.bedroom_light_level
           icon: mdi:lightbulb-on-outline
           name: Light Level
