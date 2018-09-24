@@ -8,6 +8,17 @@
         - entity: sensor.bedroom_temperature
           icon: mdi:thermometer-lines
           name: Temperature
+        - entity: switch.bedroom_heater
+          icon: mdi:radiator
+          name: Heating
+        - type: divider
+        - entity: input_number.target_bedroom_temperature
+          icon: mdi:target
+          name: Target
+        - entity: sensor.bedroom_temperature_delta
+          icon: mdi:delta
+          name: Delta
+        - type: divider
         - entity: sensor.bedroom_light_level
           icon: mdi:lightbulb-on-outline
           name: Light Level
@@ -23,17 +34,3 @@
         - entity: light.bedroom_ceiling_2
           icon: mdi:ceiling-light
           name: Ceiling 2
-    - type: entities
-      title: Heating
-      show_header_toggle: false
-      entities:
-        - entity: switch.bedroom_heater
-          icon: mdi:radiator
-          name: Heating
-        - type: divider
-        - entity: input_number.target_bedroom_temperature
-          icon: mdi:target
-          name: Target
-        - entity: sensor.bedroom_temperature_delta
-          icon: mdi:delta
-          name: Delta
