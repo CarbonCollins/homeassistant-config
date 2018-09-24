@@ -3,22 +3,25 @@
   title: Bedroom
   cards:
     - type: entities
-      title: Environment
+      title: Temperature
+      show_header_toggle: false
       entities:
-        - entity: sensor.bedroom_temperature
-          icon: mdi:thermometer-lines
-          name: Temperature
         - entity: switch.bedroom_heater
           icon: mdi:radiator
           name: Heating
         - type: divider
+        - entity: sensor.bedroom_temperature
+          icon: mdi:thermometer-lines
+          name: Current
         - entity: input_number.target_bedroom_temperature
           icon: mdi:target
           name: Target
         - entity: sensor.bedroom_temperature_delta
           icon: mdi:delta
           name: Delta
-        - type: divider
+    - type: entities
+      title: Environment
+      show_header_toggle: false
         - entity: sensor.bedroom_light_level
           icon: mdi:lightbulb-on-outline
           name: Light Level
