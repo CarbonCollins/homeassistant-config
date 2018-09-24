@@ -17,5 +17,5 @@
     bedroom_temperature_delta:
       friendly_name: "Bedroom Temperature Delta"
       value_template: '{{ (float(states.sensor.bedroom_motion_sensor.attributes.temperature) - float(states.input_number.target_bedroom_temperature.state)) | round(2) }}'
-      unit_of_measurement: ""°C"
+      unit_of_measurement: "°C"
       device_class: temperature
