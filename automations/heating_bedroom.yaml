@@ -1,0 +1,30 @@
+- id: bedroom_heating_on
+  alias: Bedroom heating on state management
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.bedroom_temperature
+    below: 25
+  condition:
+    - condition: state
+      entity_id: switch.bedroom_heater
+      state: 'off'
+    - condition: template
+      value_template: "{{ states.sensor.bedroom_temperature.state | float < (float(state.input_number.target_bedroom_temperature.state) - 0.5) | float }}"
+  action:
+    - service: script.turn_on
+      entity_id: switch.bedroom_heater
+- id: bedroom_heating_off
+  alias: Bedroom heating off state management
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.bedroom_temperature
+    above: 15
+  condition:
+    - condition: state
+      entity_id: switch.bedroom_heater
+      state: 'on'
+    - condition: template
+      value_template: "{{ states.sensor.bedroom_temperature.state | float > state.input_number.target_bedroom_temperature.state | float }}"
+  action:
+    - service: script.turn_off
+      entity_id: switch.bedroom_heater
