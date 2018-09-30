@@ -8,7 +8,7 @@
       entity_id: switch.bedroom_heater
       state: 'off'
   action:
-    - service: script.turn_on
+    - service: switch.turn_on
       entity_id: switch.bedroom_heater
 # - id: bedroom_heating_off float
 #   alias: Bedroom heating off state management
