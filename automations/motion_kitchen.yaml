@@ -22,7 +22,7 @@
   condition:
     - condition: state
       entity_id: input_boolean.cooking
-      state: 'on'
+      state: 'off'
   action:
     - delay: '00:01:00'
     - service: script.kitchen_lights_slow_off_min_condition
