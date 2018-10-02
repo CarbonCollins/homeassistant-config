@@ -25,6 +25,7 @@
           name: Ceiling
     - type: entities
       title: Utilities
+      show_header_toggle: false
       entities:
         - entity: input_boolean.cooking
           icon: mdi:stove
