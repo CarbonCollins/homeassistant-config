@@ -23,3 +23,9 @@
         - entity: light.kitchen_ceiling
           icon: mdi:ceiling-light
           name: Ceiling
+    - type: entities
+      title: Utilities
+      entities:
+        - entity: input_boolean.cooking
+          icon: mdi:stove
+          name: Is Cooking
