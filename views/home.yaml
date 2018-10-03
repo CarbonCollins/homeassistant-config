@@ -81,5 +81,18 @@
         "on": /local/rooms/kitchen_on.jpeg
         "off": /local/rooms/kitchen_off.jpeg
       entity: light.kitchen
+    - type: picture-glance
+      title: Bedroom
+      aspect_ratio: 16:9
+      entities:
+        - light.bedroom
+        - switch.bedroom_heating
+        - sensor.bedroom_temperature
+        - sensor.bedroom_light_level
+        - sensor.bedroom_motion_sensor
+      state_image:
+        "on": /local/rooms/bedroom_on.jpeg
+        "off": /local/rooms/bedroom_off.jpeg
+      entity: light.bedroom
 #      - type: weather-forecast
 #        entity: weather.dark_sky
