@@ -88,6 +88,7 @@
         - light.bedroom
         - entity: switch.bedroom_heater
           icon: mdi:radiator
+        - input_number.target_bedroom_temperature
         - sensor.bedroom_temperature
         - sensor.bedroom_light_level
         - sensor.bedroom_motion_sensor
