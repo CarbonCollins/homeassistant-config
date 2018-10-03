@@ -86,7 +86,8 @@
       aspect_ratio: 16:9
       entities:
         - light.bedroom
-        - switch.bedroom_heater
+        - entity: switch.bedroom_heater
+          icon: mdi:radiator
         - sensor.bedroom_temperature
         - sensor.bedroom_light_level
         - sensor.bedroom_motion_sensor
