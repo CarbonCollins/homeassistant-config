@@ -76,6 +76,7 @@
         - input_boolean.cooking
         - sensor.kitchen_temperature
         - sensor.kitchen_light_level
+        - sensor.kitchen_motion_sensor
       state_image:
         "on": /local/rooms/kitchen_on.jpeg
         "off": /local/rooms/kitchen_off.jpeg
