@@ -86,7 +86,7 @@
       aspect_ratio: 16:9
       entities:
         - light.bedroom
-        - switch.bedroom_heating
+        - switch.bedroom_heater
         - sensor.bedroom_temperature
         - sensor.bedroom_light_level
         - sensor.bedroom_motion_sensor
