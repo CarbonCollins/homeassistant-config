@@ -69,12 +69,13 @@
       title: Spotify
       entity: media_player.spotify
     - type: picture-glance
-      title: Living room
+      title: Kitchen
+      aspect_ratio: 16:9
       entities:
         - light.kitchen
       state_image:
-        "on": /local/kitchen_on.png
-        "off": /local/kitchen_off.png
+        "on": /local/kitchen_on.jpeg
+        "off": /local/kitchen_off.jpeg
       entity: light.kitchen
 #      - type: weather-forecast
 #        entity: weather.dark_sky
