@@ -68,5 +68,13 @@
     - type: media-control  
       title: Spotify
       entity: media_player.spotify
+    - type: picture-glance
+      title: Living room
+      entities:
+        - light.kitchen
+      state_image:
+        "on": /local/kitchen_on.png
+        "off": /local/kitchen_off.png
+      entity: light.kitchen
 #      - type: weather-forecast
 #        entity: weather.dark_sky
