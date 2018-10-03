@@ -1,0 +1,11 @@
+- name: Vaporwave Kitchen
+  icon: mdi:weather-sunset
+  entities:
+    light.kitchen_lamp:
+      state: on
+      rgb_color: [5,255,161]
+      brightness: 254
+    light.kitchen_ceiling:
+      state: on
+      rgb_color: [255,113,206]
+      brightness: 254
