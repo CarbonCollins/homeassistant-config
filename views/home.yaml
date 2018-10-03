@@ -68,33 +68,35 @@
     - type: media-control  
       title: Spotify
       entity: media_player.spotify
-    - type: picture-glance
-      title: Kitchen
-      aspect_ratio: 16:9
-      entities:
-        - light.kitchen
-        - input_boolean.cooking
-        - sensor.kitchen_temperature
-        - sensor.kitchen_light_level
-        - sensor.kitchen_motion_sensor
-      state_image:
-        "on": /local/rooms/kitchen_on.jpeg
-        "off": /local/rooms/kitchen_off.jpeg
-      entity: light.kitchen
-    - type: picture-glance
-      title: Bedroom
-      aspect_ratio: 16:9
-      entities:
-        - light.bedroom
-        - entity: switch.bedroom_heater
-          icon: mdi:radiator
-        - input_number.target_bedroom_temperature
-        - sensor.bedroom_temperature
-        - sensor.bedroom_light_level
-        - sensor.bedroom_motion_sensor
-      state_image:
-        "on": /local/rooms/bedroom_on.jpeg
-        "off": /local/rooms/bedroom_off.jpeg
-      entity: light.bedroom
+    - type: vertical-stack
+      cards:
+      - type: picture-glance
+        title: Kitchen
+        aspect_ratio: 16:9
+        entities:
+          - light.kitchen
+          - input_boolean.cooking
+          - sensor.kitchen_temperature
+          - sensor.kitchen_light_level
+          - sensor.kitchen_motion_sensor
+        state_image:
+          "on": /local/rooms/kitchen_on.jpeg
+          "off": /local/rooms/kitchen_off.jpeg
+        entity: light.kitchen
+      - type: picture-glance
+        title: Bedroom
+        aspect_ratio: 16:9
+        entities:
+          - light.bedroom
+          - entity: switch.bedroom_heater
+            icon: mdi:radiator
+          - input_number.target_bedroom_temperature
+          - sensor.bedroom_temperature
+          - sensor.bedroom_light_level
+          - sensor.bedroom_motion_sensor
+        state_image:
+          "on": /local/rooms/bedroom_on.jpeg
+          "off": /local/rooms/bedroom_off.jpeg
+        entity: light.bedroom
 #      - type: weather-forecast
 #        entity: weather.dark_sky
