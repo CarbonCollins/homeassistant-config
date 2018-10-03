@@ -7,7 +7,7 @@
       brightness: 254
     light.living_room_ceiling_2:
       state: on
-      rgb_color: [255,244,244]
+      rgb_color: [255,200,182]
       brightness: 254
     light.living_room_lamp_1:
       state: on

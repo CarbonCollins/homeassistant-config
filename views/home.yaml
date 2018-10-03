@@ -113,5 +113,12 @@
             service: scene.turn_on
             service_data:
               entity_id: scene.vaporwave_home
+          - type: call-service
+            icon: mdi:candycane
+            name: Cotton Candy
+            action_name: Sugar Me Daddy
+            service: scene.turn_on
+            service_data:
+              entity_id: scene.cotton_candy_home
 #      - type: weather-forecast
 #        entity: weather.dark_sky
