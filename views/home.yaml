@@ -98,5 +98,18 @@
           "on": /local/rooms/bedroom_on.jpeg
           "off": /local/rooms/bedroom_off.jpeg
         entity: light.bedroom
+      - type: picture-glance
+        title: Living Room
+        aspect_ratio: 16:9
+        entities:
+          - light.living_room
+          - input_number.target_living_room_temperature
+          - sensor.living_room_temperature
+          - sensor.living_room_light_level
+          - sensor.living_room_motion_sensor
+        state_image:
+          "on": /local/rooms/livingroom_on.jpeg
+          "off": /local/rooms/livingroom_off.jpeg
+        entity: light.living_room
 #      - type: weather-forecast
 #        entity: weather.dark_sky
