@@ -47,13 +47,6 @@
           service_data:
             entity_id: scene.bi_pride_living_room
         - type: call-service
-          icon: mdi:water
-          name: Under Da Sea
-          action_name: Sploosh
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.under_da_sea_living_room
-        - type: call-service
           icon: mdi:leaf
           name: Autumn
           action_name: Let it Fall
@@ -74,3 +67,10 @@
           service: scene.turn_on
           service_data:
             entity_id: scene.cotton_candy_living_room
+        - type: call-service
+          icon: mdi:water
+          name: Under Da Sea
+          action_name: Sploosh
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.under_da_sea_living_room

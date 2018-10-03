@@ -1,0 +1,33 @@
+- name: Under Da Sea Home
+  icon: mdi:water
+  entities:
+    light.living_room_ceiling_1:
+      state: on
+      rgb_color: [64,0,255]
+      brightness: 254
+    light.living_room_ceiling_2:
+      state: on
+      rgb_color: [56,255,253]
+      brightness: 254
+    light.living_room_lamp_1:
+      state: on
+      rgb_color: [61,146,255]
+      brightness: 254
+    switch.butt_plug_lamp:
+      state: off
+    light.kitchen_lamp:
+      state: on
+      rgb_color: [31,121,132]
+      brightness: 254
+    light.kitchen_ceiling:
+      state: on
+      rgb_color: [61,53,121]
+      brightness: 254
+    light.bedroom_ceiling_1:
+      state: on
+      rgb_color: [56,255,253]
+      brightness: 254
+    light.bedroom_ceiling_2:
+      state: on
+      rgb_color: [64,0,255]
+      brightness: 254
