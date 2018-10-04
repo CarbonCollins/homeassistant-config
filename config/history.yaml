@@ -1,4 +1,5 @@
 exclude:
   domains:
     - history_graph
-    - dark_sky
+  entities:
+    - weather.dark_sky.temperature
