@@ -13,6 +13,8 @@
         card:
           type: glance
           title: Who's home
+      - type: weather-forecast
+        entity: weather.darksky
       - type: media-control  
         title: Spotify
         entity: media_player.spotify
