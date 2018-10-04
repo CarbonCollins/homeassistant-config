@@ -2,4 +2,4 @@ exclude:
   domains:
     - history_graph
   entities:
-    - weather.dark_sky.temperature
+    - sensor.outside_temperature

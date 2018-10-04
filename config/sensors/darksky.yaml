@@ -1,3 +1,10 @@
+- platform: template
+  sensors:
+    outside_temperature:
+      friendly_name: 'Outside Temperature'
+      value_template: '{{states.weather.dark_sky.attributes.temperature}}'
+      unit_of_measurement: °C
+      device_class: temperature
 # - platform: darksky
 #   api_key: !secret dark_sky_key
 #   language: en
