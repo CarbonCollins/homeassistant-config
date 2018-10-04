@@ -14,7 +14,6 @@
       friendly_name: 'Outside Pressure'
       value_template: '{{states.weather.dark_sky.attributes.pressure}}'
       unit_of_measurement: hPa
-      device_class: none
 # - platform: darksky
 #   api_key: !secret dark_sky_key
 #   language: en
