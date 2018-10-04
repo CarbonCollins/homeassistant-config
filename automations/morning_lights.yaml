@@ -10,5 +10,5 @@
   action:
     - service: light.turn_on
       entity_id: light.living_room
-      color_temp: 2700
+      kelvin: 2700
       brightness: 92
