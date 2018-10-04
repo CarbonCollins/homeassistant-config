@@ -67,6 +67,7 @@
       - type: picture-glance
         title: Bathroom
         aspect_ratio: 16:9
+        entities: []
         state_image:
           "on": /local/rooms/bathroom_on.jpeg
           "off": /local/rooms/bathroom_off.jpeg
