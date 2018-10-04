@@ -68,9 +68,10 @@
         title: Bathroom
         aspect_ratio: 16:9
         entities: []
-        state_image:
-          "on": /local/rooms/bathroom_on.jpeg
-          "off": /local/rooms/bathroom_off.jpeg
+        image: /local/rooms/bathroom_off.jpeg
+        # state_image:
+        #   "on": /local/rooms/bathroom_on.jpeg
+        #   "off": /local/rooms/bathroom_off.jpeg
     - type: vertical-stack
       cards:
       - type: entities
