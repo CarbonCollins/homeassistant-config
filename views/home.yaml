@@ -22,6 +22,7 @@
       cards:
       - type: picture-glance
         title: Kitchen
+        navigation_path: 'lovelace/4'
         aspect_ratio: 16:9
         entities:
           - light.kitchen
@@ -35,6 +36,7 @@
         entity: light.kitchen
       - type: picture-glance
         title: Bedroom
+        navigation_path: 'lovelace/1'
         aspect_ratio: 16:9
         entities:
           - light.bedroom
@@ -50,6 +52,7 @@
         entity: light.bedroom
       - type: picture-glance
         title: Living Room
+        navigation_path: 'lovelace/3'
         aspect_ratio: 16:9
         entities:
           - light.living_room
@@ -61,6 +64,12 @@
           "on": /local/rooms/livingroom_on.jpeg
           "off": /local/rooms/livingroom_off.jpeg
         entity: light.living_room
+      - type: picture-glance
+        title: Bathroom
+        aspect_ratio: 16:9
+        state_image:
+          "on": /local/rooms/bathroom_on.jpeg
+          "off": /local/rooms/bathroom_off.jpeg
     - type: vertical-stack
       cards:
       - type: entities
