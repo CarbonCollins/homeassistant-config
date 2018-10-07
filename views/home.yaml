@@ -2,71 +2,143 @@
   theme: dark-mode
   title: Home
   cards:
-    - type: entity-filter
-      entities:
-        - device_tracker.steven
-        - device_tracker.kelsey
-      state_filter:
-        - 'home'
-      card:
-        type: glance
-        title: Who's home
-    - type: entities
-      title: Room Lights
-      entities:
-        - entity: light.living_room
-          icon: mdi:sofa
-          name: Living Room
-        - entity: light.kitchen
-          icon: mdi:fridge
-          name: Kitchen
-        - entity: light.bedroom
-          icon: mdi:hotel
-          name: Bedroom
-    - type: entities
-      title: Room Temperatures
-      entities:
-        - entity: sensor.house_average_temperature
-          icon: mdi:thermometer-lines
-          name: Average
-        - entity: sensor.living_room_temperature
-          icon: mdi:sofa
-          name: Living Room
-        - entity: sensor.kitchen_temperature
-          icon: mdi:fridge
-          name: Kicthen
-        - entity: sensor.bedroom_temperature
-          icon: mdi:hotel
-          name: Bedroom
-    - type: entities
-      title: Motion
-      entities:
-        - entity: sensor.living_room_motion_sensor
-          icon: mdi:sofa
-          name: Living Room
-        - entity: sensor.kitchen_motion_sensor
-          icon: mdi:fridge
-          name: Kitchen
-        - entity: sensor.bedroom_motion_sensor
-          icon: mdi:hotel
-          name: Bedroom
-    - type: entities
-      title: Light Levels
-      entities:
-        - entity: sensor.house_average_light_level
-          icon: mdi:lightbulb-on-outline
-          name: Average
-        - entity: sensor.living_room_light_level
-          icon: mdi:sofa
-          name: Living Room
-        - entity: sensor.kitchen_light_level
-          icon: mdi:fridge
-          name: Kitchen
-        - entity: sensor.bedroom_light_level
-          icon: mdi:hotel
-          name: Bedroom
-    - type: media-control  
-      title: Spotify
-      entity: media_player.spotify
+    - type: vertical-stack
+      cards:
+      - type: entity-filter
+        entities:
+          - device_tracker.steven
+          - device_tracker.kelsey
+        state_filter:
+          - 'home'
+        card:
+          type: glance
+          title: Who's home
+      - type: weather-forecast
+        entity: weather.dark_sky
+      - type: media-control  
+        title: Spotify
+        entity: media_player.spotify
+    - type: vertical-stack
+      cards:
+      - type: picture-glance
+        title: Kitchen
+        navigation_path: 'lovelace/4'
+        aspect_ratio: 16:9
+        entities:
+          - light.kitchen
+          - input_boolean.cooking
+          - sensor.kitchen_temperature
+          - sensor.kitchen_light_level
+          - sensor.kitchen_motion_sensor
+        state_image:
+          "on": /local/rooms/kitchen_on.jpeg
+          "off": /local/rooms/kitchen_off.jpeg
+        entity: light.kitchen
+      - type: picture-glance
+        title: Bedroom
+        navigation_path: 'lovelace/1'
+        aspect_ratio: 16:9
+        entities:
+          - light.bedroom
+          - entity: switch.bedroom_heater
+            icon: mdi:radiator
+          - input_number.target_bedroom_temperature
+          - sensor.bedroom_temperature
+          - sensor.bedroom_light_level
+          - sensor.bedroom_motion_sensor
+        state_image:
+          "on": /local/rooms/bedroom_on.jpeg
+          "off": /local/rooms/bedroom_off.jpeg
+        entity: light.bedroom
+      - type: picture-glance
+        title: Living Room
+        navigation_path: 'lovelace/3'
+        aspect_ratio: 16:9
+        entities:
+          - light.living_room
+          - input_number.target_living_room_temperature
+          - sensor.living_room_temperature
+          - sensor.living_room_light_level
+          - sensor.living_room_motion_sensor
+        state_image:
+          "on": /local/rooms/livingroom_on.jpeg
+          "off": /local/rooms/livingroom_off.jpeg
+        entity: light.living_room
+      - type: picture-glance
+        title: Bathroom
+        aspect_ratio: 16:9
+        entities: []
+        image: /local/rooms/bathroom_off.jpeg
+        # state_image:
+        #   "on": /local/rooms/bathroom_on.jpeg
+        #   "off": /local/rooms/bathroom_off.jpeg
+    - type: vertical-stack
+      cards:
+      - type: entities
+        title: Room Temperatures
+        entities:
+          - entity: sensor.house_average_temperature
+            icon: mdi:thermometer-lines
+            name: Average
+          - entity: sensor.living_room_temperature
+            icon: mdi:sofa
+            name: Living Room
+          - entity: sensor.kitchen_temperature
+            icon: mdi:fridge
+            name: Kicthen
+          - entity: sensor.bedroom_temperature
+            icon: mdi:hotel
+            name: Bedroom
+      - type: entities
+        title: Motion
+        entities:
+          - entity: sensor.living_room_motion_sensor
+            icon: mdi:sofa
+            name: Living Room
+          - entity: sensor.kitchen_motion_sensor
+            icon: mdi:fridge
+            name: Kitchen
+          - entity: sensor.bedroom_motion_sensor
+            icon: mdi:hotel
+            name: Bedroom
+      - type: entities
+        title: Light Levels
+        entities:
+          - entity: sensor.house_average_light_level
+            icon: mdi:lightbulb-on-outline
+            name: Average
+          - entity: sensor.living_room_light_level
+            icon: mdi:sofa
+            name: Living Room
+          - entity: sensor.kitchen_light_level
+            icon: mdi:fridge
+            name: Kitchen
+          - entity: sensor.bedroom_light_level
+            icon: mdi:hotel
+            name: Bedroom
+      - type: entities
+        title: Scenes
+        entities:
+          - type: call-service
+            icon: mdi:weather-sunset
+            name: Vaporwave
+            action_name: Time to go retro
+            service: scene.turn_on
+            service_data:
+              entity_id: scene.vaporwave_home
+          - type: call-service
+            icon: mdi:candycane
+            name: Cotton Candy
+            action_name: Sugar Me Daddy
+            service: scene.turn_on
+            service_data:
+              entity_id: scene.cotton_candy_home
+          - type: call-service
+            icon: mdi:water
+            name: under Da Sea
+            action_name: sploosh
+            service: scene.turn_on
+            service_data:
+              entity_id: scene.under_da_sea_home
 #      - type: weather-forecast
 #        entity: weather.dark_sky

@@ -1,0 +1,17 @@
+- name: Cotton Candy Living Room
+  icon: mdi:candycane
+  entities:
+    light.living_room_ceiling_1:
+      state: on
+      rgb_color: [255,167,167]
+      brightness: 254
+    light.living_room_ceiling_2:
+      state: on
+      rgb_color: [255,200,182]
+      brightness: 254
+    light.living_room_lamp_1:
+      state: on
+      rgb_color: [223,254,255]
+      brightness: 254
+    switch.butt_plug_lamp:
+      state: off

@@ -1,0 +1,4 @@
+cooking:
+  name: Is Cooking
+  initial: off
+  icon: mdi:stove

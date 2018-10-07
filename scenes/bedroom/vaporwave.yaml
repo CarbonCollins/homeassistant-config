@@ -1,0 +1,11 @@
+- name: Vaporwave Bedroom
+  icon: mdi:weather-sunset
+  entities:
+    light.bedroom_ceiling_1:
+      state: on
+      rgb_color: [5,255,161]
+      brightness: 254
+    light.bedroom_ceiling_2:
+      state: on
+      rgb_color: [185,103,255]
+      brightness: 254

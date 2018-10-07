@@ -1,0 +1,11 @@
+- name: Cotton Candy Bedroom
+  icon: mdi:candycane
+  entities:
+    light.bedroom_ceiling_1:
+      state: on
+      rgb_color: [213,82,255]
+      brightness: 254
+    light.bedroom_ceiling_2:
+      state: on
+      rgb_color: [59,168,255]
+      brightness: 254

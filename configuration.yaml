@@ -37,7 +37,7 @@ scene: !include_dir_merge_list scenes
 # Other
 #alexa: !include config/alexa.yaml
 #homekit: !include config/homekit.yaml
-#weather: !include config/weather.yaml
+weather: !include config/weather.yaml
 binary_sensor: !include config/binary_sensors.yaml
 cloud: !include config/cloud.yaml
 device_tracker: !include config/device_trackers.yaml
@@ -53,6 +53,7 @@ sun:
 switch: !include config/switches.yaml
 zone: !include config/zones.yaml
 input_number: !include config/input_number.yaml
+input_boolean: !include config/input_boolean.yaml
 
 
 

@@ -1,24 +1,40 @@
-- platform: darksky
-  api_key: !secret dark_sky_key
-  language: en
-  latitude: !secret latitude
-  longitude: !secret longitude
-  monitored_conditions:
-    - precip_type
-    - precip_intensity
-    - wind_speed
-    - wind_bearing
-    - cloud_cover
-    - humidity
-    - uv_index
-    - hourly_summary
-    - daily_summary
-    - temperature_max
-    - temperature_min
-  units: si
-  update_interval:
-    days: 0
-    hours: 0
-    minutes: 1
-    seconds: 30
-    milliseconds: 0
+- platform: template
+  sensors:
+    outside_temperature:
+      friendly_name: 'Outside Temperature'
+      value_template: '{{states.weather.dark_sky.attributes.temperature}}'
+      unit_of_measurement: °C
+      device_class: temperature
+    outside_humidity:
+      friendly_name: 'Outside Humidity'
+      value_template: '{{states.weather.dark_sky.attributes.humidity}}'
+      unit_of_measurement: '%'
+      device_class: humidity
+    outside_pressure:
+      friendly_name: 'Outside Pressure'
+      value_template: '{{states.weather.dark_sky.attributes.pressure}}'
+      unit_of_measurement: hPa
+# - platform: darksky
+#   api_key: !secret dark_sky_key
+#   language: en
+#   latitude: !secret latitude
+#   longitude: !secret longitude
+#   monitored_conditions:
+#     - precip_type
+#     - precip_intensity
+#     - wind_speed
+#     - wind_bearing
+#     - cloud_cover
+#     - humidity
+#     - uv_index
+#     - hourly_summary
+#     - daily_summary
+#     - temperature_max
+#     - temperature_min
+#   units: si
+#   update_interval:
+#     days: 0
+#     hours: 0
+#     minutes: 1
+#     seconds: 30
+#     milliseconds: 0
