@@ -6,3 +6,11 @@ target_bedroom_temperature:
   step: 0.5
   mode: slider
   unit_of_measurement: °C
+target_spare_room_temperature:
+  name: Target Spare Room Temperature
+  initial: 18
+  min: 15
+  max: 25
+  step: 0.5
+  mode: slider
+  unit_of_measurement: °C
