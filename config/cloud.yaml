@@ -3,6 +3,7 @@ alexa:
     include_entities:
       - light.living_room
       - light.kitchen
+      - light.bedroom
       - switch.butt_plug_lamp
     exclude_domains:
       - alert
@@ -27,6 +28,10 @@ alexa:
     light.kitchen:
       name: Kitchen
       description: All kitchen lights
+      display_categories: LIGHT
+    light.bedroom:
+      name: Bedroom
+      description: All bedroom lights
       display_categories: LIGHT
     switch.butt_plug_lamp:
       name: Butt Plug Lamp
