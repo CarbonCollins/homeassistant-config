@@ -72,6 +72,22 @@
         # state_image:
         #   "on": /local/rooms/bathroom_on.jpeg
         #   "off": /local/rooms/bathroom_off.jpeg
+      - type: picture-glance
+        title: Spare Room
+        navigation_path: 'lovelace/1'
+        aspect_ratio: 16:9
+        entities:
+          - light.bedroom
+          - entity: switch.spare_room_heater
+            icon: mdi:radiator
+          - input_number.target_spare_room_temperature
+          - sensor.spare_room_temperature
+          - sensor.spare_room_light_level
+          - sensor.spare_room_motion_sensor
+        state_image:
+          "on": /local/rooms/bedroom_on.jpeg
+          "off": /local/rooms/bedroom_off.jpeg
+        entity: light.bedroom
     - type: vertical-stack
       cards:
       - type: entities
