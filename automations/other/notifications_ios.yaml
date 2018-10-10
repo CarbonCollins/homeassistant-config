@@ -2,10 +2,10 @@
 - id: slave_response
   alias: Slave response
   trigger:
-  - event_data:
-      actionName: PRESS_YES
-    event_type: ios.notification_action_fired
-    platform: event
+    - event_data:
+        actionName: PRESS_YES
+      event_type: ios.notification_action_fired
+      platform: event
   condition: []
   action:
   - data:
@@ -15,10 +15,10 @@
 - id: rebel_response
   alias: Rebel Response
   trigger:
-  - event_data:
-      actionName: PRESS_NO
-    event_type: ios.notification_action_fired
-    platform: event
+    - event_data:
+        actionName: PRESS_NO
+      event_type: ios.notification_action_fired
+      platform: event
   condition: []
   action:
   - data:

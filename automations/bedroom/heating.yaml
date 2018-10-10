@@ -1,8 +1,8 @@
 - id: bedroom_heating_on
   alias: Bedroom heating on state management
   trigger:
-    platform: template
-    value_template: "{{ states.sensor.bedroom_temperature.state | float < (float(states.input_number.target_bedroom_temperature.state) - 0.5) | float }}"
+    - platform: template
+      value_template: "{{ states.sensor.bedroom_temperature.state | float < (float(states.input_number.target_bedroom_temperature.state) - 0.5) | float }}"
   condition:
     - condition: state
       entity_id: switch.bedroom_heater
@@ -13,8 +13,8 @@
 - id: bedroom_heating_off float
   alias: Bedroom heating off state management
   trigger:
-    platform: template
-    value_template: "{{ states.sensor.bedroom_temperature.state | float > states.input_number.target_bedroom_temperature.state | float }}"
+    - platform: template
+      value_template: "{{ states.sensor.bedroom_temperature.state | float > states.input_number.target_bedroom_temperature.state | float }}"
   condition:
     - condition: state
       entity_id: switch.bedroom_heater

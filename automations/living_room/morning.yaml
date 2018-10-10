@@ -1,8 +1,8 @@
 - id: living_room_morning_lights
   alias: Living Room morning lights
   trigger:
-    platform: time
-    at: '07:02:30'
+    - platform: time
+      at: '07:02:30'
   action:
     - service: light.turn_on
       data:

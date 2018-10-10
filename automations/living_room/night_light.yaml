@@ -1,14 +1,14 @@
 - id: living_room_night_light_on
   alias: Living Room night light
   trigger:
-  - entity_id: sensor.living_room_motion_sensor
-    from: 'off'
-    platform: state
-    to: 'on'
+    - entity_id: sensor.living_room_motion_sensor
+      from: 'off'
+      platform: state
+      to: 'on'
   condition:
-    platform: time
-    after: '01:00:00'
-    before: '07:00:00'
+    - platform: time
+      after: '01:00:00'
+      before: '07:00:00'
   action:
     - service: light.turn_on
       data:
@@ -18,14 +18,14 @@
 - id: living_room_night_light_off
   alias: Living Room night light off
   trigger:
-  - entity_id: sensor.living_room_motion_sensor
-    platform: state
-    from: 'on'
-    to: 'off'
+    - entity_id: sensor.living_room_motion_sensor
+      platform: state
+      from: 'on'
+      to: 'off'
   condition:
-    platform: time
-    after: '01:00:00'
-    before: '07:00:00'
+    - platform: time
+      after: '01:00:00'
+      before: '07:00:00'
   action:
     - delay: '00:01:00'
     - service: light.turn_off
