@@ -1,12 +1,8 @@
-- id: downstairs_lights_on
-  alias: Bedroom heating on state management
+- id: living_room_morning_lights
+  alias: Living Room morning lights
   trigger:
     platform: time
     at: '07:02:30'
-  condition:
-    - condition: state
-      entity_id: light.living_room
-      state: 'off'
   action:
     - service: light.turn_on
       data:

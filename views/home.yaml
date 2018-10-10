@@ -167,3 +167,14 @@
               entity_id: scene.under_da_sea_home
 #      - type: weather-forecast
 #        entity: weather.dark_sky
+      - type: history-graph
+        name: Temperature
+        hours_to_show: 24
+        refresh: 90
+        entities:
+          - sensor.air_temp
+          - sensor.road_temp
+          - sensor.living_room_temperature
+          - sensor.kitchen_temperature
+          - sensor.bedroom_temperature
+          - sensor.spare_room_temperature
