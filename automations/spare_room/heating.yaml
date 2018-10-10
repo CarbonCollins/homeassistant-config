@@ -10,7 +10,7 @@
   action:
     - service: switch.turn_on
       entity_id: switch.spare_room_heater
-- id: spare_room_heating_off float
+- id: spare_room_heating_off
   alias: Spare room heating off state management
   trigger:
     platform: template
