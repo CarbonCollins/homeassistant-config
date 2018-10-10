@@ -1,12 +1,12 @@
 - id: living_room_night_light_on
   alias: Living Room night light
   trigger:
-    - entity_id: sensor.living_room_motion_sensor
+    - platform: state
+      entity_id: sensor.living_room_motion_sensor
       from: 'off'
-      platform: state
       to: 'on'
   condition:
-    - platform: time
+    - condition: time
       after: '01:00:00'
       before: '07:00:00'
   action:
@@ -18,12 +18,12 @@
 - id: living_room_night_light_off
   alias: Living Room night light off
   trigger:
-    - entity_id: sensor.living_room_motion_sensor
-      platform: state
+    - platform: state
+      entity_id: sensor.living_room_motion_sensor
       from: 'on'
       to: 'off'
   condition:
-    - platform: time
+    - condition: time
       after: '01:00:00'
       before: '07:00:00'
   action:
