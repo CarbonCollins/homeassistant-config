@@ -105,6 +105,9 @@
           - entity: sensor.bedroom_temperature
             icon: mdi:hotel
             name: Bedroom
+          - entity: sensor.spare_room_temperature
+            icon: mdi:desk-lamp
+            name: Spare Room
       - type: entities
         title: Motion
         entities:
@@ -117,6 +120,9 @@
           - entity: sensor.bedroom_motion_sensor
             icon: mdi:hotel
             name: Bedroom
+          - entity: sensor.spare_room_motion_sensor
+            icon: mdi:desk-lamp
+            name: Spare Room
       - type: entities
         title: Light Levels
         entities:
@@ -132,6 +138,9 @@
           - entity: sensor.bedroom_light_level
             icon: mdi:hotel
             name: Bedroom
+          - entity: sensor.spare_room_light_level
+            icon: mdi:desk-lamp
+            name: Spare Room
       - type: entities
         title: Scenes
         entities:
