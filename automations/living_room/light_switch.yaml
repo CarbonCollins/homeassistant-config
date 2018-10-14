@@ -4,38 +4,51 @@
   - entity_id: sensor.living_room_switch_last_updated
     platform: state
   condition:
-    condition: or
-    conditions:
-      - condition: state
-        entity_id: sensor.living_room_switch
-        state: 4_click
-      - condition: state
-        entity_id: sensor.living_room_switch
-        state: 4_click_up
-      - condition: state
-        entity_id: sensor.living_room_switch
-        state: 4_hold
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: sensor.living_room_switch
+          state: 4_click
+        - condition: state
+          entity_id: sensor.living_room_switch
+          state: 4_click_up
   action:
     - service: light.turn_off
       data:
         entity_id: light.living_room
+- id: living_room_lights_off
+  alias: Living Room lights off
+  trigger:
+  - entity_id: sensor.living_room_switch_last_updated
+    platform: state
+  condition:
+    - condition: state
+      entity_id: sensor.living_room_switch
+      state: 4_hold
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.living_room
+    - service: light.turn_off
+      data:
+        entity_id: light.kitchen
+    - service: light.turn_off
+      data:
+        entity_id: light.bedroom
 - id: living_room_lights_on
   alias: Living Room lights on
   trigger:
   - entity_id: sensor.living_room_switch
     platform: state
   condition:
-    condition: or
-    conditions:
-      - condition: state
-        entity_id: sensor.living_room_switch
-        state: 1_click
-      - condition: state
-        entity_id: sensor.living_room_switch
-        state: 1_click_up
-      - condition: state
-        entity_id: sensor.living_room_switch
-        state: 1_hold
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: sensor.living_room_switch
+          state: 1_click
+        - condition: state
+          entity_id: sensor.living_room_switch
+          state: 1_click_up
   action:
     - service: light.turn_on
       data:
