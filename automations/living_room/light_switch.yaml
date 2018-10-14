@@ -17,36 +17,36 @@
       data:
         entity_id: light.living_room
 
-# - id: living_room_lights_brighten
-#   alias: Living Room lights brighten
-#   trigger:
-#   - entity_id: sensor.living_room_switch
-#     platform: state
-#   condition:
-#     - condition: and
-#       conditions:
-#         - condition: state
-#           entity_id: light.living_room
-#           state: 'on'
-#         - condition: or
-#           conditions:
-#             - condition: state
-#               entity_id: sensor.living_room_switch
-#               state: 2_click
-#             - condition: state
-#               entity_id: sensor.living_room_switch
-#               state: 2_click_up
-#   action:
-#     - service: light.turn_on
-#       data:
-#         entity_id: light.living_room
-#         brightness: >
-#           {% set n = states.light.living_room_ceiling_1.attributes.brightness|default(0)|int + 25 %}
-#           {% if n > 255 %}
-#             255
-#           {% else %}
-#             {{ n }}
-#           {% endif %}
+- id: living_room_lights_brighten
+  alias: Living Room lights brighten
+  trigger:
+  - entity_id: sensor.living_room_switch
+    platform: state
+  condition:
+    # - condition: and
+    #   conditions:
+    #     - condition: state
+    #       entity_id: light.living_room
+    #       state: 'on'
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: sensor.living_room_switch
+          state: 2_click
+        - condition: state
+          entity_id: sensor.living_room_switch
+          state: 2_click_up
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.living_room
+        brightness: >
+          {% set n = state_attr(light.living_room, brightness) + 25 %}
+          {% if n > 255 %}
+            255
+          {% else %}
+            {{ n }}
+          {% endif %}
 
 # - id: living_room_lights_dim
 #   alias: Living Room lights dim
