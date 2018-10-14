@@ -37,16 +37,7 @@
           entity_id: sensor.living_room_switch
           state: 2_click_up
   action:
-    - service: light.turn_on
-      data:
-        entity_id: light.living_room_ceiling_1
-        brightness: >
-          {% set n = state_attr(light.living_room_ceiling_1, brightness) + 25 %}
-          {% if n > 255 %}
-            255
-          {% else %}
-            {{ n }}
-          {% endif %}
+    - service: script.living_room_brighten
 
 # - id: living_room_lights_dim
 #   alias: Living Room lights dim

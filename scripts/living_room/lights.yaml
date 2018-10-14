@@ -1,0 +1,13 @@
+living_room_brighten:
+  alias: Brighten living room lights
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.living_room
+        brightness: >
+          {% set n = state_attr(light.living_room, brightness) + 25 %}
+          {% if n > 255 %}
+            255
+          {% else %}
+            {{ n }}
+          {% endif %}
