@@ -4,4 +4,4 @@ living_room_brighten:
     - service: light.turn_on
       data:
         entity_id: light.living_room
-        brightness: {{ state_attr('light.living_room', 'brightness') | default(0) | int + 25 }}
+        brightness: {{ ((state_attr('light.living_room', 'brightness') | default(0) | int) + 25) | int }}
