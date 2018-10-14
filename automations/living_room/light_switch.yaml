@@ -41,7 +41,7 @@
       data:
         entity_id: light.living_room
         brightness: >
-          {% set n = states.light.light.living_room_ceiling_1.attributes.brightness|default(0)|int + 25 %}
+          {% set n = states.light.living_room_ceiling_1.attributes.brightness|default(0)|int + 25 %}
           {% if n > 255 %}
             255
           {% else %}
