@@ -41,7 +41,12 @@
       data:
         entity_id: light.living_room
         brightness: >
-          {{ (states.light.living_room.attributes.brightness | default(0) | int) + 12 }}
+          {% set n = states.light.living_room.attributes.brightness|default(0)|int + 25 %}
+          {% if n > 255 %}
+            255
+          {% else %}
+            {{ n }}
+          {% endif %}
 
 - id: living_room_lights_dim
   alias: Living Room lights dim
