@@ -39,9 +39,9 @@
   action:
     - service: light.turn_on
       data:
-        entity_id: light.living_room
+        entity_id: light.living_room_ceiling_1
         brightness: >
-          {% set n = state_attr(light.living_room, brightness) + 25 %}
+          {% set n = state_attr(light.living_room_ceiling_1, brightness) + 25 %}
           {% if n > 255 %}
             255
           {% else %}
