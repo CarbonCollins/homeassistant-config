@@ -7,6 +7,9 @@
   - entity_id: sensor.living_room_switch
     platform: state
     to: 4_click
+  - entity_id: sensor.living_room_switch
+    platform: state
+    to: 4_click_up
   action:
     - service: light.turn_off
       data:
@@ -20,6 +23,9 @@
   - entity_id: sensor.living_room_switch
     platform: state
     to: 1_click
+  - entity_id: sensor.living_room_switch
+    platform: state
+    to: 1_click_up
   action:
     - service: light.turn_on
       data:
