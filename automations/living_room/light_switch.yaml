@@ -1,15 +1,20 @@
 - id: living_room_lights_off
   alias: Living Room lights off
   trigger:
-  - entity_id: sensor.living_room_switch
+  - entity_id: sensor.living_room_switch_last_updated
     platform: state
-    to: 4_hold
-  - entity_id: sensor.living_room_switch
-    platform: state
-    to: 4_click
-  - entity_id: sensor.living_room_switch
-    platform: state
-    to: 4_click_up
+  condition:
+    condition: or
+    conditions:
+      - condition: state
+        entity_id: sensor.living_room_switch
+        state: 4_click
+      - condition: state
+        entity_id: sensor.living_room_switch
+        state: 4_click_up
+      - condition: state
+        entity_id: sensor.living_room_switch
+        state: 4_hold
   action:
     - service: light.turn_off
       data:
@@ -19,13 +24,18 @@
   trigger:
   - entity_id: sensor.living_room_switch
     platform: state
-    to: 1_hold
-  - entity_id: sensor.living_room_switch
-    platform: state
-    to: 1_click
-  - entity_id: sensor.living_room_switch
-    platform: state
-    to: 1_click_up
+  condition:
+    condition: or
+    conditions:
+      - condition: state
+        entity_id: sensor.living_room_switch
+        state: 1_click
+      - condition: state
+        entity_id: sensor.living_room_switch
+        state: 1_click_up
+      - condition: state
+        entity_id: sensor.living_room_switch
+        state: 1_hold
   action:
     - service: light.turn_on
       data:
