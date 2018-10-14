@@ -41,7 +41,7 @@
       data:
         entity_id: light.living_room
         brightness: >-
-          {{ states.light.living_room.attributes.brightness | default(0) | int + 12 }}
+          {{ (states.light.living_room.attributes.brightness | default(0) | int) + 12 }}
 
 - id: living_room_lights_dim
   alias: Living Room lights dim
@@ -67,7 +67,7 @@
       data:
         entity_id: light.living_room
         brightness: >-
-          {{ states.light.living_room.attributes.brightness | default(0) | int - 12 }}
+          {{ (states.light.living_room.attributes.brightness | default(0) | int) - 12 }}
 
 - id: living_room_lights_off
   alias: Living Room lights off
