@@ -1,0 +1,37 @@
+- id: kicthen_lights_on
+  alias: Kicthen lights on
+  trigger:
+  - entity_id: sensor.kicthen_switch
+    platform: state
+  condition:
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: sensor.kicthen_switch
+          state: 1_click
+        - condition: state
+          entity_id: sensor.kicthen_switch
+          state: 1_click_up
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.kicthen
+
+- id: kicthen_lights_off
+  alias: Kicthen lights off
+  trigger:
+  - entity_id: sensor.kicthen_switch_last_updated
+    platform: state
+  condition:
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: sensor.kicthen_switch
+          state: 4_click
+        - condition: state
+          entity_id: sensor.kicthen_switch
+          state: 4_click_up
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.kicthen
