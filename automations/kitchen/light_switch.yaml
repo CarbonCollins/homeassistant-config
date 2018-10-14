@@ -1,56 +1,56 @@
-- id: kicthen_lights_on
+- id: kitchen_lights_on
   alias: Kicthen lights on
   trigger:
-  - entity_id: sensor.kicthen_switch
+  - entity_id: sensor.kitchen_switch
     platform: state
   condition:
     - condition: or
       conditions:
         - condition: state
-          entity_id: sensor.kicthen_switch
+          entity_id: sensor.kitchen_switch
           state: 1_click
         - condition: state
-          entity_id: sensor.kicthen_switch
+          entity_id: sensor.kitchen_switch
           state: 1_click_up
   action:
     - service: light.turn_on
       data:
-        entity_id: light.kicthen
-- id: kicthen_lights_on_full
+        entity_id: light.kitchen
+- id: kitchen_lights_on_full
   alias: Kicthen lights on full
   trigger:
-  - entity_id: sensor.kicthen_switch
+  - entity_id: sensor.kitchen_switch
     platform: state
   condition:
     - condition: state
-      entity_id: sensor.kicthen_switch
+      entity_id: sensor.kitchen_switch
       state: 1_hold
   action:
     - service: light.turn_on
       data:
-        entity_id: light.kicthen
+        entity_id: light.kitchen
     - service: input_boolean.turn_on
       data:
         entity_id: input_boolean.cooking
 
-- id: kicthen_lights_off
+- id: kitchen_lights_off
   alias: Kicthen lights off
   trigger:
-  - entity_id: sensor.kicthen_switch_last_updated
+  - entity_id: sensor.kitchen_switch_last_updated
     platform: state
   condition:
     - condition: or
       conditions:
         - condition: state
-          entity_id: sensor.kicthen_switch
+          entity_id: sensor.kitchen_switch
           state: 4_click
         - condition: state
-          entity_id: sensor.kicthen_switch
+          entity_id: sensor.kitchen_switch
           state: 4_click_up
   action:
     - service: light.turn_off
       data:
-        entity_id: light.kicthen
+        entity_id: light.kitchen
     - service: input_boolean.turn_off
       data:
         entity_id: input_boolean.cooking
