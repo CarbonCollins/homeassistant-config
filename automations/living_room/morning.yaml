@@ -3,6 +3,8 @@
   trigger:
     - platform: time
       at: '07:00:00'
+  condition:
+    - platform: time
       weekday:
         - mon
         - tue
