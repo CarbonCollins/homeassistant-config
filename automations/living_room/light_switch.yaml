@@ -4,7 +4,23 @@
   - entity_id: sensor.living_room_switch
     platform: state
     to: 4_hold
+  - entity_id: sensor.living_room_switch
+    platform: state
+    to: 4_click
   action:
     - service: light.turn_off
+      data:
+        entity_id: light.living_room
+- id: living_room_lights_on
+  alias: Living Room lights on
+  trigger:
+  - entity_id: sensor.living_room_switch
+    platform: state
+    to: 1_hold
+  - entity_id: sensor.living_room_switch
+    platform: state
+    to: 1_click
+  action:
+    - service: light.turn_on
       data:
         entity_id: light.living_room
