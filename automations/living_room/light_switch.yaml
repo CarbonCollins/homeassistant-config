@@ -25,6 +25,9 @@
   condition:
     - condition: and
       conditions:
+        - condition: state
+          entity_id: light.living_room
+          state: on
         - condition: or
           conditions:
             - condition: state
@@ -33,9 +36,6 @@
             - condition: state
               entity_id: sensor.living_room_switch
               state: 2_click_up
-        - condition: state
-          entity_id: light.living_room
-          state: on
   action:
     - service: light.turn_on
       data:
@@ -51,6 +51,9 @@
   condition:
     - condition: and
       conditions:
+        - condition: state
+          entity_id: light.living_room
+          state: on
         - condition: or
           conditions:
             - condition: state
@@ -59,9 +62,6 @@
             - condition: state
               entity_id: sensor.living_room_switch
               state: 3_click_up
-        - condition: state
-          entity_id: light.living_room
-          state: on
   action:
     - service: light.turn_on
       data:
