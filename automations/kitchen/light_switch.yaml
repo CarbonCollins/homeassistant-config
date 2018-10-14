@@ -16,6 +16,22 @@
     - service: light.turn_on
       data:
         entity_id: light.kicthen
+- id: kicthen_lights_on_full
+  alias: Kicthen lights on full
+  trigger:
+  - entity_id: sensor.kicthen_switch
+    platform: state
+  condition:
+    - condition: state
+      entity_id: sensor.kicthen_switch
+      state: 1_hold
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.kicthen
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.cooking
 
 - id: kicthen_lights_off
   alias: Kicthen lights off
@@ -35,3 +51,6 @@
     - service: light.turn_off
       data:
         entity_id: light.kicthen
+    - service: input_boolean.turn_off
+      data:
+        entity_id: input_boolean.cooking
