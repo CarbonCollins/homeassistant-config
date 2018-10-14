@@ -1,0 +1,10 @@
+- id: living_room_lights_off
+  alias: Living Room lights off
+  trigger:
+  - entity_id: sensor.living_room_switch
+    platform: state
+    to: 4_hold
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.living_room

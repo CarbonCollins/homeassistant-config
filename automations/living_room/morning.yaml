@@ -2,7 +2,13 @@
   alias: Living Room morning lights
   trigger:
     - platform: time
-      at: '07:02:30'
+      at: '07:00:00'
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
   action:
     - service: light.turn_on
       data:
