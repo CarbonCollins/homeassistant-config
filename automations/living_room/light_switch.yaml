@@ -27,7 +27,7 @@
       conditions:
         - condition: state
           entity_id: light.living_room
-          state: on
+          state: 'on'
         - condition: or
           conditions:
             - condition: state
@@ -53,7 +53,7 @@
       conditions:
         - condition: state
           entity_id: light.living_room
-          state: on
+          state: 'on'
         - condition: or
           conditions:
             - condition: state
