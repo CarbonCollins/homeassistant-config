@@ -16,8 +16,8 @@
     - service: light.turn_off
       data:
         entity_id: light.living_room
-- id: living_room_lights_off
-  alias: Living Room lights off
+- id: all_lights_off
+  alias: All lights off
   trigger:
   - entity_id: sensor.living_room_switch_last_updated
     platform: state
