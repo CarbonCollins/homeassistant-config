@@ -17,27 +17,27 @@
       data:
         entity_id: light.living_room
 
-- id: living_room_lights_brighten
-  alias: Living Room lights brighten
-  trigger:
-  - entity_id: sensor.living_room_switch
-    platform: state
-  condition:
-    # - condition: and
-    #   conditions:
-    #     - condition: state
-    #       entity_id: light.living_room
-    #       state: 'on'
-    - condition: or
-      conditions:
-        - condition: state
-          entity_id: sensor.living_room_switch
-          state: 2_click
-        - condition: state
-          entity_id: sensor.living_room_switch
-          state: 2_click_up
-  action:
-    - service: script.living_room_brighten
+# - id: living_room_lights_brighten
+#   alias: Living Room lights brighten
+#   trigger:
+#   - entity_id: sensor.living_room_switch
+#     platform: state
+#   condition:
+#     # - condition: and
+#     #   conditions:
+#     #     - condition: state
+#     #       entity_id: light.living_room
+#     #       state: 'on'
+#     - condition: or
+#       conditions:
+#         - condition: state
+#           entity_id: sensor.living_room_switch
+#           state: 2_click
+#         - condition: state
+#           entity_id: sensor.living_room_switch
+#           state: 2_click_up
+#   action:
+#     - service: script.living_room_brighten
 
 # - id: living_room_lights_dim
 #   alias: Living Room lights dim
