@@ -4,10 +4,4 @@ living_room_brighten:
     - service: light.turn_on
       data:
         entity_id: light.living_room
-        brightness: >-
-          {% set n = states.light.living_room.attributes.brightness + 25 %}
-          {% if n > 255 %}
-            255
-          {% else %}
-            {{ n }}
-          {% endif %}
+        brightness: {{ state_attr('light.living_room', 'brightness') | default(0) | int + 25 }}
