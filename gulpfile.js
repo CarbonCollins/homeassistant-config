@@ -2,6 +2,7 @@ const gulp = require('gulp');
 const { join } = require('path');
 const { ensureDir, writeFile, remove } = require('fs-extra');
 const yaml = require('json-to-pretty-yaml');
+const indent = require('indent-string');
 
 const { rooms, scenes } = require('./scenes.json');
 
@@ -51,7 +52,7 @@ function generateScenes() {
             }
           })
         });
-        return writeFile(join(scenesDir, room.id, `${scene.id}.yaml`), sceneConfig);
+        return writeFile(join(scenesDir, room.id, `${scene.id}.yaml`), `-${indent(sceneConfig, 2).substring(1)}`);
       }))
     .reduce((finalArr, currentArr) => {
       finalArr = finalArr.concat(currentArr);

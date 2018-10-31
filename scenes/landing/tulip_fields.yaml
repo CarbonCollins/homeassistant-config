@@ -1,7 +1,7 @@
-name: "Tulip Fields"
-icon: "mdi:flower-tulip-outline"
-entities:
-  - light.landing_ceiling_1:
-      state: "on"
-      rgb_color: "[58,199,255]"
-      brightness: 254
+- name: "Tulip Fields"
+  icon: "mdi:flower-tulip-outline"
+  entities:
+    - light.landing_ceiling_1:
+        state: "on"
+        rgb_color: "[58,199,255]"
+        brightness: 254

@@ -1,24 +1,15 @@
-name: "Blind"
-icon: "mdi:eye-off"
-entities:
-  - light.spare_room_ceiling_1:
-      state: "on"
-      rgb_color:
-        - 64
-        - 156
-        - 255
-      brightness: 254
-  - light.spare_room_ceiling_2:
-      state: "on"
-      rgb_color:
-        - 64
-        - 156
-        - 255
-      brightness: 254
-  - light.spare_room_lamp:
-      state: "on"
-      rgb_color:
-        - 64
-        - 156
-        - 255
-      brightness: 254
+- name: "Blind"
+  icon: "mdi:eye-off"
+  entities:
+    - light.spare_room_ceiling_1:
+        state: "on"
+        rgb_color: "[64,156,255]"
+        brightness: 254
+    - light.spare_room_ceiling_2:
+        state: "on"
+        rgb_color: "[64,156,255]"
+        brightness: 254
+    - light.spare_room_lamp:
+        state: "on"
+        rgb_color: "[64,156,255]"
+        brightness: 254

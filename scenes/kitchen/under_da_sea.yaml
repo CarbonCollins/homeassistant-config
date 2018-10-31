@@ -1,11 +1,11 @@
-name: "Under Da Sea"
-icon: "mdi:water"
-entities:
-  - light.kitchen_lamp:
-      state: "on"
-      rgb_color: "[56,255,253]"
-      brightness: 254
-  - light.kitchen_ceiling:
-      state: "on"
-      rgb_color: "[61,146,255]"
-      brightness: 254
+- name: "Under Da Sea"
+  icon: "mdi:water"
+  entities:
+    - light.kitchen_lamp:
+        state: "on"
+        rgb_color: "[56,255,253]"
+        brightness: 254
+    - light.kitchen_ceiling:
+        state: "on"
+        rgb_color: "[61,146,255]"
+        brightness: 254

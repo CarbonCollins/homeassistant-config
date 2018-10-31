@@ -1,11 +1,11 @@
-name: "Cotton Candy"
-icon: "mdi:candycane"
-entities:
-  - light.kitchen_lamp:
-      state: "on"
-      rgb_color: "[213,82,255]"
-      brightness: 254
-  - light.kitchen_ceiling:
-      state: "on"
-      rgb_color: "[59,168,255]"
-      brightness: 254
+- name: "Cotton Candy"
+  icon: "mdi:candycane"
+  entities:
+    - light.kitchen_lamp:
+        state: "on"
+        rgb_color: "[213,82,255]"
+        brightness: 254
+    - light.kitchen_ceiling:
+        state: "on"
+        rgb_color: "[59,168,255]"
+        brightness: 254
