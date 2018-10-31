@@ -32,7 +32,7 @@ map:
 automation: !include_dir_merge_list automations
 sensor: !include_dir_merge_list config/sensors
 script: !include_dir_merge_named scripts
-scene: !include_dir_merge_list scenes
+scene: !include_dir_list scenes
 
 # Other
 #alexa: !include config/alexa.yaml
