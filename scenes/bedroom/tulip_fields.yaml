@@ -1,15 +1,15 @@
-name: "Cotton Candy"
-icon: "mdi:candycane"
+name: "Tulip Fields"
+icon: "mdi:flower-tulip-outline"
 entities:
   - light.bedroom_ceiling_1:
       state: "on"
-      rgb_color: "[255,200,182]"
+      rgb_color: "[255,43,62]"
       brightness: 254
   - light.bedroom_ceiling_2:
       state: "on"
-      rgb_color: "[223,254,255]"
+      rgb_color: "[129,16,255]"
       brightness: 254
   - light.bedroom_lamp:
       state: "on"
-      rgb_color: "[201,253,255]"
+      rgb_color: "[58,199,255]"
       brightness: 254

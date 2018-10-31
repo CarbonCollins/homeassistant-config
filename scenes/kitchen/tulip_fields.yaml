@@ -1,11 +1,11 @@
-name: "Vaporwave"
-icon: "mdi:weather-sunset"
+name: "Tulip Fields"
+icon: "mdi:flower-tulip-outline"
 entities:
   - light.kitchen_lamp:
       state: "on"
-      rgb_color: "[1,205,254]"
+      rgb_color: "[255,43,62]"
       brightness: 254
   - light.kitchen_ceiling:
       state: "on"
-      rgb_color: "[185,103,255]"
+      rgb_color: "[129,16,255]"
       brightness: 254

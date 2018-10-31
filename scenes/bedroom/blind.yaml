@@ -1,15 +1,24 @@
-name: "Cotton Candy"
-icon: "mdi:candycane"
+name: "Blind"
+icon: "mdi:eye-off"
 entities:
   - light.bedroom_ceiling_1:
       state: "on"
-      rgb_color: "[255,200,182]"
+      rgb_color:
+        - 64
+        - 156
+        - 255
       brightness: 254
   - light.bedroom_ceiling_2:
       state: "on"
-      rgb_color: "[223,254,255]"
+      rgb_color:
+        - 64
+        - 156
+        - 255
       brightness: 254
   - light.bedroom_lamp:
       state: "on"
-      rgb_color: "[201,253,255]"
+      rgb_color:
+        - 64
+        - 156
+        - 255
       brightness: 254

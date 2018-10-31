@@ -1,0 +1,20 @@
+{
+  "name": "homeassistant",
+  "description": "A home assistant configuration",
+  "version": "1.0.0",
+  "repository": "git@gitlab.com:CarbonCollins/homeassistant-config.git",
+  "author": "CarbonCollins <steven@carboncollins.uk>",
+  "license": "MIT",
+  "scripts": {
+    "gulp": "./node_modules/.bin/gulp",
+    "build:scenes": "yarn gulp build:scenes"
+  },
+  "devDependencies": {
+    "fs-extra": "^7.0.0",
+    "gulp": "4",
+    "gulp-yaml": "^2.0.2",
+    "js-yaml": "^3.12.0",
+    "json-to-pretty-yaml": "^1.2.2",
+    "json2yaml": "^1.1.0"
+  }
+}

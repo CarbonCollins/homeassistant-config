@@ -1,0 +1,137 @@
+{
+  "rooms": [
+    {
+      "name": "Bed Room",
+      "id": "bedroom",
+      "lights": [
+        "light.bedroom_ceiling_1",
+        "light.bedroom_ceiling_2",
+        "light.bedroom_lamp"
+      ]
+    },
+    {
+      "name": "Kitchen",
+      "id": "kitchen",
+      "lights": [
+        "light.kitchen_lamp",
+        "light.kitchen_ceiling"
+      ]
+    },
+    {
+      "name": "Living Room",
+      "id": "living_room",
+      "lights": [
+        "light.living_room_ceiling_1",
+        "light.living_room_ceiling_2",
+        "light.living_room_lamp_1"
+      ],
+      "switches": [
+        "switch.butt_plug_lamp"
+      ]
+    },
+    {
+      "name": "Spare Room",
+      "id": "spare_room",
+      "lights": [
+        "light.spare_room_ceiling_1",
+        "light.spare_room_ceiling_2",
+        "light.spare_room_lamp"
+      ]
+    },
+    {
+      "name": "Landing",
+      "id": "landing",
+      "lights": [
+        "light.landing_ceiling_1"
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "name": "Autumn",
+      "id": "autumn",
+      "button": "Leaf me alone",
+      "icon": "mdi:leaf",
+      "colors": [
+        "[255,65,0]",
+        "[255,128,25]",
+        "[255,145,38]"
+      ],
+      "switch": true
+    },
+    {
+      "name": "Cotton Candy",
+      "id": "cotton_candy",
+      "button": "Sugar me daddy",
+      "icon": "mdi:candycane",
+      "colors": [
+        "[255,167,167]",
+        "[255,200,182]",
+        "[223,254,255]",
+        "[201,253,255]",
+        "[213,82,255]",
+        "[59,168,255]"
+      ],
+      "switch": false
+    },
+    {
+      "name": "Bi Pride",
+      "id": "bi_pride",
+      "button": "Bi Bi Bi",
+      "icon": "mdi:genter-transgener",
+      "colors": [
+        "[0,56,168]",
+        "[155,79,150]",
+        "[214,2,112]"
+      ],
+      "switch": true
+    },
+    {
+      "name": "Tulip Fields",
+      "id": "tulip_fields",
+      "button": "Dutch Sprint",
+      "icon": "mdi:flower-tulip-outline",
+      "colors": [
+        "[58,199,255]",
+        "[255,43,62]",
+        "[129,16,255]"
+      ],
+      "switch": true
+    },
+    {
+      "name": "Under Da Sea",
+      "id": "under_da_sea",
+      "button": "sploosh",
+      "icon": "mdi:water",
+      "colors": [
+        "[64,0,255]",
+        "[56,255,253]",
+        "[61,146,255]"
+      ],
+      "switch": false
+    },
+    {
+      "name": "Vaporwave",
+      "id": "vaporwave",
+      "button": "Time to go retro",
+      "icon": "mdi:weather-sunset",
+      "colors": [
+        "[1,205,254]",
+        "[185,103,255]",
+        "[255,113,206]",
+        "[5,255,161]"
+      ],
+      "switch": true
+    },
+    {
+      "name": "Blind",
+      "id": "blind",
+      "button": "Kill the eyes",
+      "icon": "mdi:eye-off",
+      "colors": [
+        "[64,156,255]"
+      ],
+      "switch": false
+    }
+  ]
+}

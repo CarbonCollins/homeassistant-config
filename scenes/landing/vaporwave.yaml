@@ -1,11 +1,7 @@
 name: "Vaporwave"
 icon: "mdi:weather-sunset"
 entities:
-  - light.kitchen_lamp:
+  - light.landing_ceiling_1:
       state: "on"
       rgb_color: "[1,205,254]"
-      brightness: 254
-  - light.kitchen_ceiling:
-      state: "on"
-      rgb_color: "[185,103,255]"
       brightness: 254

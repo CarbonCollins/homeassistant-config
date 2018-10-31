@@ -1,11 +1,11 @@
-name: "Vaporwave"
-icon: "mdi:weather-sunset"
+name: "Autumn"
+icon: "mdi:leaf"
 entities:
   - light.kitchen_lamp:
       state: "on"
-      rgb_color: "[1,205,254]"
+      rgb_color: "[255,128,25]"
       brightness: 254
   - light.kitchen_ceiling:
       state: "on"
-      rgb_color: "[185,103,255]"
+      rgb_color: "[255,145,38]"
       brightness: 254
