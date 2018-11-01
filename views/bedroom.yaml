@@ -56,7 +56,7 @@
           service_data:
             entity_id: scene.cotton_candy_bed_room
         - type: call-service
-          icon: mdi:genter-transgener
+          icon: mdi:gender-transgener
           name: Bi Pride
           action_name: Bi Bi Bi
           service: scene.turn_on
@@ -65,7 +65,7 @@
         - type: call-service
           icon: mdi:flower-tulip-outline
           name: Tulip Fields
-          action_name: Dutch Sprint
+          action_name: Dutch Spring
           service: scene.turn_on
           service_data:
             entity_id: scene.tulip_fields_bed_room
@@ -90,5 +90,10 @@
           service: scene.turn_on
           service_data:
             entity_id: scene.blind_bed_room
-
-
+        - type: call-service
+          icon: mdi:weather-sunny
+          name: Tangled
+          action_name: frying pan
+          service: scene.turn_on
+          service_data:
+            entity_id: scene.tangled_bed_room

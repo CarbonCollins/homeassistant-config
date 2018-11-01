@@ -110,7 +110,7 @@
     {
       "name": "Tulip Fields",
       "id": "tulip_fields",
-      "button": "Dutch Sprint",
+      "button": "Dutch Spring",
       "icon": "mdi:flower-tulip-outline",
       "colors": [
         "[58,199,255]",
@@ -151,6 +151,20 @@
       "icon": "mdi:eye-off",
       "colors": [
         "[255,255,255]"
+      ],
+      "switch": false
+    },
+    {
+      "name": "Tangled",
+      "id": "tangled",
+      "button": "frying pan",
+      "icon": "mdi:weather-sunny",
+      "colors": [
+        "[223,201,17]",
+        "[255,209,153]",
+        "[254,186,184]",
+        "[187,49,216]",
+        "[206,169,214]"
       ],
       "switch": false
     }

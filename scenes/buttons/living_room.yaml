@@ -22,7 +22,7 @@
 - type: call-service
   icon: mdi:flower-tulip-outline
   name: Tulip Fields
-  action_name: Dutch Sprint
+  action_name: Dutch Spring
   service: scene.turn_on
   service_data:
     entity_id: scene.tulip_fields_living_room
@@ -47,3 +47,10 @@
   service: scene.turn_on
   service_data:
     entity_id: scene.blind_living_room
+- type: call-service
+  icon: mdi:weather-sunny
+  name: Tangled
+  action_name: frying pan
+  service: scene.turn_on
+  service_data:
+    entity_id: scene.tangled_living_room

@@ -1,0 +1,7 @@
+- name: Tangled Landing
+  icon: mdi:weather-sunny
+  entities:
+    light.landing_ceiling_1:
+      state: on
+      rgb_color: [255,209,153]
+      brightness: 254
