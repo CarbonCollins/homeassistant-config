@@ -1,7 +1,7 @@
-- name: "Bi Pride Landing"
-  icon: "mdi:genter-transgener"
+- name: Bi Pride Landing
+  icon: mdi:genter-transgener
   entities:
-    - light.landing_ceiling_1:
-        state: "on"
-        rgb_color: "[0,56,168]"
-        brightness: 254
+    light.landing_ceiling_1:
+      state: on
+      rgb_color: [0,56,168]
+      brightness: 254

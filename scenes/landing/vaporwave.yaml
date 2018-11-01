@@ -1,7 +1,7 @@
-- name: "Vaporwave Landing"
-  icon: "mdi:weather-sunset"
+- name: Vaporwave Landing
+  icon: mdi:weather-sunset
   entities:
-    - light.landing_ceiling_1:
-        state: "on"
-        rgb_color: "[1,205,254]"
-        brightness: 254
+    light.landing_ceiling_1:
+      state: on
+      rgb_color: [1,205,254]
+      brightness: 254

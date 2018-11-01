@@ -1,15 +1,15 @@
-- name: "Vaporwave Spare Room"
-  icon: "mdi:weather-sunset"
+- name: Vaporwave Spare Room
+  icon: mdi:weather-sunset
   entities:
-    - light.spare_room_ceiling_1:
-        state: "on"
-        rgb_color: "[185,103,255]"
-        brightness: 254
-    - light.spare_room_ceiling_2:
-        state: "on"
-        rgb_color: "[255,113,206]"
-        brightness: 254
-    - light.spare_room_lamp:
-        state: "on"
-        rgb_color: "[5,255,161]"
-        brightness: 254
+    light.spare_room_ceiling_1:
+      state: on
+      rgb_color: [185,103,255]
+      brightness: 254
+    light.spare_room_ceiling_2:
+      state: on
+      rgb_color: [255,113,206]
+      brightness: 254
+    light.spare_room_lamp:
+      state: on
+      rgb_color: [5,255,161]
+      brightness: 254

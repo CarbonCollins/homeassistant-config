@@ -1,11 +1,11 @@
-- name: "Bi Pride Kitchen"
-  icon: "mdi:genter-transgener"
+- name: Bi Pride Kitchen
+  icon: mdi:genter-transgener
   entities:
-    - light.kitchen_lamp:
-        state: "on"
-        rgb_color: "[155,79,150]"
-        brightness: 254
-    - light.kitchen_ceiling:
-        state: "on"
-        rgb_color: "[214,2,112]"
-        brightness: 254
+    light.kitchen_lamp:
+      state: on
+      rgb_color: [155,79,150]
+      brightness: 254
+    light.kitchen_ceiling:
+      state: on
+      rgb_color: [214,2,112]
+      brightness: 254

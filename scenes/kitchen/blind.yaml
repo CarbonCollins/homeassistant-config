@@ -1,11 +1,11 @@
-- name: "Blind Kitchen"
-  icon: "mdi:eye-off"
+- name: Blind Kitchen
+  icon: mdi:eye-off
   entities:
-    - light.kitchen_lamp:
-        state: "on"
-        rgb_color: "[64,156,255]"
-        brightness: 254
-    - light.kitchen_ceiling:
-        state: "on"
-        rgb_color: "[64,156,255]"
-        brightness: 254
+    light.kitchen_lamp:
+      state: on
+      rgb_color: [64,156,255]
+      brightness: 254
+    light.kitchen_ceiling:
+      state: on
+      rgb_color: [64,156,255]
+      brightness: 254

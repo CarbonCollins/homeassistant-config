@@ -1,7 +1,7 @@
-- name: "Cotton Candy Landing"
-  icon: "mdi:candycane"
+- name: Cotton Candy Landing
+  icon: mdi:candycane
   entities:
-    - light.landing_ceiling_1:
-        state: "on"
-        rgb_color: "[255,167,167]"
-        brightness: 254
+    light.landing_ceiling_1:
+      state: on
+      rgb_color: [255,167,167]
+      brightness: 254

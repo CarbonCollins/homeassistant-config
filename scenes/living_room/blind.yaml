@@ -1,15 +1,17 @@
-- name: "Blind Living Room"
-  icon: "mdi:eye-off"
+- name: Blind Living Room
+  icon: mdi:eye-off
   entities:
-    - light.living_room_ceiling_1:
-        state: "on"
-        rgb_color: "[64,156,255]"
-        brightness: 254
-    - light.living_room_ceiling_2:
-        state: "on"
-        rgb_color: "[64,156,255]"
-        brightness: 254
-    - light.living_room_lamp_1:
-        state: "on"
-        rgb_color: "[64,156,255]"
-        brightness: 254
+    light.living_room_ceiling_1:
+      state: on
+      rgb_color: [64,156,255]
+      brightness: 254
+    light.living_room_ceiling_2:
+      state: on
+      rgb_color: [64,156,255]
+      brightness: 254
+    light.living_room_lamp_1:
+      state: on
+      rgb_color: [64,156,255]
+      brightness: 254
+    switch.butt_plug_lamp:
+      state: off

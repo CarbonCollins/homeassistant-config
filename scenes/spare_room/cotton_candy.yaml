@@ -1,15 +1,15 @@
-- name: "Cotton Candy Spare Room"
-  icon: "mdi:candycane"
+- name: Cotton Candy Spare Room
+  icon: mdi:candycane
   entities:
-    - light.spare_room_ceiling_1:
-        state: "on"
-        rgb_color: "[201,253,255]"
-        brightness: 254
-    - light.spare_room_ceiling_2:
-        state: "on"
-        rgb_color: "[213,82,255]"
-        brightness: 254
-    - light.spare_room_lamp:
-        state: "on"
-        rgb_color: "[59,168,255]"
-        brightness: 254
+    light.spare_room_ceiling_1:
+      state: on
+      rgb_color: [201,253,255]
+      brightness: 254
+    light.spare_room_ceiling_2:
+      state: on
+      rgb_color: [213,82,255]
+      brightness: 254
+    light.spare_room_lamp:
+      state: on
+      rgb_color: [59,168,255]
+      brightness: 254
