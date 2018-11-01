@@ -13,7 +13,7 @@
   service_data:
     entity_id: scene.cotton_candy_spare_room
 - type: call-service
-  icon: mdi:genter-transgener
+  icon: mdi:gender-transgener
   name: Bi Pride
   action_name: Bi Bi Bi
   service: scene.turn_on

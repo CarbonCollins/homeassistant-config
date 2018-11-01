@@ -1,5 +1,5 @@
 - name: Bi Pride Kitchen
-  icon: mdi:genter-transgener
+  icon: mdi:gender-transgener
   entities:
     light.kitchen_lamp:
       state: on

@@ -1,5 +1,5 @@
 - name: Bi Pride Bed Room
-  icon: mdi:genter-transgener
+  icon: mdi:gender-transgener
   entities:
     light.bedroom_ceiling_1:
       state: on

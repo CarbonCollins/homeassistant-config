@@ -99,7 +99,7 @@
       "name": "Bi Pride",
       "id": "bi_pride",
       "button": "Bi Bi Bi",
-      "icon": "mdi:genter-transgener",
+      "icon": "mdi:gender-transgener",
       "colors": [
         "[0,56,168]",
         "[155,79,150]",
@@ -150,7 +150,7 @@
       "button": "Kill the eyes",
       "icon": "mdi:eye-off",
       "colors": [
-        "[64,156,255]"
+        "[255,255,255]"
       ],
       "switch": false
     }
