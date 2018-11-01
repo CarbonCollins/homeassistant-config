@@ -1,6 +1,27 @@
 {
   "rooms": [
     {
+      "name": "Home",
+      "id": "home",
+      "lights": [
+        "light.bedroom_ceiling_1",
+        "light.bedroom_ceiling_2",
+        "light.bedroom_lamp",
+        "light.kitchen_lamp",
+        "light.kitchen_ceiling",
+        "light.living_room_ceiling_1",
+        "light.living_room_ceiling_2",
+        "light.living_room_lamp_1",
+        "light.spare_room_ceiling_1",
+        "light.spare_room_ceiling_2",
+        "light.spare_room_lamp",
+        "light.landing_ceiling_1"
+      ],
+      "switches": [
+        "switch.butt_plug_lamp"
+      ]
+    },
+    {
       "name": "Bed Room",
       "id": "bedroom",
       "lights": [

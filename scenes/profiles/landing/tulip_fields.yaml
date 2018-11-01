@@ -3,5 +3,5 @@
   entities:
     light.landing_ceiling_1:
       state: on
-      rgb_color: [58,199,255]
+      rgb_color: [255,43,62]
       brightness: 254

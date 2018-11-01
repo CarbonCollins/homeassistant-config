@@ -40,25 +40,4 @@
           name: Ceiling 2
     - type: entities
       title: Scenes
-      entities:
-        - type: call-service
-          icon: mdi:weather-sunset
-          name: Vaporwave
-          action_name: Time to go retro
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.vaporwave_bedroom
-        - type: call-service
-          icon: mdi:candycane
-          name: Cotton Candy
-          action_name: Sugar Me Daddy
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.cotton_candy_bedroom
-        - type: call-service
-          icon: mdi:water
-          name: under Da Sea
-          action_name: sploosh
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.under_da_sea_bedroom
+      entities: !import scenes/buttons/bedroom.yaml

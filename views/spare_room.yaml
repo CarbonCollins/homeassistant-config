@@ -29,36 +29,18 @@
         - entity: sensor.spare_room_motion_sensor
           icon: mdi:run-fast
           name: Motion
-    # - type: entities
-    #   title: Lights
-    #   entities:
-    #     - entity: light.bed_ceiling_1
-    #       icon: mdi:ceiling-light
-    #       name: Ceiling 1
-    #     - entity: light.bedroom_ceiling_2
-    #       icon: mdi:ceiling-light
-    #       name: Ceiling 2
-    # - type: entities
-    #   title: Scenes
-    #   entities:
-    #     - type: call-service
-    #       icon: mdi:weather-sunset
-    #       name: Vaporwave
-    #       action_name: Time to go retro
-    #       service: scene.turn_on
-    #       service_data:
-    #         entity_id: scene.vaporwave_bedroom
-    #     - type: call-service
-    #       icon: mdi:candycane
-    #       name: Cotton Candy
-    #       action_name: Sugar Me Daddy
-    #       service: scene.turn_on
-    #       service_data:
-    #         entity_id: scene.cotton_candy_bedroom
-    #     - type: call-service
-    #       icon: mdi:water
-    #       name: under Da Sea
-    #       action_name: sploosh
-    #       service: scene.turn_on
-    #       service_data:
-    #         entity_id: scene.under_da_sea_bedroom
+    - type: entities
+      title: Lights
+      entities:
+        - entity: light.spare_room_ceiling_1
+          icon: mdi:ceiling-light
+          name: Ceiling 1
+        - entity: light.spare_room_ceiling_2
+          icon: mdi:ceiling-light
+          name: Ceiling 2
+        - entity: light.spare_room_lamp
+          icon: mdi:lava-lamp
+          name: Lamp
+    - type: entities
+      title: Scenes
+      entities: !import scenes/buttons/spare_room.yaml

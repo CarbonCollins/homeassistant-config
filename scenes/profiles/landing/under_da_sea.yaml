@@ -1,7 +1,7 @@
-- name: Autumn Landing
-  icon: mdi:leaf
+- name: Under Da Sea Landing
+  icon: mdi:water
   entities:
     light.landing_ceiling_1:
       state: on
-      rgb_color: [255,65,0]
+      rgb_color: [56,255,253]
       brightness: 254

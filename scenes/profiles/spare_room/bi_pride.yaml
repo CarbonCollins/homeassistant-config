@@ -1,15 +1,15 @@
-- name: Under Da Sea Spare Room
-  icon: mdi:water
+- name: Bi Pride Spare Room
+  icon: mdi:genter-transgener
   entities:
     light.spare_room_ceiling_1:
       state: on
-      rgb_color: [64,0,255]
+      rgb_color: [155,79,150]
       brightness: 254
     light.spare_room_ceiling_2:
       state: on
-      rgb_color: [56,255,253]
+      rgb_color: [214,2,112]
       brightness: 254
     light.spare_room_lamp:
       state: on
-      rgb_color: [61,146,255]
+      rgb_color: [0,56,168]
       brightness: 254

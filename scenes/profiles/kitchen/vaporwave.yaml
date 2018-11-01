@@ -1,11 +1,11 @@
-- name: Cotton Candy Kitchen
-  icon: mdi:candycane
+- name: Vaporwave Kitchen
+  icon: mdi:weather-sunset
   entities:
     light.kitchen_lamp:
       state: on
-      rgb_color: [213,82,255]
+      rgb_color: [185,103,255]
       brightness: 254
     light.kitchen_ceiling:
       state: on
-      rgb_color: [59,168,255]
+      rgb_color: [255,113,206]
       brightness: 254

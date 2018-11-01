@@ -1,17 +1,17 @@
-- name: Cotton Candy Living Room
-  icon: mdi:candycane
+- name: Under Da Sea Living Room
+  icon: mdi:water
   entities:
     light.living_room_ceiling_1:
       state: on
-      rgb_color: [255,167,167]
+      rgb_color: [56,255,253]
       brightness: 254
     light.living_room_ceiling_2:
       state: on
-      rgb_color: [255,200,182]
+      rgb_color: [61,146,255]
       brightness: 254
     light.living_room_lamp_1:
       state: on
-      rgb_color: [223,254,255]
+      rgb_color: [64,0,255]
       brightness: 254
     switch.butt_plug_lamp:
       state: off

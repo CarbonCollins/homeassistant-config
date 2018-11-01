@@ -1,12 +1,12 @@
 const gulp = require('gulp');
 const { join } = require('path');
 const { ensureDir, writeFile, remove } = require('fs-extra');
-const yaml = require('json-to-pretty-yaml');
-const indent = require('indent-string');
 
 const { rooms, scenes } = require('./scenes.json');
 
 const scenesDir = join(process.cwd(), 'scenes');
+const sceneProfilesDir = join(scenesDir, 'profiles');
+const sceneButtonsDir = join(scenesDir, 'buttons');
 
 function rotate(array) {
   const temp = array.shift();
@@ -18,22 +18,40 @@ function clearScenesFolder() {
 }
 
 function ensureSceneFolder() {
-  return ensureDir(scenesDir);
+  return ensureDir(sceneProfilesDir)
+    .then(() => { return ensureDir(sceneButtonsDir)});
 }
 
 function ensureRoomFolders() {
   return rooms
     .slice(0)
-    .map(room => ensureDir(join(scenesDir, room.id)))
+    .map(room => ensureDir(join(sceneProfilesDir, room.id)))
     .reduce((promiseChain, currentPromise) => {
       return promiseChain.then(currentPromise);
     }, Promise.resolve())
-    .then(() => ensureDir(join(scenesDir, 'home')));
 }
 
-function generateSceneYAML(name, icon, room, colors, switchState = false) {
-  let sceneYAML = `- name: ${name}
-  icon: ${icon}
+function generateButtonYAML(scenes, room) {
+  let buttonsYAML = '';
+  
+  scenes.slice(0).map(scene => {
+    buttonsYAML += `- type: call-service
+  icon: ${scene.icon}
+  name: ${scene.name}
+  action_name: ${scene.button}
+  service: scene.turn_on
+  service_data:
+    entity_id: scene.${scene.id}_${room.id}
+`;
+  });
+
+  return buttonsYAML;
+}
+
+function generateSceneYAML(scene, room) {
+  let colors = scene.colors.slice(0);
+  let sceneYAML = `- name: ${scene.name} ${room.name}
+  icon: ${scene.icon}
   entities:`;
 
   room.lights.slice(0).map(light => {
@@ -49,41 +67,38 @@ function generateSceneYAML(name, icon, room, colors, switchState = false) {
     room.switches.slice(0).map(switchId => {
       sceneYAML += `
     ${switchId}:
-      state: ${(switchState) ? 'on' : 'off'}`;
+      state: ${(scene.switch || false) ? 'on' : 'off'}`;
     });
   }
 
   return `${sceneYAML}\n`;
 }
 
-function generateScenes() {
+function generateSceneProfiles() {
   return rooms
     .slice(0)
     .map(room => scenes
       .slice(0)
       .map((scene) => {
-        let rgbColors = scene.colors;
-        const sceneConfig = generateSceneYAML(`${scene.name} ${room.name}`, scene.icon, room, scene.colors, scene.switch);
-        // const sceneConfig = yaml.stringify({
-        //   name: `${scene.name} ${room.name}`,
-        //   icon: scene.icon,
-        //   entities: room.lights.slice(0).map(light => {
-        //     rotate(rgbColors);
-        //     return {
-        //       [light]: {
-        //         state: 'on',
-        //         rgb_color: rgbColors[0],
-        //         brightness: 254
-        //       }
-        //     }
-        //   })
-        // });
-        return writeFile(join(scenesDir, room.id, `${scene.id}.yaml`), sceneConfig);
+        const sceneConfig = generateSceneYAML(scene, room);
+
+        return writeFile(join(sceneProfilesDir, room.id, `${scene.id}.yaml`), sceneConfig);
       }))
     .reduce((finalArr, currentArr) => {
       finalArr = finalArr.concat(currentArr);
       return finalArr;
     }, [])
+    .reduce((promiseChain, currentPromise) => {
+      return promiseChain.then(currentPromise);
+    }, Promise.resolve());
+}
+function generateSceneButtons() {
+  return rooms
+    .slice(0)
+    .map(room => {
+      const buttonYAML = generateButtonYAML(scenes, room);
+      return writeFile(join(sceneButtonsDir, `${room.id}.yaml`), buttonYAML);
+    })
     .reduce((promiseChain, currentPromise) => {
       return promiseChain.then(currentPromise);
     }, Promise.resolve());
@@ -94,5 +109,6 @@ gulp.task('clean:scenes', clearScenesFolder);
 gulp.task('build:scenes', gulp.series(
   clearScenesFolder,
   gulp.series(ensureSceneFolder, ensureRoomFolders),
-  generateScenes
+  generateSceneProfiles,
+  generateSceneButtons
 ));
