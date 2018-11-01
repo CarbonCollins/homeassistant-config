@@ -23,7 +23,7 @@
     },
     {
       "name": "Bed Room",
-      "id": "bedroom",
+      "id": "bed_room",
       "lights": [
         "light.bedroom_ceiling_1",
         "light.bedroom_ceiling_2",

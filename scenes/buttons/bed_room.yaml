@@ -4,46 +4,46 @@
   action_name: Leaf me alone
   service: scene.turn_on
   service_data:
-    entity_id: scene.autumn_bedroom
+    entity_id: scene.autumn_bed_room
 - type: call-service
   icon: mdi:candycane
   name: Cotton Candy
   action_name: Sugar me daddy
   service: scene.turn_on
   service_data:
-    entity_id: scene.cotton_candy_bedroom
+    entity_id: scene.cotton_candy_bed_room
 - type: call-service
   icon: mdi:genter-transgener
   name: Bi Pride
   action_name: Bi Bi Bi
   service: scene.turn_on
   service_data:
-    entity_id: scene.bi_pride_bedroom
+    entity_id: scene.bi_pride_bed_room
 - type: call-service
   icon: mdi:flower-tulip-outline
   name: Tulip Fields
   action_name: Dutch Sprint
   service: scene.turn_on
   service_data:
-    entity_id: scene.tulip_fields_bedroom
+    entity_id: scene.tulip_fields_bed_room
 - type: call-service
   icon: mdi:water
   name: Under Da Sea
   action_name: sploosh
   service: scene.turn_on
   service_data:
-    entity_id: scene.under_da_sea_bedroom
+    entity_id: scene.under_da_sea_bed_room
 - type: call-service
   icon: mdi:weather-sunset
   name: Vaporwave
   action_name: Time to go retro
   service: scene.turn_on
   service_data:
-    entity_id: scene.vaporwave_bedroom
+    entity_id: scene.vaporwave_bed_room
 - type: call-service
   icon: mdi:eye-off
   name: Blind
   action_name: Kill the eyes
   service: scene.turn_on
   service_data:
-    entity_id: scene.blind_bedroom
+    entity_id: scene.blind_bed_room
