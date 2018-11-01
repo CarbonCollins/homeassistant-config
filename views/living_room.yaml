@@ -31,4 +31,4 @@
           name: Ceiling 2
     - type: entities
       title: Scenes
-      entities: !import scenes/buttons/living_room.yaml
+      entities: !import ../scenes/buttons/living_room.yaml

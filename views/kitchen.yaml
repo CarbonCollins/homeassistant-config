@@ -32,4 +32,4 @@
           name: Is Cooking
     - type: entities
       title: Scenes
-      entities: !import scenes/buttons/kitchen.yaml
+      entities: !import ../scenes/buttons/kitchen.yaml

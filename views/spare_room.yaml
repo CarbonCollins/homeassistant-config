@@ -43,4 +43,4 @@
           name: Lamp
     - type: entities
       title: Scenes
-      entities: !import scenes/buttons/spare_room.yaml
+      entities: !import ../scenes/buttons/spare_room.yaml

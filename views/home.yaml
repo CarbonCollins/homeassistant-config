@@ -143,7 +143,7 @@
             name: Spare Room
       - type: entities
         title: Scenes
-        entities: !import scenes/buttons/home.yaml
+        entities: !import ../scenes/buttons/home.yaml
 #      - type: weather-forecast
 #        entity: weather.dark_sky
       - type: history-graph
