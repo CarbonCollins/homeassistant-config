@@ -3,3 +3,4 @@
   host: !secret ip_unifi
   username: !secret unifi_username
   password: !secret unifi_password
+  verify_ssl: false
