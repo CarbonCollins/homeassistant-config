@@ -1,15 +1,15 @@
-- name: Bi Pride Spare Room
-  icon: mdi:gender-transgender
+- name: Joy Spare Room
+  icon: mdi:emoticon-happy
   entities:
     light.spare_room_ceiling_1:
       state: on
-      rgb_color: [155,79,150]
+      rgb_color: [218,219,39]
       brightness: 254
     light.spare_room_ceiling_2:
       state: on
-      rgb_color: [214,2,112]
+      rgb_color: [138,195,62]
       brightness: 254
     light.spare_room_lamp:
       state: on
-      rgb_color: [0,56,168]
+      rgb_color: [202,34,96]
       brightness: 254

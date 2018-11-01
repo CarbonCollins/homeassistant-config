@@ -1,5 +1,5 @@
 - name: Bi Pride Home
-  icon: mdi:gender-transgener
+  icon: mdi:gender-transgender
   entities:
     light.bedroom_ceiling_1:
       state: on

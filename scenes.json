@@ -99,7 +99,7 @@
       "name": "Bi Pride",
       "id": "bi_pride",
       "button": "Bi Bi Bi",
-      "icon": "mdi:gender-transgener",
+      "icon": "mdi:gender-transgender",
       "colors": [
         "[0,56,168]",
         "[155,79,150]",
@@ -166,7 +166,20 @@
         "[187,49,216]",
         "[206,169,214]"
       ],
-      "switch": false
+      "switch": true
+    },
+    {
+      "name": "Joy",
+      "id": "joy",
+      "button": "I don't know",
+      "icon": "mdi:emoticon-happy",
+      "colors": [
+        "[32,157,220]",
+        "[218,219,39]",
+        "[138,195,62]",
+        "[202,34,96]"
+      ],
+      "switch": true
     }
   ]
 }

@@ -13,7 +13,7 @@
   service_data:
     entity_id: scene.cotton_candy_home
 - type: call-service
-  icon: mdi:gender-transgener
+  icon: mdi:gender-transgender
   name: Bi Pride
   action_name: Bi Bi Bi
   service: scene.turn_on
@@ -54,3 +54,10 @@
   service: scene.turn_on
   service_data:
     entity_id: scene.tangled_home
+- type: call-service
+  icon: mdi:emoticon-happy
+  name: Joy
+  action_name: I don't know
+  service: scene.turn_on
+  service_data:
+    entity_id: scene.joy_home

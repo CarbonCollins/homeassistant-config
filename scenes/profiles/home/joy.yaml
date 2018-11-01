@@ -1,53 +1,53 @@
-- name: Tangled Home
-  icon: mdi:weather-sunny
+- name: Joy Home
+  icon: mdi:emoticon-happy
   entities:
     light.bedroom_ceiling_1:
       state: on
-      rgb_color: [255,209,153]
+      rgb_color: [218,219,39]
       brightness: 254
     light.bedroom_ceiling_2:
       state: on
-      rgb_color: [254,186,184]
+      rgb_color: [138,195,62]
       brightness: 254
     light.bedroom_lamp:
       state: on
-      rgb_color: [187,49,216]
+      rgb_color: [202,34,96]
       brightness: 254
     light.kitchen_lamp:
       state: on
-      rgb_color: [206,169,214]
+      rgb_color: [32,157,220]
       brightness: 254
     light.kitchen_ceiling:
       state: on
-      rgb_color: [223,201,17]
+      rgb_color: [218,219,39]
       brightness: 254
     light.living_room_ceiling_1:
       state: on
-      rgb_color: [255,209,153]
+      rgb_color: [138,195,62]
       brightness: 254
     light.living_room_ceiling_2:
       state: on
-      rgb_color: [254,186,184]
+      rgb_color: [202,34,96]
       brightness: 254
     light.living_room_lamp_1:
       state: on
-      rgb_color: [187,49,216]
+      rgb_color: [32,157,220]
       brightness: 254
     light.spare_room_ceiling_1:
       state: on
-      rgb_color: [206,169,214]
+      rgb_color: [218,219,39]
       brightness: 254
     light.spare_room_ceiling_2:
       state: on
-      rgb_color: [223,201,17]
+      rgb_color: [138,195,62]
       brightness: 254
     light.spare_room_lamp:
       state: on
-      rgb_color: [255,209,153]
+      rgb_color: [202,34,96]
       brightness: 254
     light.landing_ceiling_1:
       state: on
-      rgb_color: [254,186,184]
+      rgb_color: [32,157,220]
       brightness: 254
     switch.butt_plug_lamp:
       state: on

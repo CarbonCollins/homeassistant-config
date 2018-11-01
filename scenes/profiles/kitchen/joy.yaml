@@ -1,11 +1,11 @@
-- name: Bi Pride Kitchen
-  icon: mdi:gender-transgender
+- name: Joy Kitchen
+  icon: mdi:emoticon-happy
   entities:
     light.kitchen_lamp:
       state: on
-      rgb_color: [155,79,150]
+      rgb_color: [218,219,39]
       brightness: 254
     light.kitchen_ceiling:
       state: on
-      rgb_color: [214,2,112]
+      rgb_color: [138,195,62]
       brightness: 254

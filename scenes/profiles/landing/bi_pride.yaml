@@ -1,5 +1,5 @@
 - name: Bi Pride Landing
-  icon: mdi:gender-transgener
+  icon: mdi:gender-transgender
   entities:
     light.landing_ceiling_1:
       state: on
