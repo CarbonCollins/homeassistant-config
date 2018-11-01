@@ -1,4 +1,4 @@
-- name: "Autumn"
+- name: "Autumn Landing"
   icon: "mdi:leaf"
   entities:
     - light.landing_ceiling_1:

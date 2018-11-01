@@ -1,4 +1,4 @@
-- name: "Cotton Candy"
+- name: "Cotton Candy Kitchen"
   icon: "mdi:candycane"
   entities:
     - light.kitchen_lamp:

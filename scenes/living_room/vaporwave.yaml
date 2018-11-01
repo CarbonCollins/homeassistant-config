@@ -1,4 +1,4 @@
-- name: "Vaporwave"
+- name: "Vaporwave Living Room"
   icon: "mdi:weather-sunset"
   entities:
     - light.living_room_ceiling_1:

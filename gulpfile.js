@@ -31,6 +31,23 @@ function ensureRoomFolders() {
     .then(() => ensureDir(join(scenesDir, 'home')));
 }
 
+function generateSceneYAML(name, icon, room, colors) {
+  let sceneYAML = `- "${name}"
+  icon: "${icon}"
+  entities:`;
+
+  room.lights.slice(0).map(light => {
+    rotate(colors);
+    sceneYAML += `
+    ${light}:
+      state: on
+      rgb_color: ${colors[0]}
+      brightness: 254`;
+  });
+
+  return sceneYAML;
+}
+
 function generateScenes() {
   return rooms
     .slice(0)
@@ -38,8 +55,9 @@ function generateScenes() {
       .slice(0)
       .map((scene) => {
         let rgbColors = scene.colors;
+        // const sceneConfig = generateSceneYAML(`${scene.name}_${room.id}`, scene.icon, room, scene.colors);
         const sceneConfig = yaml.stringify({
-          name: scene.name,
+          name: `${scene.name} ${room.name}`,
           icon: scene.icon,
           entities: room.lights.slice(0).map(light => {
             rotate(rgbColors);

@@ -1,4 +1,4 @@
-- name: "Under Da Sea"
+- name: "Under Da Sea Living Room"
   icon: "mdi:water"
   entities:
     - light.living_room_ceiling_1:

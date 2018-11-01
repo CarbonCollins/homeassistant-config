@@ -1,4 +1,4 @@
-- name: "Tulip Fields"
+- name: "Tulip Fields Spare Room"
   icon: "mdi:flower-tulip-outline"
   entities:
     - light.spare_room_ceiling_1:

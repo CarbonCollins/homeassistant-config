@@ -1,4 +1,4 @@
-- name: "Blind"
+- name: "Blind Landing"
   icon: "mdi:eye-off"
   entities:
     - light.landing_ceiling_1:

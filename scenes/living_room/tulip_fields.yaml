@@ -1,4 +1,4 @@
-- name: "Tulip Fields"
+- name: "Tulip Fields Living Room"
   icon: "mdi:flower-tulip-outline"
   entities:
     - light.living_room_ceiling_1:

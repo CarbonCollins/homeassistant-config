@@ -1,4 +1,4 @@
-- name: "Bi Pride"
+- name: "Bi Pride Spare Room"
   icon: "mdi:genter-transgener"
   entities:
     - light.spare_room_ceiling_1:

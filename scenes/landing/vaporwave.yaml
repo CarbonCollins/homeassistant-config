@@ -1,4 +1,4 @@
-- name: "Vaporwave"
+- name: "Vaporwave Landing"
   icon: "mdi:weather-sunset"
   entities:
     - light.landing_ceiling_1:

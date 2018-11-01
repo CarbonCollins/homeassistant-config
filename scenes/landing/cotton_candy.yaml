@@ -1,4 +1,4 @@
-- name: "Cotton Candy"
+- name: "Cotton Candy Landing"
   icon: "mdi:candycane"
   entities:
     - light.landing_ceiling_1:

@@ -1,4 +1,4 @@
-- name: "Bi Pride"
+- name: "Bi Pride Landing"
   icon: "mdi:genter-transgener"
   entities:
     - light.landing_ceiling_1:

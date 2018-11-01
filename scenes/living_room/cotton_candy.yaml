@@ -1,4 +1,4 @@
-- name: "Cotton Candy"
+- name: "Cotton Candy Living Room"
   icon: "mdi:candycane"
   entities:
     - light.living_room_ceiling_1:

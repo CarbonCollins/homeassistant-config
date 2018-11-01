@@ -1,4 +1,4 @@
-- name: "Autumn"
+- name: "Autumn Bed Room"
   icon: "mdi:leaf"
   entities:
     - light.bedroom_ceiling_1:

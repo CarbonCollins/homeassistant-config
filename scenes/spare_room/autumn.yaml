@@ -1,4 +1,4 @@
-- name: "Autumn"
+- name: "Autumn Spare Room"
   icon: "mdi:leaf"
   entities:
     - light.spare_room_ceiling_1:

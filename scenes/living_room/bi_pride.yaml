@@ -1,4 +1,4 @@
-- name: "Bi Pride"
+- name: "Bi Pride Living Room"
   icon: "mdi:genter-transgener"
   entities:
     - light.living_room_ceiling_1:

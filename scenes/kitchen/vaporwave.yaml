@@ -1,4 +1,4 @@
-- name: "Vaporwave"
+- name: "Vaporwave Kitchen"
   icon: "mdi:weather-sunset"
   entities:
     - light.kitchen_lamp:

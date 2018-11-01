@@ -1,4 +1,4 @@
-- name: "Blind"
+- name: "Blind Bed Room"
   icon: "mdi:eye-off"
   entities:
     - light.bedroom_ceiling_1:

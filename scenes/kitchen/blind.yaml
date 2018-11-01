@@ -1,4 +1,4 @@
-- name: "Blind"
+- name: "Blind Kitchen"
   icon: "mdi:eye-off"
   entities:
     - light.kitchen_lamp:

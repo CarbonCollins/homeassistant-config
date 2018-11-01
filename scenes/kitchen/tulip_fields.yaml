@@ -1,4 +1,4 @@
-- name: "Tulip Fields"
+- name: "Tulip Fields Kitchen"
   icon: "mdi:flower-tulip-outline"
   entities:
     - light.kitchen_lamp:

@@ -1,4 +1,4 @@
-- name: "Autumn"
+- name: "Autumn Kitchen"
   icon: "mdi:leaf"
   entities:
     - light.kitchen_lamp:

@@ -1,4 +1,4 @@
-- name: "Vaporwave"
+- name: "Vaporwave Spare Room"
   icon: "mdi:weather-sunset"
   entities:
     - light.spare_room_ceiling_1:

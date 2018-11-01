@@ -1,4 +1,4 @@
-- name: "Bi Pride"
+- name: "Bi Pride Kitchen"
   icon: "mdi:genter-transgener"
   entities:
     - light.kitchen_lamp:
