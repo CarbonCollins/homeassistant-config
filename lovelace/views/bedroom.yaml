@@ -40,4 +40,4 @@ cards:
         name: Ceiling 2
   - type: entities
     title: Scenes
-    entities: !include ../../scenes/buttons/bed_room.yaml
+    entities: !include ../scenes/buttons/bed_room.yaml
