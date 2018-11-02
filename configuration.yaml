@@ -35,7 +35,7 @@ script: !include_dir_merge_named scripts
 scene: !include_dir_merge_list scenes/profiles
 
 # Other
-#alexa: !include config/alexa.yaml
+# alexa: !include config/alexa.yaml
 #homekit: !include config/homekit.yaml
 weather: !include config/weather.yaml
 binary_sensor: !include config/binary_sensors.yaml

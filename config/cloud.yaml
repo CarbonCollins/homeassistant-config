@@ -4,6 +4,8 @@ alexa:
       - light.living_room
       - light.kitchen
       - light.bedroom
+      - light.spare_room
+      - light.landing
       - switch.butt_plug_lamp
     exclude_domains:
       - alert
@@ -32,6 +34,14 @@ alexa:
     light.bedroom:
       name: Bedroom
       description: All bedroom lights
+      display_categories: LIGHT
+    light.spare_room:
+      name: Spare Room
+      description: All spare room lights
+      display_categories: LIGHT
+    light.landing:
+      name: Landing
+      description: All landing lights
       display_categories: LIGHT
     switch.butt_plug_lamp:
       name: Butt Plug Lamp
