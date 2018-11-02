@@ -1,106 +1,106 @@
-- icon: mdi:hotel
-  theme: dark-mode
-  title: Bedroom
-  cards:
-    - type: entities
-      title: Temperature
-      show_header_toggle: false
-      entities:
-        - entity: switch.bedroom_heater
-          icon: mdi:radiator
-          name: Heating
-        - type: divider
-        - entity: sensor.bedroom_temperature
-          icon: mdi:thermometer-lines
-          name: Current
-        - entity: input_number.target_bedroom_temperature
-          icon: mdi:target
-          name: Target
-        - entity: sensor.bedroom_temperature_delta
-          icon: mdi:delta
-          name: Delta
-    - type: entities
-      title: Environment
-      show_header_toggle: false
-      entities:
-        - entity: sensor.bedroom_light_level
-          icon: mdi:lightbulb-on-outline
-          name: Light Level
-        - entity: sensor.bedroom_motion_sensor
-          icon: mdi:run-fast
-          name: Motion
-    - type: entities
-      title: Lights
-      entities:
-        - entity: light.bedroom_ceiling_1
-          icon: mdi:ceiling-light
-          name: Ceiling 1
-        - entity: light.bedroom_ceiling_2
-          icon: mdi:ceiling-light
-          name: Ceiling 2
-    - type: entities
-      title: Scenes
-      entities:
-        - type: call-service
-          icon: mdi:leaf
-          name: Autumn
-          action_name: Leaf me alone
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.autumn_bed_room
-        - type: call-service
-          icon: mdi:candycane
-          name: Cotton Candy
-          action_name: Sugar me daddy
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.cotton_candy_bed_room
-        - type: call-service
-          icon: mdi:gender-transgender
-          name: Bi Pride
-          action_name: Bi Bi Bi
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.bi_pride_bed_room
-        - type: call-service
-          icon: mdi:flower-tulip-outline
-          name: Tulip Fields
-          action_name: Dutch Spring
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.tulip_fields_bed_room
-        - type: call-service
-          icon: mdi:water
-          name: Under Da Sea
-          action_name: sploosh
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.under_da_sea_bed_room
-        - type: call-service
-          icon: mdi:weather-sunset
-          name: Vaporwave
-          action_name: Time to go retro
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.vaporwave_bed_room
-        - type: call-service
-          icon: mdi:eye-off
-          name: Blind
-          action_name: Kill the eyes
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.blind_bed_room
-        - type: call-service
-          icon: mdi:weather-sunny
-          name: Tangled
-          action_name: frying pan
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.tangled_bed_room
-        - type: call-service
-          icon: mdi:emoticon-happy
-          name: Joy
-          action_name: I don't know
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.joy_bed_room
+title: Bedroom
+icon: mdi:hotel
+theme: dark-mode
+cards:
+  - type: entities
+    title: Temperature
+    show_header_toggle: false
+    entities:
+      - entity: switch.bedroom_heater
+        icon: mdi:radiator
+        name: Heating
+      - type: divider
+      - entity: sensor.bedroom_temperature
+        icon: mdi:thermometer-lines
+        name: Current
+      - entity: input_number.target_bedroom_temperature
+        icon: mdi:target
+        name: Target
+      - entity: sensor.bedroom_temperature_delta
+        icon: mdi:delta
+        name: Delta
+  - type: entities
+    title: Environment
+    show_header_toggle: false
+    entities:
+      - entity: sensor.bedroom_light_level
+        icon: mdi:lightbulb-on-outline
+        name: Light Level
+      - entity: sensor.bedroom_motion_sensor
+        icon: mdi:run-fast
+        name: Motion
+  - type: entities
+    title: Lights
+    entities:
+      - entity: light.bedroom_ceiling_1
+        icon: mdi:ceiling-light
+        name: Ceiling 1
+      - entity: light.bedroom_ceiling_2
+        icon: mdi:ceiling-light
+        name: Ceiling 2
+  - type: entities
+    title: Scenes
+    entities:
+      - type: call-service
+        icon: mdi:leaf
+        name: Autumn
+        action_name: Leaf me alone
+        service: scene.turn_on
+        service_data:
+          entity_id: scene.autumn_bed_room
+      - type: call-service
+        icon: mdi:candycane
+        name: Cotton Candy
+        action_name: Sugar me daddy
+        service: scene.turn_on
+        service_data:
+          entity_id: scene.cotton_candy_bed_room
+      - type: call-service
+        icon: mdi:gender-transgender
+        name: Bi Pride
+        action_name: Bi Bi Bi
+        service: scene.turn_on
+        service_data:
+          entity_id: scene.bi_pride_bed_room
+      - type: call-service
+        icon: mdi:flower-tulip-outline
+        name: Tulip Fields
+        action_name: Dutch Spring
+        service: scene.turn_on
+        service_data:
+          entity_id: scene.tulip_fields_bed_room
+      - type: call-service
+        icon: mdi:water
+        name: Under Da Sea
+        action_name: sploosh
+        service: scene.turn_on
+        service_data:
+          entity_id: scene.under_da_sea_bed_room
+      - type: call-service
+        icon: mdi:weather-sunset
+        name: Vaporwave
+        action_name: Time to go retro
+        service: scene.turn_on
+        service_data:
+          entity_id: scene.vaporwave_bed_room
+      - type: call-service
+        icon: mdi:eye-off
+        name: Blind
+        action_name: Kill the eyes
+        service: scene.turn_on
+        service_data:
+          entity_id: scene.blind_bed_room
+      - type: call-service
+        icon: mdi:weather-sunny
+        name: Tangled
+        action_name: frying pan
+        service: scene.turn_on
+        service_data:
+          entity_id: scene.tangled_bed_room
+      - type: call-service
+        icon: mdi:emoticon-happy
+        name: Joy
+        action_name: I don't know
+        service: scene.turn_on
+        service_data:
+          entity_id: scene.joy_bed_room
