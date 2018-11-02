@@ -49,6 +49,7 @@ ios: !include config/ios.yaml
 light: !include config/lights.yaml
 logbook: !include config/logbook.yaml
 media_player: !include config/media_players.yaml
+shell_command: !include config/shell_command.yaml
 sun:
 switch: !include config/switches.yaml
 zone: !include config/zones.yaml
