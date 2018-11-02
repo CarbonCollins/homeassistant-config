@@ -1,8 +1,8 @@
 title: LabSE
 views:
   - !include views/home.yaml
-  - !include views/bedroom.yaml
-  - !include views/kitchen.yaml
   - !include views/living_room.yaml
-#  - !include views/server.yaml
+  - !include views/kitchen.yaml
+  - !include views/bedroom.yaml
   - !include views/spare_room.yaml
+#  - !include views/server.yaml
