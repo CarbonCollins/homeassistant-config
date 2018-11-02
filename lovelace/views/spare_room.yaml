@@ -1,109 +1,46 @@
-- icon: mdi:desk-lamp
-  theme: dark-mode
-  title: Spare Room
-  cards:
-    - type: entities
-      title: Temperature
-      show_header_toggle: false
-      entities:
-        - entity: switch.spare_room_heater
-          icon: mdi:radiator
-          name: Heating
-        - type: divider
-        - entity: sensor.spare_room_temperature
-          icon: mdi:thermometer-lines
-          name: Current
-        - entity: input_number.target_spare_room_temperature
-          icon: mdi:target
-          name: Target
-        - entity: sensor.spare_room_temperature_delta
-          icon: mdi:delta
-          name: Delta
-    - type: entities
-      title: Environment
-      show_header_toggle: false
-      entities:
-        - entity: sensor.spare_room_light_level
-          icon: mdi:lightbulb-on-outline
-          name: Light Level
-        - entity: sensor.spare_room_motion_sensor
-          icon: mdi:run-fast
-          name: Motion
-    - type: entities
-      title: Lights
-      entities:
-        - entity: light.spare_room_ceiling_1
-          icon: mdi:ceiling-light
-          name: Ceiling 1
-        - entity: light.spare_room_ceiling_2
-          icon: mdi:ceiling-light
-          name: Ceiling 2
-        - entity: light.spare_room_lamp
-          icon: mdi:lava-lamp
-          name: Lamp
-    - type: entities
-      title: Scenes
-      entities:
-        - type: call-service
-          icon: mdi:leaf
-          name: Autumn
-          action_name: Leaf me alone
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.autumn_spare_room
-        - type: call-service
-          icon: mdi:candycane
-          name: Cotton Candy
-          action_name: Sugar me daddy
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.cotton_candy_spare_room
-        - type: call-service
-          icon: mdi:gender-transgender
-          name: Bi Pride
-          action_name: Bi Bi Bi
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.bi_pride_spare_room
-        - type: call-service
-          icon: mdi:flower-tulip-outline
-          name: Tulip Fields
-          action_name: Dutch Spring
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.tulip_fields_spare_room
-        - type: call-service
-          icon: mdi:water
-          name: Under Da Sea
-          action_name: sploosh
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.under_da_sea_spare_room
-        - type: call-service
-          icon: mdi:weather-sunset
-          name: Vaporwave
-          action_name: Time to go retro
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.vaporwave_spare_room
-        - type: call-service
-          icon: mdi:eye-off
-          name: Blind
-          action_name: Kill the eyes
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.blind_spare_room
-        - type: call-service
-          icon: mdi:weather-sunny
-          name: Tangled
-          action_name: frying pan
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.tangled_spare_room
-        - type: call-service
-          icon: mdi:emoticon-happy
-          name: Joy
-          action_name: I don't know
-          service: scene.turn_on
-          service_data:
-            entity_id: scene.joy_spare_room
+title: Spare Room
+icon: mdi:desk-lamp
+theme: dark-mode
+cards:
+  - type: entities
+    title: Temperature
+    show_header_toggle: false
+    entities:
+      - entity: switch.spare_room_heater
+        icon: mdi:radiator
+        name: Heating
+      - type: divider
+      - entity: sensor.spare_room_temperature
+        icon: mdi:thermometer-lines
+        name: Current
+      - entity: input_number.target_spare_room_temperature
+        icon: mdi:target
+        name: Target
+      - entity: sensor.spare_room_temperature_delta
+        icon: mdi:delta
+        name: Delta
+  - type: entities
+    title: Environment
+    show_header_toggle: false
+    entities:
+      - entity: sensor.spare_room_light_level
+        icon: mdi:lightbulb-on-outline
+        name: Light Level
+      - entity: sensor.spare_room_motion_sensor
+        icon: mdi:run-fast
+        name: Motion
+  - type: entities
+    title: Lights
+    entities:
+      - entity: light.spare_room_ceiling_1
+        icon: mdi:ceiling-light
+        name: Ceiling 1
+      - entity: light.spare_room_ceiling_2
+        icon: mdi:ceiling-light
+        name: Ceiling 2
+      - entity: light.spare_room_lamp
+        icon: mdi:lava-lamp
+        name: Lamp
+  - type: entities
+    title: Scenes
+    entities: !include scenes/spare_room.yaml

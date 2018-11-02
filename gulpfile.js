@@ -5,8 +5,7 @@ const { ensureDir, writeFile, remove } = require('fs-extra');
 const { rooms, scenes } = require('./scenes.json');
 
 const scenesDir = join(process.cwd(), 'scenes');
-const sceneProfilesDir = join(scenesDir, 'profiles');
-const sceneButtonsDir = join(scenesDir, 'buttons');
+const lovelaceScenesDir = join(process.cwd(), 'lovelace/scenes');
 
 function rotate(array) {
   const temp = array.shift();
@@ -18,14 +17,14 @@ function clearScenesFolder() {
 }
 
 function ensureSceneFolder() {
-  return ensureDir(sceneProfilesDir)
-    .then(() => { return ensureDir(sceneButtonsDir)});
+  return ensureDir(scenesDir)
+    .then(() => { return ensureDir(lovelaceScenesDir)});
 }
 
 function ensureRoomFolders() {
   return rooms
     .slice(0)
-    .map(room => ensureDir(join(sceneProfilesDir, room.id)))
+    .map(room => ensureDir(join(scenesDir, room.id)))
     .reduce((promiseChain, currentPromise) => {
       return promiseChain.then(currentPromise);
     }, Promise.resolve())
@@ -82,7 +81,7 @@ function generateSceneProfiles() {
       .map((scene) => {
         const sceneConfig = generateSceneYAML(scene, room);
 
-        return writeFile(join(sceneProfilesDir, room.id, `${scene.id}.yaml`), sceneConfig);
+        return writeFile(join(scenesDir, room.id, `${scene.id}.yaml`), sceneConfig);
       }))
     .reduce((finalArr, currentArr) => {
       finalArr = finalArr.concat(currentArr);
@@ -97,7 +96,7 @@ function generateSceneButtons() {
     .slice(0)
     .map(room => {
       const buttonYAML = generateButtonYAML(scenes, room);
-      return writeFile(join(sceneButtonsDir, `${room.id}.yaml`), buttonYAML);
+      return writeFile(join(lovelaceScenesDir, `${room.id}.yaml`), buttonYAML);
     })
     .reduce((promiseChain, currentPromise) => {
       return promiseChain.then(currentPromise);

@@ -1,4 +1,9 @@
 title: LabSE
 # views: !include_dir_merge_list views
 views:
+  - !include views/home.yaml
   - !include views/bedroom.yaml
+  - !include views/kitchen.yaml
+  - !include views/living_room.yaml
+  - !include views/server.yaml
+  - !include views/spare_room.yaml
