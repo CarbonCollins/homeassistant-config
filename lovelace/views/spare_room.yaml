@@ -3,6 +3,17 @@ icon: mdi:desk-lamp
 theme: dark-mode
 cards:
   - type: entities
+    card:
+      type: glance
+      title: Environment
+    entities:
+      - entity: sensor.spare_room_light_level
+        icon: mdi:lightbulb-on-outline
+        name: Light Level
+      - entity: sensor.spare_room_motion_sensor
+        icon: mdi:run-fast
+        name: Motion
+  - type: entities
     title: Temperature
     show_header_toggle: false
     entities:
@@ -19,16 +30,6 @@ cards:
       - entity: sensor.spare_room_temperature_delta
         icon: mdi:delta
         name: Delta
-  - type: entities
-    title: Environment
-    show_header_toggle: false
-    entities:
-      - entity: sensor.spare_room_light_level
-        icon: mdi:lightbulb-on-outline
-        name: Light Level
-      - entity: sensor.spare_room_motion_sensor
-        icon: mdi:run-fast
-        name: Motion
   - type: entities
     title: Lights
     entities:
