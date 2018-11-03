@@ -8,6 +8,12 @@ cards:
       - entity: sensor.spare_room_light_level
         icon: mdi:lightbulb-on-outline
         name: Light Level
+      - entity: sensor.spare_room_temperature
+        icon: mdi:thermometer-lines
+        name: Temperature
+      - entity: switch.spare_room_heater
+        icon: mdi:radiator
+        name: Heating
       - entity: sensor.spare_room_motion_sensor
         icon: mdi:run-fast
         name: Motion
