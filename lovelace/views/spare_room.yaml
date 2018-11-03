@@ -2,10 +2,8 @@ title: Spare Room
 icon: mdi:desk-lamp
 theme: dark-mode
 cards:
-  - type: entities
-    card:
-      type: glance
-      title: Environment
+  - type: glance
+    title: Environment
     entities:
       - entity: sensor.spare_room_light_level
         icon: mdi:lightbulb-on-outline
