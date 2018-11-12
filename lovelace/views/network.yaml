@@ -18,13 +18,25 @@ cards:
     card:
       type: glance
       title: Internet Route
-  - type: history-graph
-    name: Internet Speed
-    hours_to_show: 24
-    refresh: 90
-    entities:
-      - sensor.speedtest_download
-      - sensor.speedtest_upload
+  - type: vertical-stack
+    cards:
+      - type: entity-filter
+        entities:
+          - entity: sensor.speedtest_download
+            icon: mdi:download
+          - entity: sensor.speedtest_upload
+            icon: mdi:upload
+          - entity: sensor.speedtest_ping
+            icon: mdi:av-timer
+        card:
+          type: glance
+          title: Internet Stats
+      - type: history-graph
+        hours_to_show: 24
+        refresh: 90
+        entities:
+          - sensor.speedtest_download
+          - sensor.speedtest_upload
   # - type: entities
   #   title: DNS Resolutions
   #   entities:
