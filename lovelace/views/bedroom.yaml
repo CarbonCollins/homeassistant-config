@@ -38,6 +38,9 @@ cards:
       - entity: light.bedroom_ceiling_2
         icon: mdi:ceiling-light
         name: Ceiling 2
+      - entity: light.bedroom_lamp
+        icon: mdi:lava-lamp
+        name: Lamp
   - type: entities
     title: Scenes
     entities: !include scenes/bed_room.yaml
