@@ -5,4 +5,4 @@ views:
   - !include views/kitchen.yaml
   - !include views/bedroom.yaml
   - !include views/spare_room.yaml
-  - !include views/server.yaml
+  - !include views/network.yaml
