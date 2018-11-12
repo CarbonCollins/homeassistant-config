@@ -1,6 +1,6 @@
 title: Spare Room
 icon: mdi:desk-lamp
-theme: dark-mode
+theme: binary
 cards:
   - type: glance
     title: Environment
