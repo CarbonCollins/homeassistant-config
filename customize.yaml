@@ -2,3 +2,8 @@ sensor.kitchen_motion_sensor:
   device_class: motion
 sensor.living_room_motion_sensor:
   device_class: motion
+binary_sensor.apollo:
+  friendly_name: Apollo
+  templates:
+    icon: if (state === 'on') return 'mdi:server-security'; else return 'mdi:server-off';
+    rgb_color: if (state === 'on') return [68, 115, 158]; else return [220, 20, 60];
