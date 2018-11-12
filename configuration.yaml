@@ -24,6 +24,7 @@ updater:
 # Frontend
 frontend:
   javascript_version: latest
+  themes: !include config/themes.yaml
 config:
 map:
 
@@ -51,7 +52,6 @@ media_player: !include config/media_players.yaml
 shell_command: !include config/shell_command.yaml
 sun:
 switch: !include config/switches.yaml
-themes: !include config/themes.yaml
 zone: !include config/zones.yaml
 input_number: !include config/input_number.yaml
 input_boolean: !include config/input_boolean.yaml
