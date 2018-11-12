@@ -5,5 +5,9 @@ sensor.living_room_motion_sensor:
 binary_sensor.apollo:
   friendly_name: Apollo
   templates:
-    icon: if (state === 'on') return 'mdi:server-security'; else return 'mdi:server-off';
-    rgb_color: if (state === 'on') return [68, 115, 158]; else return [220, 20, 60];
+    icon: >
+      if (state === 'on') return 'mdi:server-security';
+      return 'mdi:server-off';
+    icon_color: >
+      if (state === 'on') return 'rgb(68, 115, 158)';
+      return 'rgb(220, 20, 60)';
