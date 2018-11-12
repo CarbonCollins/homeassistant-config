@@ -5,7 +5,6 @@ cards:
   - type: entity-filter
     entities:
       - entity: binary_sensor.apollo
-        icon: mdi:server-security
       - entity: binary_sensor.firewall
         icon: mdi:server-security
       - entity: binary_sensor.router

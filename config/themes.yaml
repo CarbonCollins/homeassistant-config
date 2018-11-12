@@ -1,5 +1,5 @@
 binary:
-  state-icon-color: "#44739e"
-  state-icon-active-color: "#990000"
-  paper-item-icon-color: "#44739e"
-  paper-item-icon-active-color: "#990000"
+  state-icon-color: "#ae1313"
+  state-icon-active-color: "#44739e"
+  paper-item-icon-color: "#ae1313"
+  paper-item-icon-active-color: "#44739e"
