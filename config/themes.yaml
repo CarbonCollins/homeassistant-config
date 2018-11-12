@@ -1,3 +1,5 @@
 binary:
   state-icon-color: "#44739e"
   state-icon-active-color: "#990000"
+  paper-item-icon-color: "var(--state-icon-color)"
+  paper-item-icon-active-color: "var(--state-icon-active-color)"
