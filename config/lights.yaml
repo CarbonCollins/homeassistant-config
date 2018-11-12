@@ -9,30 +9,31 @@
       turn_off:
         service: switch.turn_off
         entity_id: switch.butt_plug_lamp
-- platform: group
-  name: Living Room
-  entities:
-    - light.living_room_ceiling_1
-    - light.living_room_ceiling_2
-    - light.living_room_lamp_1
-- platform: group
-  name: Kitchen
-  entities:
-    - light.kitchen_ceiling
-    - light.kitchen_lamp
-- platform: group
-  name: Bedroom
-  entities:
-    - light.bedroom_ceiling_1
-    - light.bedroom_ceiling_2
-- platform: group
-  name: Spare Room
-  entities:
-    - light.spare_room_ceiling_1
-    - light.spare_room_ceiling_2
-    - light.spare_room_lamp
-- platform: group
-  name: Landing
-  entities:
-    - light.landing_ceiling_1
+# - platform: group
+#   name: Living Room
+#   entities:
+#     - light.living_room_ceiling_1
+#     - light.living_room_ceiling_2
+#     - light.living_room_lamp_1
+# - platform: group
+#   name: Kitchen
+#   entities:
+#     - light.kitchen_ceiling
+#     - light.kitchen_lamp
+# - platform: group
+#   name: Bedroom
+#   entities:
+#     - light.bedroom_ceiling_1
+#     - light.bedroom_ceiling_2
+#     - light.bedroom_lamp
+# - platform: group
+#   name: Spare Room
+#   entities:
+#     - light.spare_room_ceiling_1
+#     - light.spare_room_ceiling_2
+#     - light.spare_room_lamp
+# - platform: group
+#   name: Landing
+#   entities:
+#     - light.landing_ceiling_1
 
