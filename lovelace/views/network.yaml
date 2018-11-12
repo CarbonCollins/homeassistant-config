@@ -1,8 +1,9 @@
 title: Network
 icon: mdi:server-network
-theme: binary
+theme: dark-theme
 cards:
   - type: entity-filter
+    theme: binary
     entities:
       - entity: binary_sensor.apollo
       - entity: binary_sensor.firewall

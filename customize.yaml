@@ -8,6 +8,3 @@ binary_sensor.apollo:
     icon: >
       if (state === 'on') return 'mdi:server-security';
       return 'mdi:server-off';
-    icon_color: >
-      if (state === 'on') return 'rgb(68, 115, 158)';
-      return 'rgb(220, 20, 60)';
