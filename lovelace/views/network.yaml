@@ -22,6 +22,7 @@ cards:
     cards:
       - type: glance
         title: Internet Stats
+        show_name: false
         entities:
           - entity: sensor.speedtest_download
             name: Download
