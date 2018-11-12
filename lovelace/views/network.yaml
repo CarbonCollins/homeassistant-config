@@ -24,10 +24,13 @@ cards:
         title: Internet Stats
         entities:
           - entity: sensor.speedtest_download
+            name: Download
             icon: mdi:download
           - entity: sensor.speedtest_upload
+            name: Upload
             icon: mdi:upload
           - entity: sensor.speedtest_ping
+            name: Ping
             icon: mdi:av-timer
       - type: history-graph
         hours_to_show: 24
