@@ -18,12 +18,12 @@ cards:
     card:
       type: glance
       title: Internet Route
-  - type: entities
-    title: DNS Resolutions
-    entities:
-      - entity: !secret sensor_ha
-        icon: mdi:ip
-        name: !secret url_ha
-      - entity: sensor.myipopendnscom
-        icon: mdi:ip
-        name: External IP
+  # - type: entities
+  #   title: DNS Resolutions
+  #   entities:
+  #     - entity: !secret sensor_ha
+  #       icon: mdi:ip
+  #       name: !secret url_ha
+  #     - entity: sensor.myipopendnscom
+  #       icon: mdi:ip
+  #       name: External IP

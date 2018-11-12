@@ -1,2 +1,2 @@
-lovelace_gen: 'python3 /lovelace-gen.py'
+lovelace_gen: 'python3 ./lovelace-gen.py'
 git_pull: 'git pull'

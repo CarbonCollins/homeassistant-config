@@ -43,7 +43,7 @@ outfile = "ui-lovelace.yaml"
 
 wwwdir = "www"
 resourcedir = "lovelace"
-timestamp = time.time();
+timestamp = time.time()
 states = {}
 
 helpstring = """
@@ -103,7 +103,7 @@ def get_states(base_url, password=""):
         headers['x-ha-access'] = password
     r = requests.get(base_url+"/api/states", headers=headers)
     if r.status_code != 200:
-        print("Could not fetch states", file=sys.stderr);
+        print("Could not fetch states", file=sys.stderr)
         return
     states = {}
     for s in r.json():
