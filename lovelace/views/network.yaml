@@ -1,6 +1,6 @@
 title: Network
 icon: mdi:server-network
-theme: dark-mode
+theme: binary
 cards:
   - type: entity-filter
     entities:
