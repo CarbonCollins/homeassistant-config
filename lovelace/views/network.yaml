@@ -20,7 +20,8 @@ cards:
       title: Internet Route
   - type: vertical-stack
     cards:
-      - type: entity-filter
+      - type: glance
+        title: Internet Stats
         entities:
           - entity: sensor.speedtest_download
             icon: mdi:download
@@ -28,9 +29,6 @@ cards:
             icon: mdi:upload
           - entity: sensor.speedtest_ping
             icon: mdi:av-timer
-        card:
-          type: glance
-          title: Internet Stats
       - type: history-graph
         hours_to_show: 24
         refresh: 90
