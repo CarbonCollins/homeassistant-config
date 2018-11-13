@@ -7,6 +7,7 @@ alexa:
       - light.spare_room
       - light.landing
       - switch.butt_plug_lamp
+      - input_boolean.is_cooking
     exclude_domains:
       - alert
       - automation
@@ -47,3 +48,7 @@ alexa:
       name: Butt Plug Lamp
       description: The mighty butt plug lamp
       display_categories: LIGHT
+    input_boolean.is_cooking:
+      name: Cooking
+      description: A flag to set if you are cooking
+      display_categories: SWITCH
