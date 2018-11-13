@@ -1,0 +1,8 @@
+living_room_lights_off_condition:
+  alias: Turn off living room lights with condition
+  sequence:
+  - condition: template
+    value_template: '{{ (as_timestamp(now()) - as_timestamp(states.sensor.living_room_motion_sensor.last_updated)) > 250 }}'
+  - service: light.turn_off
+    data:
+      entity_id: light.living_room

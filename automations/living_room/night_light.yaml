@@ -28,4 +28,4 @@
       before: '06:30:00'
   action:
     - delay: '00:05:00'
-    - service: living_room_lights_off_condition
+    - service: script.living_room_lights_off_condition
