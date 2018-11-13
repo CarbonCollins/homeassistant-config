@@ -7,8 +7,8 @@
       to: 'on'
   condition:
     - condition: time
-      after: '01:00:00'
-      before: '07:00:00'
+      after: '00:00:01'
+      before: '06:30:00'
   action:
     - service: light.turn_on
       data:
@@ -24,10 +24,8 @@
       to: 'off'
   condition:
     - condition: time
-      after: '01:00:00'
-      before: '07:00:00'
+      after: '00:00:01'
+      before: '06:30:00'
   action:
-    - delay: '00:01:00'
-    - service: light.turn_off
-      data:
-        entity_id: light.living_room
+    - delay: '00:05:00'
+    - service: living_room_lights_off_condition

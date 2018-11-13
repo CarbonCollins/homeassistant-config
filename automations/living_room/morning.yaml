@@ -2,7 +2,7 @@
   alias: Living Room morning lights
   trigger:
     - platform: time
-      at: '07:00:00'
+      at: '06:30:00'
   condition:
     - condition: time
       weekday:
@@ -16,4 +16,4 @@
       data:
         entity_id: light.living_room
         kelvin: 2700
-        brightness: 128
+        brightness: 48
