@@ -4,6 +4,7 @@ living_room_lights_on:
     - service: light.turn_on
       data_template:
         entity_id: light.living_room
+        kelvin: 2700
         brightness: >
           {%- if now().hour| int >= 22 %}
             50

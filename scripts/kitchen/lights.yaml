@@ -4,6 +4,7 @@ kitchen_lights_on:
     - service: light.turn_on
       data_template:
         entity_id: light.kitchen
+        kelvin: 2700
         brightness: >
           {%- if is_state('input_boolean.cooking', 'on') %}
             255

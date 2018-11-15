@@ -4,6 +4,7 @@ landing_lights_on:
     - service: light.turn_on
       data_template:
         entity_id: light.landing
+        kelvin: 2700
         brightness: >
           {%- if now().hour| int >= 22 %}
             50

@@ -17,54 +17,6 @@
       data:
         entity_id: light.living_room
 
-# - id: living_room_lights_brighten
-#   alias: Living Room lights brighten
-#   trigger:
-#   - entity_id: sensor.living_room_switch
-#     platform: state
-#   condition:
-#     # - condition: and
-#     #   conditions:
-#     #     - condition: state
-#     #       entity_id: light.living_room
-#     #       state: 'on'
-#     - condition: or
-#       conditions:
-#         - condition: state
-#           entity_id: sensor.living_room_switch
-#           state: 2_click
-#         - condition: state
-#           entity_id: sensor.living_room_switch
-#           state: 2_click_up
-#   action:
-#     - service: script.living_room_brighten
-
-# - id: living_room_lights_dim
-#   alias: Living Room lights dim
-#   trigger:
-#   - entity_id: sensor.living_room_switch
-#     platform: state
-#   condition:
-#     - condition: and
-#       conditions:
-#         - condition: state
-#           entity_id: light.living_room
-#           state: 'on'
-#         - condition: or
-#           conditions:
-#             - condition: state
-#               entity_id: sensor.living_room_switch
-#               state: 3_click
-#             - condition: state
-#               entity_id: sensor.living_room_switch
-#               state: 3_click_up
-#   action:
-#     - service: light.turn_on
-#       data:
-#         entity_id: light.living_room
-#         brightness: >
-#           {{ (states.light.living_room.attributes.brightness | default(0) | int) - 12 }}
-
 - id: living_room_lights_off
   alias: Living Room lights off
   trigger:
@@ -102,3 +54,12 @@
     - service: light.turn_off
       data:
         entity_id: light.bedroom
+    - service: light.turn_off
+      data:
+        entity_id: light.landing
+    - service: light.turn_off
+      data:
+        entity_id: light.spare_room
+    - service: switch.turn_off
+      data:
+        entity_id: switch.butt_plug_lamp
