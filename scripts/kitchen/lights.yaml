@@ -5,8 +5,12 @@ kitchen_lights_on:
       data:
         entity_id: light.kitchen
         brightness: >
-          {% if is_state('input_boolean.cooking', 'on') %}255
-          {% elif now().hour > 22 %}50
-          {% elif now().hour < 8 %}50
-          {% else %}200
+          {% if is_state('input_boolean.cooking', 'on') %}
+            255
+          {% elif now().hour > 22 %}
+            50
+          {% elif now().hour < 8 %}
+            50
+          {% else %}
+            200
           {% endif %}
