@@ -11,10 +11,10 @@
       to: 'on'
   condition: []
   action:
-    service: light.turn_on
-    data:
-      entity_id: light.kitchen
-      brightness: 255
+    - service: light.turn_on
+      data:
+        entity_id: light.kitchen
+        brightness: 255
 
 - id: no_detect_motion_kitchen
   alias: No motion detected in kitchen
@@ -34,11 +34,11 @@
       state: 'off'
     - condition: state
       entity_id: sensor.kitchen_motion_sensor
-      to: 'off'
+      state: 'off'
       for:
         minutes: 10
   action:
-    service: light.turn_off
-    data:
-      entity_id: light.kitchen
-      transition: 5
+    - service: light.turn_off
+      data:
+        entity_id: light.kitchen
+        transition: 5
