@@ -11,9 +11,6 @@ cards:
       - entity: sensor.landing_temperature
         icon: mdi:thermometer-lines
         name: Temperature
-      - entity: switch.landing_heater
-        icon: mdi:radiator
-        name: Heating
       - entity: sensor.landing_motion_sensor
         icon: mdi:run-fast
         name: Motion
