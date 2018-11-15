@@ -1,38 +1,12 @@
-kitchen_lights_fast_on:
-  alias: Turn on kitchen lights
+kitchen_lights_on:
+  alias: Turn Kitchen Lights On
   sequence:
-  - data:
-      entity_id: light.kitchen
-      brightness: 255
-    service: light.turn_on
-kitchen_lights_fast_off:
-  alias: Turn off kitchen lights
-  sequence:
-  - data:
-      entity_id: light.kitchen
-    service: light.turn_off
-
-kitchen_lights_slow_on:
-  alias: Turn on kitchen lights slowly
-  sequence:
-  - service: light.turn_on
-    data:
-      entity_id: light.kitchen
-      brightness: 255
-      transition: 5
-kitchen_lights_slow_off:
-  alias: Turn off kitchen lights slowly
-  sequence:
-  - service: light.turn_off
-    data:
-      entity_id: light.kitchen
-      transition: 5
-kitchen_lights_slow_off_min_condition:
-  alias: Turn off kitchen lights slowly with condition
-  sequence:
-  - condition: template
-    value_template: '{{ (as_timestamp(now()) - as_timestamp(states.sensor.kitchen_motion_sensor.last_updated)) > 250 }}'
-  - service: light.turn_off
-    data:
-      entity_id: light.kitchen
-      transition: 5
+    - service: light.turn_on
+      data:
+        entity_id: light.kitchen
+        brightness: >
+          {% if is_state('input_boolean.cooking', 'on') %}255
+          {% elif now().hour > 22 %}50
+          {% elif now().hour < 8 %}50
+          {% else %}200
+          {% endif %}
