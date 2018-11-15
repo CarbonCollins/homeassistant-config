@@ -11,8 +11,7 @@
       to: 'on'
   condition: []
   action:
-    - service: script.turn_on
-      entity_id: script.kitchen_lights_on
+    - service: script.kitchen_lights_on
 
 - id: no_detect_motion_kitchen
   alias: No motion detected in kitchen
