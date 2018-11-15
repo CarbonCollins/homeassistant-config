@@ -9,6 +9,8 @@ kitchen_lights_on:
             255
           {%- elif now().hour| int >= 22 %}
             50
+          {%- elif now().hour| int < 6 %}
+            5
           {%- elif now().hour| int < 8 %}
             50
           {%- else %}

@@ -43,6 +43,15 @@ cards:
             name: Upload
           - entity: sensor.speedtest_ping
             name: Ping
+  - type: entity-filter
+    entities:
+      - device_tracker.living_room_echo
+      - device_tracker.spare_room_echo
+    state_filter:
+      - 'home'
+    card:
+      type: glance
+      title: Devices
   # - type: entities
   #   title: DNS Resolutions
   #   entities:
