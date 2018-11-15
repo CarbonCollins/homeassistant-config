@@ -10,12 +10,10 @@
       entity_id: light.landing
       state: 'off'
   action:
-    - service: light.turn_on
-      data:
-        entity_id: light.landing
+    - service: script.landing_lights_on
 
 - id: no_motion_landing
-  alias: Turn off landing light 10 minutes after last movement
+  alias: Turn off landing light 1 minutes after last movement
   trigger:
     - platform: state
       entity_id: sensor.landing_motion_sensor
