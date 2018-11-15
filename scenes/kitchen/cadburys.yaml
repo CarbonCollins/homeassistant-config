@@ -1,0 +1,11 @@
+- name: Cadburys Kitchen
+  icon: mdi:washing-machine
+  entities:
+    light.kitchen_lamp:
+      state: on
+      rgb_color: [0,92,51]
+      brightness: 254
+    light.kitchen_ceiling:
+      state: on
+      rgb_color: [137,137,137]
+      brightness: 254

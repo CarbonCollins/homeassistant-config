@@ -1,0 +1,17 @@
+- name: Cadburys Living Room
+  icon: mdi:washing-machine
+  entities:
+    light.living_room_ceiling_1:
+      state: on
+      rgb_color: [0,92,51]
+      brightness: 254
+    light.living_room_ceiling_2:
+      state: on
+      rgb_color: [137,137,137]
+      brightness: 254
+    light.living_room_lamp_1:
+      state: on
+      rgb_color: [120,81,169]
+      brightness: 254
+    switch.butt_plug_lamp:
+      state: on

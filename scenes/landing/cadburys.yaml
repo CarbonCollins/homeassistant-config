@@ -1,0 +1,7 @@
+- name: Cadburys Landing
+  icon: mdi:washing-machine
+  entities:
+    light.landing_ceiling_1:
+      state: on
+      rgb_color: [0,92,51]
+      brightness: 254

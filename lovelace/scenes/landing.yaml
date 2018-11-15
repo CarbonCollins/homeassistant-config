@@ -61,3 +61,10 @@
   service: scene.turn_on
   service_data:
     entity_id: scene.joy_landing
+- type: call-service
+  icon: mdi:washing-machine
+  name: Cadburys
+  action_name: Nani da fuq
+  service: scene.turn_on
+  service_data:
+    entity_id: scene.cadburys_landing

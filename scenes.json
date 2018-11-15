@@ -180,6 +180,18 @@
         "[202,34,96]"
       ],
       "switch": true
+    },
+    {
+      "name": "Cadburys",
+      "id": "cadburys",
+      "button": "Nani da fuq",
+      "icon": "mdi:washing-machine",
+      "colors": [
+        "[120,81,169]",
+        "[0,92,51]",
+        "[137,137,137]"
+      ],
+      "switch": true
     }
   ]
 }
