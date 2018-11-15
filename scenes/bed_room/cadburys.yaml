@@ -7,7 +7,7 @@
       brightness: 254
     light.bedroom_ceiling_2:
       state: on
-      rgb_color: [33,33,33]
+      rgb_color: [108,60,12]
       brightness: 254
     light.bedroom_lamp:
       state: on
