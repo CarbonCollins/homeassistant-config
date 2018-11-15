@@ -7,7 +7,7 @@
       brightness: 254
     light.spare_room_ceiling_2:
       state: on
-      rgb_color: [137,137,137]
+      rgb_color: [33,33,33]
       brightness: 254
     light.spare_room_lamp:
       state: on

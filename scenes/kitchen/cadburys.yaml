@@ -7,5 +7,5 @@
       brightness: 254
     light.kitchen_ceiling:
       state: on
-      rgb_color: [137,137,137]
+      rgb_color: [33,33,33]
       brightness: 254
