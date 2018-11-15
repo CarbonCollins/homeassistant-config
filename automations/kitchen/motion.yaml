@@ -11,14 +11,19 @@
       to: 'on'
   condition: []
   action:
-    - service: script.kitchen_lights_fast_on
+    service: light.turn_on
+    data:
+      entity_id: light.kitchen
+      brightness: 255
+
 - id: no_detect_motion_kitchen
   alias: No motion detected in kitchen
   trigger:
     - platform: state
       entity_id: sensor.kitchen_motion_sensor
-      from: 'on'
       to: 'off'
+      for:
+        minutes: 10
     - platform: state
       entity_id: input_boolean.cooking
       from: 'on'
@@ -27,6 +32,13 @@
     - condition: state
       entity_id: input_boolean.cooking
       state: 'off'
+    - condition: state
+      entity_id: sensor.kitchen_motion_sensor
+      to: 'off'
+      for:
+        minutes: 10
   action:
-    - delay: '00:05:00'
-    - service: script.kitchen_lights_slow_off_min_condition
+    service: light.turn_off
+    data:
+      entity_id: light.kitchen
+      transition: 5
