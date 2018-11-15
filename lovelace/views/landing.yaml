@@ -1,0 +1,28 @@
+title: Landing
+icon: mdi:hanger
+theme: binary
+cards:
+  - type: glance
+    title: Environment
+    entities:
+      - entity: sensor.landing_light_level
+        icon: mdi:lightbulb-on-outline
+        name: Light Level
+      - entity: sensor.landing_temperature
+        icon: mdi:thermometer-lines
+        name: Temperature
+      - entity: switch.landing_heater
+        icon: mdi:radiator
+        name: Heating
+      - entity: sensor.landing_motion_sensor
+        icon: mdi:run-fast
+        name: Motion
+  - type: entities
+    title: Lights
+    entities:
+      - entity: light.landing_ceiling_1
+        icon: mdi:ceiling-light
+        name: Ceiling
+  - type: entities
+    title: Scenes
+    entities: !include scenes/landing.yaml
