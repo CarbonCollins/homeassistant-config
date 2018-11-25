@@ -5,15 +5,12 @@
       entity_id: sensor.living_room_motion_sensor
       from: 'off'
       to: 'on'
-  condition:
-    - condition: time
-      after: '00:00:00'
-      before: '06:30:00'
+  condition: []
   action:
     - service: script.living_room_lights_on
 
-- id: no_detect_motion_living_room
-  alias: No motion detected in Living Room
+- id: no_detect_motion_living_room_day
+  alias: No motion detected in Living Room day
   trigger:
     - platform: state
       entity_id: sensor.living_room_motion_sensor
@@ -22,7 +19,23 @@
         minutes: 5
   condition:
     - condition: time
-      after: '00:00:00'
+      after: '06:30:00'
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.living_room
+        transition: 30
+
+- id: no_detect_motion_living_room_night
+  alias: No motion detected in Living Room night
+  trigger:
+    - platform: state
+      entity_id: sensor.living_room_motion_sensor
+      to: 'off'
+      for:
+        minutes: 5
+  condition:
+    - condition: time
       before: '06:30:00'
   action:
     - service: light.turn_off
