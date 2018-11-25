@@ -11,6 +11,6 @@
   min_cycle_duration:
     minutes: 3
   keep_alive:
-    minutes: 5
+    minutes: 1
   initial_operation_mode: "off"
   away_temp: 16
