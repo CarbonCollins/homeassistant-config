@@ -1,5 +1,20 @@
 push:
   categories:
+    - name: Spare Room Visitor
+      identifier: 'visitor'
+      actions:
+        - identifier: 'STAYING_OVER'
+          title: 'Staying Over'
+          activationMode: 'foreground'
+          authenticationRequired: no
+          destructive: no
+          behavior: 'default'
+        - identifier: 'JUST_VISITING'
+          title: 'Just Visiting'
+          activationMode: 'background'
+          authenticationRequired: no
+          destructive: no
+          behavior: 'default'
     - name: Alarm
       identifier: 'alarm'
       actions:
