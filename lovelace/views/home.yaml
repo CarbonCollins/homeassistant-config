@@ -89,7 +89,7 @@ cards:
       state_image:
         "on": /local/rooms/spare_room_on.jpeg
         "off": /local/rooms/spare_room_off.jpeg
-      entity: light.bedroom
+      entity: light.spare_room
   - type: vertical-stack
     cards:
     - type: entities
