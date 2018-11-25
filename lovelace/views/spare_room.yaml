@@ -2,31 +2,33 @@ title: Spare Room
 icon: mdi:desk-lamp
 theme: binary
 cards:
-  - type: glance
-    title: Environment
-    entities:
-      - entity: sensor.spare_room_light_level
-        icon: mdi:lightbulb-on-outline
-        name: Light Level
-      - entity: sensor.spare_room_temperature
-        icon: mdi:thermometer-lines
-        name: Temperature
-      - entity: switch.spare_room_heater
-        icon: mdi:radiator
-        name: Heating
-      - entity: sensor.spare_room_motion_sensor
-        icon: mdi:run-fast
-        name: Motion
-  - type: thermostat
-    entity: climate.spare_room
-  - type: horizontal-stack
+  - type: vertical-stack
     cards:
-      - type: light
-        entity: light.spare_room_ceiling
-        name: Ceiling
-      - type: light
-        entity: light.spare_room_lamp
-        name: Lamp
+      - type: thermostat
+        entity: climate.spare_room
+      - type: horizontal-stack
+        cards:
+          - type: light
+            entity: light.spare_room_ceiling
+            name: Ceiling
+          - type: light
+            entity: light.spare_room_lamp
+            name: Lamp
+      - type: glance
+        title: Environment
+        entities:
+          - entity: sensor.spare_room_light_level
+            icon: mdi:lightbulb-on-outline
+            name: Light Level
+          - entity: sensor.spare_room_temperature
+            icon: mdi:thermometer-lines
+            name: Temperature
+          - entity: switch.spare_room_heater
+            icon: mdi:radiator
+            name: Heating
+          - entity: sensor.spare_room_motion_sensor
+            icon: mdi:run-fast
+            name: Motion
   # - type: entities
   #   title: Temperature
   #   show_header_toggle: false
