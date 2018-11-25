@@ -26,12 +26,11 @@
 #     - light.bedroom_ceiling_1
 #     - light.bedroom_ceiling_2
 #     - light.bedroom_lamp
-# - platform: group
-#   name: Spare Room
-#   entities:
-#     - light.spare_room_ceiling_1
-#     - light.spare_room_ceiling_2
-#     - light.spare_room_lamp
+- platform: group
+  name: Spare Room Ceiling
+  entities:
+    - light.spare_room_ceiling_1
+    - light.spare_room_ceiling_2
 # - platform: group
 #   name: Landing
 #   entities:
