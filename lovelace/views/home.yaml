@@ -9,6 +9,7 @@ cards:
         - device_tracker.steven
         - device_tracker.kelsey
         - device_tracker.oscar
+        - device_tracker.jimmy
       state_filter:
         - 'home'
       card:
@@ -86,8 +87,8 @@ cards:
         - sensor.spare_room_light_level
         - sensor.spare_room_motion_sensor
       state_image:
-        "on": /local/rooms/bedroom_on.jpeg
-        "off": /local/rooms/bedroom_off.jpeg
+        "on": /local/rooms/spare_room_on.jpeg
+        "off": /local/rooms/spare_room_off.jpeg
       entity: light.bedroom
   - type: vertical-stack
     cards:
