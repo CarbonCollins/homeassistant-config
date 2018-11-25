@@ -1,0 +1,30 @@
+- id: notify_oscar_arrival
+  alias: Notify when Oscar arrives
+  trigger:
+    - platform: state
+      entity_id: device_tracker.oscar
+      to: 'home'
+  condition: []
+  action:
+    - service: notify.ios_steven
+      data:
+        message: "Oscar has arrived! Is it for long?"
+        data:
+          push:
+            badge: 1
+            category: "visitor"
+- id: notify_jimmy_arrival
+  alias: Notify when Jimmy arrives
+  trigger:
+    - platform: state
+      entity_id: device_tracker.jimmy
+      to: 'home'
+  condition: []
+  action:
+    - service: notify.ios_steven
+      data:
+        message: "Jimmy has arrived! Is it for long?"
+        data:
+          push:
+            badge: 1
+            category: "visitor"
