@@ -1,0 +1,16 @@
+- platform: generic_thermostat
+  name: Spare Room
+  heater: switch.spare_room_heater
+  target_sensor: sensor.spare_room_temperature
+  min_temp: 15
+  max_temp: 25
+  ac_mode: False
+  target_temp: 18
+  cold_tolerance: 0.3
+  hot_tolerance: 0
+  min_cycle_duration:
+    minutes: 3
+  keep_alive:
+    minutes: 5
+  initial_operation_mode: "off"
+  away_temp: 16

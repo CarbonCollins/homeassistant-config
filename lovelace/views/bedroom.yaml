@@ -31,6 +31,7 @@ cards:
         name: Motion
   - type: entities
     title: Lights
+    show_header_toggle: true
     entities:
       - entity: light.bedroom_ceiling_1
         icon: mdi:ceiling-light

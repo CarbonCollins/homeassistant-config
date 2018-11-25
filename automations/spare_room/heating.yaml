@@ -1,24 +1,24 @@
-- id: spare_room_heating_on
-  alias: Spare room heating on state management
-  trigger:
-    - platform: template
-      value_template: "{{ states.sensor.spare_room_temperature.state | float < (float(states.input_number.target_spare_room_temperature.state) - 0.5) | float }}"
-  condition:
-    - condition: state
-      entity_id: switch.spare_room_heater
-      state: 'off'
-  action:
-    - service: switch.turn_on
-      entity_id: switch.spare_room_heater
-- id: spare_room_heating_off
-  alias: Spare room heating off state management
-  trigger:
-    - platform: template
-      value_template: "{{ states.sensor.spare_room_temperature.state | float > states.input_number.target_spare_room_temperature.state | float }}"
-  condition:
-    - condition: state
-      entity_id: switch.spare_room_heater
-      state: 'on'
-  action:
-    - service: switch.turn_off
-      entity_id: switch.spare_room_heater
+# - id: spare_room_heating_on
+#   alias: Spare room heating on state management
+#   trigger:
+#     - platform: template
+#       value_template: "{{ states.sensor.spare_room_temperature.state | float < (float(states.input_number.target_spare_room_temperature.state) - 0.5) | float }}"
+#   condition:
+#     - condition: state
+#       entity_id: switch.spare_room_heater
+#       state: 'off'
+#   action:
+#     - service: switch.turn_on
+#       entity_id: switch.spare_room_heater
+# - id: spare_room_heating_off
+#   alias: Spare room heating off state management
+#   trigger:
+#     - platform: template
+#       value_template: "{{ states.sensor.spare_room_temperature.state | float > states.input_number.target_spare_room_temperature.state | float }}"
+#   condition:
+#     - condition: state
+#       entity_id: switch.spare_room_heater
+#       state: 'on'
+#   action:
+#     - service: switch.turn_off
+#       entity_id: switch.spare_room_heater
