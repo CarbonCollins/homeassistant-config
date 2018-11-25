@@ -16,7 +16,7 @@
       entity_id: sensor.living_room_motion_sensor
       to: 'off'
       for:
-        minutes: 5
+        minutes: 30
   condition:
     - condition: time
       after: '06:30:00'
@@ -24,7 +24,7 @@
     - service: light.turn_off
       data:
         entity_id: light.living_room
-        transition: 30
+        transition: 10
 
 - id: no_detect_motion_living_room_night
   alias: No motion detected in Living Room night
