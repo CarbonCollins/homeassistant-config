@@ -17,23 +17,25 @@ cards:
       - entity: sensor.spare_room_motion_sensor
         icon: mdi:run-fast
         name: Motion
-  - type: entities
-    title: Temperature
-    show_header_toggle: false
-    entities:
-      - entity: switch.spare_room_heater
-        icon: mdi:radiator
-        name: Heating
-      - type: divider
-      - entity: sensor.spare_room_temperature
-        icon: mdi:thermometer-lines
-        name: Current
-      - entity: input_number.target_spare_room_temperature
-        icon: mdi:target
-        name: Target
-      - entity: sensor.spare_room_temperature_delta
-        icon: mdi:delta
-        name: Delta
+  - type: thermostat
+    entity: climate.spare_room
+  # - type: entities
+  #   title: Temperature
+  #   show_header_toggle: false
+  #   entities:
+  #     - entity: switch.spare_room_heater
+  #       icon: mdi:radiator
+  #       name: Heating
+  #     - type: divider
+  #     - entity: sensor.spare_room_temperature
+  #       icon: mdi:thermometer-lines
+  #       name: Current
+  #     - entity: input_number.target_spare_room_temperature
+  #       icon: mdi:target
+  #       name: Target
+  #     - entity: sensor.spare_room_temperature_delta
+  #       icon: mdi:delta
+  #       name: Delta
   - type: entities
     title: Lights
     entities:
