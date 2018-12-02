@@ -63,6 +63,8 @@ cards:
     card:
       type: glance
       title: Devices
+      columns: 3
+      theme: binary
   # - type: entities
   #   title: DNS Resolutions
   #   entities:
