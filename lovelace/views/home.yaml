@@ -99,6 +99,13 @@ cards:
         graph: line
         icon: mdi:thermometer-lines
         detail: 2
+      - type: sensor
+        entity: sensor.house_average_light_level
+        name: Home Light Level
+        height: 75
+        graph: line
+        icon: mdi:lightbulb-on-outline
+        detail: 2
     # - type: entities
     #   title: Room Temperatures
     #   entities:
@@ -138,27 +145,27 @@ cards:
           - entity: sensor.landing_motion_sensor
             icon: mdi:hanger
             name: Landing
-      - type: entities
-        title: Light Levels
-        entities:
-          - entity: sensor.house_average_light_level
-            icon: mdi:lightbulb-on-outline
-            name: Average
-          - entity: sensor.living_room_light_level
-            icon: mdi:sofa
-            name: Living Room
-          - entity: sensor.kitchen_light_level
-            icon: mdi:fridge
-            name: Kitchen
-          - entity: sensor.bedroom_light_level
-            icon: mdi:hotel
-            name: Bedroom
-          - entity: sensor.spare_room_light_level
-            icon: mdi:desk-lamp
-            name: Spare Room
-          - entity: sensor.landing_light_level
-            icon: mdi:hanger
-            name: Landing
+      # - type: entities
+      #   title: Light Levels
+      #   entities:
+      #     - entity: sensor.house_average_light_level
+      #       icon: mdi:lightbulb-on-outline
+      #       name: Average
+      #     - entity: sensor.living_room_light_level
+      #       icon: mdi:sofa
+      #       name: Living Room
+      #     - entity: sensor.kitchen_light_level
+      #       icon: mdi:fridge
+      #       name: Kitchen
+      #     - entity: sensor.bedroom_light_level
+      #       icon: mdi:hotel
+      #       name: Bedroom
+      #     - entity: sensor.spare_room_light_level
+      #       icon: mdi:desk-lamp
+      #       name: Spare Room
+      #     - entity: sensor.landing_light_level
+      #       icon: mdi:hanger
+      #       name: Landing
       - type: entities
         title: Scenes
         entities: !include scenes/home.yaml
