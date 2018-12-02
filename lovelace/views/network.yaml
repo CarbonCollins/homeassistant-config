@@ -51,7 +51,7 @@ cards:
         name: Spare Room Echo
       - entity: device_tracker.kitchen_echo
         name: Kitchen Echo
-      - entity: device_tracker.butt_plug_switch
+      - entity: device_tracker.butt_plug_lamp_switch
         name: Butt Plug Switch
       - entity: device_tracker.spare_room_heater_switch
         name: Spare Room Heater
