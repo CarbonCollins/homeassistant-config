@@ -127,7 +127,7 @@ cards:
     #     - entity: sensor.landing_temperature
     #       icon: mdi:hanger
     #       name: Landing
-      - type: entities
+      - type: glance
         title: Motion
         entities:
           - entity: sensor.living_room_motion_sensor
