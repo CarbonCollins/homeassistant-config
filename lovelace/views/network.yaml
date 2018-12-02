@@ -45,8 +45,18 @@ cards:
             name: Ping
   - type: entity-filter
     entities:
-      - device_tracker.living_room_echo
-      - device_tracker.spare_room_echo
+      - entity: device_tracker.living_room_echo
+        name: Living Room Echo
+      - entity: device_tracker.spare_room_echo
+        name: Spare Room Echo
+      - entity: device_tracker.kitchen_echo
+        name: Kitchen Echo
+      - entity: device_tracker.butt_plug_switch
+        name: Butt Plug Switch
+      - entity: device_tracker.spare_room_heater_switch
+        name: Spare Room Heater
+      - entity: device_tracker.bedroom_heater_switch
+        name: Bedroom Heater
     state_filter:
       - 'home'
     card:
