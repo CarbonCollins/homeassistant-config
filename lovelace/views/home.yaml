@@ -168,6 +168,7 @@ cards:
       #       name: Landing
       - type: glance
         title: Scenes
+        show_state: false
         entities: !include scenes/home.yaml
       - type: history-graph
         name: Temperature
