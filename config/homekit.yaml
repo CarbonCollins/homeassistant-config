@@ -1,5 +1,5 @@
-auto_start: true
+auto_start: false
 name: Home Assistant Bridge
-entity_config:
-  light.kitchen:
-    name: Kitchen
+filter:
+  include_domains:
+    - light
