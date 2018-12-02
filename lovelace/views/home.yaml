@@ -92,78 +92,85 @@ cards:
       entity: light.spare_room
   - type: vertical-stack
     cards:
-    - type: entities
-      title: Room Temperatures
-      entities:
-        - entity: sensor.house_average_temperature
-          icon: mdi:thermometer-lines
-          name: Average
-        - entity: sensor.living_room_temperature
-          icon: mdi:sofa
-          name: Living Room
-        - entity: sensor.kitchen_temperature
-          icon: mdi:fridge
-          name: Kicthen
-        - entity: sensor.bedroom_temperature
-          icon: mdi:hotel
-          name: Bedroom
-        - entity: sensor.spare_room_temperature
-          icon: mdi:desk-lamp
-          name: Spare Room
-        - entity: sensor.landing_temperature
-          icon: mdi:hanger
-          name: Landing
-    - type: entities
-      title: Motion
-      entities:
-        - entity: sensor.living_room_motion_sensor
-          icon: mdi:sofa
-          name: Living Room
-        - entity: sensor.kitchen_motion_sensor
-          icon: mdi:fridge
-          name: Kitchen
-        - entity: sensor.bedroom_motion_sensor
-          icon: mdi:hotel
-          name: Bedroom
-        - entity: sensor.spare_room_motion_sensor
-          icon: mdi:desk-lamp
-          name: Spare Room
-        - entity: sensor.landing_motion_sensor
-          icon: mdi:hanger
-          name: Landing
-    - type: entities
-      title: Light Levels
-      entities:
-        - entity: sensor.house_average_light_level
-          icon: mdi:lightbulb-on-outline
-          name: Average
-        - entity: sensor.living_room_light_level
-          icon: mdi:sofa
-          name: Living Room
-        - entity: sensor.kitchen_light_level
-          icon: mdi:fridge
-          name: Kitchen
-        - entity: sensor.bedroom_light_level
-          icon: mdi:hotel
-          name: Bedroom
-        - entity: sensor.spare_room_light_level
-          icon: mdi:desk-lamp
-          name: Spare Room
-        - entity: sensor.landing_light_level
-          icon: mdi:hanger
-          name: Landing
-    - type: entities
-      title: Scenes
-      entities: !include scenes/home.yaml
-    - type: history-graph
-      name: Temperature
-      hours_to_show: 24
-      refresh: 90
-      entities:
-        - sensor.air_temp
-        - sensor.road_temp
-        - sensor.living_room_temperature
-        - sensor.kitchen_temperature
-        - sensor.bedroom_temperature
-        - sensor.spare_room_temperature
-        - sensor.landing_temperature
+      - type: sensor
+        entity: sensor.house_average_temperature
+        name: Home Temperature
+        height: 75
+        graph: line
+        icon: mdi:thermometer-lines
+        detail: 2
+    # - type: entities
+    #   title: Room Temperatures
+    #   entities:
+    #     - entity: sensor.house_average_temperature
+    #       icon: mdi:thermometer-lines
+    #       name: Average
+    #     - entity: sensor.living_room_temperature
+    #       icon: mdi:sofa
+    #       name: Living Room
+    #     - entity: sensor.kitchen_temperature
+    #       icon: mdi:fridge
+    #       name: Kicthen
+    #     - entity: sensor.bedroom_temperature
+    #       icon: mdi:hotel
+    #       name: Bedroom
+    #     - entity: sensor.spare_room_temperature
+    #       icon: mdi:desk-lamp
+    #       name: Spare Room
+    #     - entity: sensor.landing_temperature
+    #       icon: mdi:hanger
+    #       name: Landing
+      - type: entities
+        title: Motion
+        entities:
+          - entity: sensor.living_room_motion_sensor
+            icon: mdi:sofa
+            name: Living Room
+          - entity: sensor.kitchen_motion_sensor
+            icon: mdi:fridge
+            name: Kitchen
+          - entity: sensor.bedroom_motion_sensor
+            icon: mdi:hotel
+            name: Bedroom
+          - entity: sensor.spare_room_motion_sensor
+            icon: mdi:desk-lamp
+            name: Spare Room
+          - entity: sensor.landing_motion_sensor
+            icon: mdi:hanger
+            name: Landing
+      - type: entities
+        title: Light Levels
+        entities:
+          - entity: sensor.house_average_light_level
+            icon: mdi:lightbulb-on-outline
+            name: Average
+          - entity: sensor.living_room_light_level
+            icon: mdi:sofa
+            name: Living Room
+          - entity: sensor.kitchen_light_level
+            icon: mdi:fridge
+            name: Kitchen
+          - entity: sensor.bedroom_light_level
+            icon: mdi:hotel
+            name: Bedroom
+          - entity: sensor.spare_room_light_level
+            icon: mdi:desk-lamp
+            name: Spare Room
+          - entity: sensor.landing_light_level
+            icon: mdi:hanger
+            name: Landing
+      - type: entities
+        title: Scenes
+        entities: !include scenes/home.yaml
+      - type: history-graph
+        name: Temperature
+        hours_to_show: 24
+        refresh: 90
+        entities:
+          - sensor.air_temp
+          - sensor.road_temp
+          - sensor.living_room_temperature
+          - sensor.kitchen_temperature
+          - sensor.bedroom_temperature
+          - sensor.spare_room_temperature
+          - sensor.landing_temperature
