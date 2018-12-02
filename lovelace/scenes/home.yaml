@@ -3,8 +3,6 @@
   name: Autumn
   tap_action: call-service
   service: scene.turn_on
-  service_data:
-    entity_id: scene.autumn_home
 
 # - type: call-service
 #   icon: mdi:leaf
