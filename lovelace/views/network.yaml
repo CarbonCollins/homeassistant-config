@@ -59,6 +59,7 @@ cards:
         name: Bedroom Heater
     state_filter:
       - 'home'
+      - 'not_home'
     card:
       type: glance
       title: Devices
