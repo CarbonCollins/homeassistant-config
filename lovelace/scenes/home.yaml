@@ -1,70 +1,78 @@
-- type: call-service
+- entity: scene.autumn_home
   icon: mdi:leaf
   name: Autumn
-  action_name: Leaf me alone
+  tap_action: toggle
   service: scene.turn_on
   service_data:
     entity_id: scene.autumn_home
-- type: call-service
-  icon: mdi:candycane
-  name: Cotton Candy
-  action_name: Sugar me daddy
-  service: scene.turn_on
-  service_data:
-    entity_id: scene.cotton_candy_home
-- type: call-service
-  icon: mdi:gender-transgender
-  name: Bi Pride
-  action_name: Bi Bi Bi
-  service: scene.turn_on
-  service_data:
-    entity_id: scene.bi_pride_home
-- type: call-service
-  icon: mdi:flower-tulip-outline
-  name: Tulip Fields
-  action_name: Dutch Spring
-  service: scene.turn_on
-  service_data:
-    entity_id: scene.tulip_fields_home
-- type: call-service
-  icon: mdi:water
-  name: Under Da Sea
-  action_name: sploosh
-  service: scene.turn_on
-  service_data:
-    entity_id: scene.under_da_sea_home
-- type: call-service
-  icon: mdi:weather-sunset
-  name: Vaporwave
-  action_name: Time to go retro
-  service: scene.turn_on
-  service_data:
-    entity_id: scene.vaporwave_home
-- type: call-service
-  icon: mdi:eye-off
-  name: Blind
-  action_name: Kill the eyes
-  service: scene.turn_on
-  service_data:
-    entity_id: scene.blind_home
-- type: call-service
-  icon: mdi:weather-sunny
-  name: Tangled
-  action_name: frying pan
-  service: scene.turn_on
-  service_data:
-    entity_id: scene.tangled_home
-- type: call-service
-  icon: mdi:emoticon-happy
-  name: Joy
-  action_name: I don't know
-  service: scene.turn_on
-  service_data:
-    entity_id: scene.joy_home
-- type: call-service
-  icon: mdi:washing-machine
-  name: Cadburys
-  action_name: Nani da fuq
-  service: scene.turn_on
-  service_data:
-    entity_id: scene.cadburys_home
+
+# - type: call-service
+#   icon: mdi:leaf
+#   name: Autumn
+#   action_name: Leaf me alone
+#   service: scene.turn_on
+#   service_data:
+#     entity_id: scene.autumn_home
+# - type: call-service
+#   icon: mdi:candycane
+#   name: Cotton Candy
+#   action_name: Sugar me daddy
+#   service: scene.turn_on
+#   service_data:
+#     entity_id: scene.cotton_candy_home
+# - type: call-service
+#   icon: mdi:gender-transgender
+#   name: Bi Pride
+#   action_name: Bi Bi Bi
+#   service: scene.turn_on
+#   service_data:
+#     entity_id: scene.bi_pride_home
+# - type: call-service
+#   icon: mdi:flower-tulip-outline
+#   name: Tulip Fields
+#   action_name: Dutch Spring
+#   service: scene.turn_on
+#   service_data:
+#     entity_id: scene.tulip_fields_home
+# - type: call-service
+#   icon: mdi:water
+#   name: Under Da Sea
+#   action_name: sploosh
+#   service: scene.turn_on
+#   service_data:
+#     entity_id: scene.under_da_sea_home
+# - type: call-service
+#   icon: mdi:weather-sunset
+#   name: Vaporwave
+#   action_name: Time to go retro
+#   service: scene.turn_on
+#   service_data:
+#     entity_id: scene.vaporwave_home
+# - type: call-service
+#   icon: mdi:eye-off
+#   name: Blind
+#   action_name: Kill the eyes
+#   service: scene.turn_on
+#   service_data:
+#     entity_id: scene.blind_home
+# - type: call-service
+#   icon: mdi:weather-sunny
+#   name: Tangled
+#   action_name: frying pan
+#   service: scene.turn_on
+#   service_data:
+#     entity_id: scene.tangled_home
+# - type: call-service
+#   icon: mdi:emoticon-happy
+#   name: Joy
+#   action_name: I don't know
+#   service: scene.turn_on
+#   service_data:
+#     entity_id: scene.joy_home
+# - type: call-service
+#   icon: mdi:washing-machine
+#   name: Cadburys
+#   action_name: Nani da fuq
+#   service: scene.turn_on
+#   service_data:
+#     entity_id: scene.cadburys_home
