@@ -2,10 +2,10 @@
   icon: mdi:leaf
   name: Autumn
   tap_action: call-service
+  action_name: Leaf me alone
   service: scene.turn_on
   service_data:
     entity_id: scene.autumn_home
-    action_name: Leaf me alone
 
 # - type: call-service
 #   icon: mdi:leaf
