@@ -166,7 +166,7 @@ cards:
       #     - entity: sensor.landing_light_level
       #       icon: mdi:hanger
       #       name: Landing
-      - type: entities
+      - type: glance
         title: Scenes
         entities: !include scenes/home.yaml
       - type: history-graph
