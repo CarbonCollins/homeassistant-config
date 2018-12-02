@@ -1,0 +1,32 @@
+- id: no_one_home
+  alias: Turn lights off when no one is home
+  trigger:
+    - platform: state
+      entity_id: device_tracker.steven
+      to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.kelsey
+      to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.visitor_1
+      to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.visitor_2
+      to: 'not_home'
+  condition:
+    - condition: state
+      entity_id: device_tracker.steven
+      state: 'not_home'
+    - condition: state
+      entity_id: device_tracker.kelsey
+      state: 'not_home'
+    - condition: state
+      entity_id: device_tracker.visitor_1
+      state: 'not_home'
+    - condition: state
+      entity_id: device_tracker.visitor_2
+      state: 'not_home'
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.home
