@@ -1,0 +1,26 @@
+- id: detect_spare_room
+  alias: Motion detected in Spare Room
+  trigger:
+    - platform: state
+      entity_id: sensor.spare_room_motion_sensor
+      from: 'off'
+      to: 'on'
+  condition: []
+  action:
+    - service: script.spare_room_lights_on
+
+- id: no_detect_motion_spare_room_day
+  alias: No motion detected in Spare Room day
+  trigger:
+    - platform: state
+      entity_id: sensor.spare_room_motion_sensor
+      to: 'off'
+      for:
+        minutes: 30
+  condition: []
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.spare_room
+        transition: 10
+
