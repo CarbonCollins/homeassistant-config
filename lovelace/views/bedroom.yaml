@@ -2,23 +2,8 @@ title: Bedroom
 icon: mdi:hotel
 theme: dark-mode
 cards:
-  - type: entities
-    title: Temperature
-    show_header_toggle: false
-    entities:
-      - entity: switch.bedroom_heater
-        icon: mdi:radiator
-        name: Heating
-      - type: divider
-      - entity: sensor.bedroom_temperature
-        icon: mdi:thermometer-lines
-        name: Current
-      - entity: input_number.target_bedroom_temperature
-        icon: mdi:target
-        name: Target
-      - entity: sensor.bedroom_temperature_delta
-        icon: mdi:delta
-        name: Delta
+  - type: thermostat
+    entity: climate.bedroom
   - type: entities
     title: Environment
     show_header_toggle: false
