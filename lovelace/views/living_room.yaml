@@ -29,6 +29,7 @@ cards:
       - entity: light.living_room_ceiling_2
         icon: mdi:ceiling-light
         name: Ceiling 2
-  - type: entities
+  - type: glance
     title: Scenes
+    show_state: false
     entities: !include scenes/living_room.yaml

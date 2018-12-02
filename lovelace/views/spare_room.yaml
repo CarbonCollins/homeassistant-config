@@ -58,6 +58,7 @@ cards:
       - entity: light.spare_room_lamp
         icon: mdi:lava-lamp
         name: Lamp
-  - type: entities
+  - type: glance
     title: Scenes
+    show_state: false
     entities: !include scenes/spare_room.yaml

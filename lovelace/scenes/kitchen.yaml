@@ -1,70 +1,50 @@
-- type: call-service
+- entity: scene.autumn_kitchen 
+  tap_action: call-service
   icon: mdi:leaf
   name: Autumn
-  action_name: Leaf me alone
   service: scene.turn_on
-  service_data:
-    entity_id: scene.autumn_kitchen
-- type: call-service
+- entity: scene.cotton_candy_kitchen 
+  tap_action: call-service
   icon: mdi:candycane
   name: Cotton Candy
-  action_name: Sugar me daddy
   service: scene.turn_on
-  service_data:
-    entity_id: scene.cotton_candy_kitchen
-- type: call-service
+- entity: scene.bi_pride_kitchen 
+  tap_action: call-service
   icon: mdi:gender-transgender
   name: Bi Pride
-  action_name: Bi Bi Bi
   service: scene.turn_on
-  service_data:
-    entity_id: scene.bi_pride_kitchen
-- type: call-service
+- entity: scene.tulip_fields_kitchen 
+  tap_action: call-service
   icon: mdi:flower-tulip-outline
   name: Tulip Fields
-  action_name: Dutch Spring
   service: scene.turn_on
-  service_data:
-    entity_id: scene.tulip_fields_kitchen
-- type: call-service
+- entity: scene.under_da_sea_kitchen 
+  tap_action: call-service
   icon: mdi:water
   name: Under Da Sea
-  action_name: sploosh
   service: scene.turn_on
-  service_data:
-    entity_id: scene.under_da_sea_kitchen
-- type: call-service
+- entity: scene.vaporwave_kitchen 
+  tap_action: call-service
   icon: mdi:weather-sunset
   name: Vaporwave
-  action_name: Time to go retro
   service: scene.turn_on
-  service_data:
-    entity_id: scene.vaporwave_kitchen
-- type: call-service
+- entity: scene.blind_kitchen 
+  tap_action: call-service
   icon: mdi:eye-off
   name: Blind
-  action_name: Kill the eyes
   service: scene.turn_on
-  service_data:
-    entity_id: scene.blind_kitchen
-- type: call-service
+- entity: scene.tangled_kitchen 
+  tap_action: call-service
   icon: mdi:weather-sunny
   name: Tangled
-  action_name: frying pan
   service: scene.turn_on
-  service_data:
-    entity_id: scene.tangled_kitchen
-- type: call-service
+- entity: scene.joy_kitchen 
+  tap_action: call-service
   icon: mdi:emoticon-happy
   name: Joy
-  action_name: I don't know
   service: scene.turn_on
-  service_data:
-    entity_id: scene.joy_kitchen
-- type: call-service
+- entity: scene.cadburys_kitchen 
+  tap_action: call-service
   icon: mdi:washing-machine
   name: Cadburys
-  action_name: Nani da fuq
   service: scene.turn_on
-  service_data:
-    entity_id: scene.cadburys_kitchen

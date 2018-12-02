@@ -20,6 +20,7 @@ cards:
       - entity: light.landing_ceiling_1
         icon: mdi:ceiling-light
         name: Ceiling
-  - type: entities
+  - type: glance
     title: Scenes
+    show_state: false
     entities: !include scenes/landing.yaml

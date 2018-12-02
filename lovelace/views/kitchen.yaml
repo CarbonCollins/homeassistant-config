@@ -30,7 +30,8 @@ cards:
       - entity: input_boolean.cooking
         icon: mdi:stove
         name: Is Cooking
-  - type: entities
+  - type: glance
     title: Scenes
+    show_state: false
     entities: !include scenes/kitchen.yaml
 

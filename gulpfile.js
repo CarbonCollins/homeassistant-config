@@ -34,13 +34,11 @@ function generateButtonYAML(scenes, room) {
   let buttonsYAML = '';
   
   scenes.slice(0).map(scene => {
-    buttonsYAML += `- type: call-service
+    buttonsYAML += `- entity: scene.${scene.id}_${room.id} 
+  tap_action: call-service
   icon: ${scene.icon}
   name: ${scene.name}
-  action_name: ${scene.button}
   service: scene.turn_on
-  service_data:
-    entity_id: scene.${scene.id}_${room.id}
 `;
   });
 
