@@ -1,0 +1,14 @@
+
+- id: bedroom_heating_disconnected
+  alias: Bedoom heating is disconnected
+  trigger:
+    - platform: state
+      entity_id: device_tracker.bedroom_heater_switch
+      to: 'not_home'
+      for:
+        minutes: 5
+  action:
+    service: notify.ios_steven
+      data:
+        title: "Heating Disconnected"
+        message: "The heater in the bedroom has been disconnected from the network."

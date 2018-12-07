@@ -22,3 +22,16 @@
 #   action:
 #     - service: switch.turn_off
 #       entity_id: switch.spare_room_heater
+- id: spare_room_heating_disconnected
+  alias: Spare Room heating is disconnected
+  trigger:
+    - platform: state
+      entity_id: device_tracker.spare_room_heater_switch
+      to: 'not_home'
+      for:
+        minutes: 5
+  action:
+    service: notify.ios_steven
+      data:
+        title: "Heating Disconnected"
+        message: "The heater in the spare room has been disconnected from the network."
