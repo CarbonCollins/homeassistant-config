@@ -4,7 +4,6 @@ spare_room_lights_on:
     - service: light.turn_on
       data_template:
         entity_id: light.spare_room
-        kelvin: 2700
         brightness: >
           {%- if now().hour| int >= 23 %}
             50
