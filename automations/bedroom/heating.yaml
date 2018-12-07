@@ -8,7 +8,7 @@
       for:
         minutes: 5
   action:
-    - service: notify.ios_steven
+    - service: !secret notify_steven
       data:
         title: "Heating Disconnected"
         message: "The heater in the bedroom has been disconnected from the network."

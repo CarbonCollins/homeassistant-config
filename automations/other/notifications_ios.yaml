@@ -11,7 +11,7 @@
     - data:
         message: You are now a slave to your robot overlords
         title: Slave
-      service: notify.ios_steven
+      service: !secret notify_steven
 - id: rebel_response
   alias: Rebel Response
   trigger:
@@ -24,4 +24,4 @@
     - data:
         message: I like you
         title: You're a rebel
-      service: notify.ios_steven
+      service: !secret notify_steven

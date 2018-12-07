@@ -9,7 +9,7 @@
       to: 'home'
   condition: []
   action:
-    - service: notify.ios_steven
+    - service: !secret notify_steven
       data:
         message: "Someone has arrived! Is it for long?"
         data:

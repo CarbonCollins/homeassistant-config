@@ -1,14 +1,14 @@
 message_ip_change:
   alias: Message IP Change to Steven
   sequence:
-  - service: notify.ios_steven
+  - service: !secret notify_steven
     data:
       message: The public IP address has changed
       title: Public IP Change
 message_button_test:
   alias: Message action test
   sequence:
-  - service: notify.ios_steven
+  - service: !secret notify_steven
     data:
       message: Press Yes
       title: Time to choose
