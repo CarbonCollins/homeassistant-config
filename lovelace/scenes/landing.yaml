@@ -38,13 +38,3 @@
   icon: mdi:weather-sunny
   name: Tangled
   service: scene.turn_on
-- entity: scene.joy_landing 
-  tap_action: call-service
-  icon: mdi:emoticon-happy
-  name: Joy
-  service: scene.turn_on
-- entity: scene.cadburys_landing 
-  tap_action: call-service
-  icon: mdi:washing-machine
-  name: Cadburys
-  service: scene.turn_on

@@ -12,6 +12,7 @@
         "light.living_room_ceiling_1",
         "light.living_room_ceiling_2",
         "light.living_room_lamp_1",
+        "light.living_room_lamp_2",
         "light.spare_room_ceiling_1",
         "light.spare_room_ceiling_2",
         "light.spare_room_lamp",
@@ -44,7 +45,8 @@
       "lights": [
         "light.living_room_ceiling_1",
         "light.living_room_ceiling_2",
-        "light.living_room_lamp_1"
+        "light.living_room_lamp_1",
+        "light.living_room_lamp_2"
       ],
       "switches": [
         "switch.butt_plug_lamp"
@@ -86,10 +88,6 @@
       "button": "Sugar me daddy",
       "icon": "mdi:candycane",
       "colors": [
-        "[255,167,167]",
-        "[255,200,182]",
-        "[223,254,255]",
-        "[201,253,255]",
         "[213,82,255]",
         "[59,168,255]"
       ],
@@ -167,31 +165,6 @@
         "[206,169,214]"
       ],
       "switch": true
-    },
-    {
-      "name": "Joy",
-      "id": "joy",
-      "button": "I don't know",
-      "icon": "mdi:emoticon-happy",
-      "colors": [
-        "[32,157,220]",
-        "[218,219,39]",
-        "[138,195,62]",
-        "[202,34,96]"
-      ],
-      "switch": true
-    },
-    {
-      "name": "Cadburys",
-      "id": "cadburys",
-      "button": "Nani da fuq",
-      "icon": "mdi:washing-machine",
-      "colors": [
-        "[120,81,169]",
-        "[0,92,51]",
-        "[108,60,12]"
-      ],
-      "switch": false
     }
   ]
 }
