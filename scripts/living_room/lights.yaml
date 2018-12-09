@@ -7,10 +7,14 @@ living_room_lights_on:
         brightness: >
           {%- if now().hour| int >= 22 %}
             50
+          {%- if now().hour| int >= 21 %}
+            125
           {%- elif now().hour| int < 6 %}
             5
-          {%- elif now().hour| int < 8 %}
+          {%- elif now().hour| int < 7 %}
             50
+          {%- elif now().hour| int < 8 %}
+            125
           {%- else %}
             200
           {%- endif %}
