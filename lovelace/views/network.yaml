@@ -65,24 +65,29 @@ cards:
       title: Devices
       columns: 3
       theme: binary
-  - type: horizontal-stack
+  - type: vertical-stack
     cards:
-    - type: gauge
-      entity: sensor.pihole_ads_percentage_blocked_today
-      title: Queries Blocked
-      unit: "%"
-      severity:
-        green: 0
-        yellow: 45
-        red: 75
-    - type: gauge
-      entity: sensor.pihole_dns_percentage_cached
-      title: Queries Cached
-      unit: "%"
-      severity:
-        green: 75
-        yellow: 45
-        red: 0
+      - type: markdown
+        content: >
+          ## PiHole
+      - type: horizontal-stack
+        cards:
+        - type: gauge
+          entity: sensor.pihole_ads_percentage_blocked_today
+          title: Queries Blocked
+          unit: "%"
+          severity:
+            green: 0
+            yellow: 45
+            red: 75
+        - type: gauge
+          entity: sensor.pihole_dns_percentage_cached
+          title: Queries Cached
+          unit: "%"
+          severity:
+            green: 75
+            yellow: 45
+            red: 0
   # - type: entities
   #   title: DNS Resolutions
   #   entities:
