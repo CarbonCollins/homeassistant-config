@@ -15,6 +15,6 @@
 - platform: template
   sensors:
     pihole_dns_percentage_cached:
-      friendly_name: "Percentage of queries cached"
+      friendly_name: "Pi-Hole DNS Percentage Queries Cached"
       value_template: '{{ ((float(states.sensor.pihole_dns_queries_cached) / float(states.sensor.pihole_dns_queries_today)) * 100) | round(2) }}'
       unit_of_measurement: "%"
