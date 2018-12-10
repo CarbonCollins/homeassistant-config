@@ -67,12 +67,22 @@ cards:
       theme: binary
   - type: horizontal-stack
     cards:
-    - type: sensor
+    - type: gauge
       entity: sensor.pihole_ads_percentage_blocked_today
       name: Queries Blocked
-    - type: sensor
-      entity: sensor.pihole_queries_percentage_cached
+      unit: "%"
+      severity:
+        green: 0
+        yellow: 45
+        red: 75
+    - type: gauge
+      entity: sensor.pihole_dns_percentage_cached
       name: Queries Cached
+      unit: "%"
+      severity:
+        green: 75
+        yellow: 45
+        red: 0
   # - type: entities
   #   title: DNS Resolutions
   #   entities:
