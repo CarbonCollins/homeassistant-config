@@ -65,6 +65,14 @@ cards:
       title: Devices
       columns: 3
       theme: binary
+  - type: horizontal-stack
+    cards:
+    - type: sensor
+      entity: sensor.pihole_ads_percentage_today
+      name: Queries Blocked
+    - type: sensor
+      entity: sensor.pihole_queries_percentage_cached
+      name: Queries Cached
   # - type: entities
   #   title: DNS Resolutions
   #   entities:

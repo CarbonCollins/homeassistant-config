@@ -1,3 +1,8 @@
 - platform: pi_hole
   host: !secret ip_pihole
-  
+  monitored_conditions:
+    - ads_blocked_today
+    - ads_percentage_today
+    - dns_queries_today
+    - queries_cached
+    - queries_forwarded
