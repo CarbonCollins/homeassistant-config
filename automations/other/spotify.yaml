@@ -1,0 +1,22 @@
+- id: switch_spotify
+  alias: Switches spotify from pion to living room
+  trigger:
+    - platform: state
+      entity_id: device_tracker.steven
+      to: 'home'
+  condition:
+    condition: and
+    conditions:
+      - condition: state
+        entity_id: device_tracker.kelsey
+        state: 'not_home'
+      - condition: state
+        entity_id: media_player.spotify
+        state: 'playing'
+      - condition: template
+        value_template: "{{ state_attr('media_player.spotify', 'source') == "Pion" }}"
+  action:
+    - service: media_player.select_source
+      data: 
+        entity_id: media_player.spotify
+        source: "Living Room"
