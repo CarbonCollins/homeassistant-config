@@ -16,4 +16,5 @@
   sensors:
     pihole_queries_percentage_cached:
       friendly_name: "Percentage of queries cached"
-      value_template: '{{ (float(states.sensor.pihole_queries_percentage_cached) / float(states.sensor.pihole_dns_queries_today)) | round(2) }}'
+      value_template: '{{ ((float(states.sensor.pihole_queries_cached) / float(states.sensor.pihole_dns_queries_today)) * 100) | round(2) }}'
+      unit_of_measurement: "%"
