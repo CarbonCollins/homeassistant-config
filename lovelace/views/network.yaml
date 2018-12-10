@@ -68,7 +68,7 @@ cards:
   - type: horizontal-stack
     cards:
     - type: sensor
-      entity: sensor.pihole_ads_percentage_today
+      entity: sensor.pihole_ads_percentage_blocked_today
       name: Queries Blocked
     - type: sensor
       entity: sensor.pihole_queries_percentage_cached
