@@ -7,11 +7,12 @@
   ac_mode: false
   target_temp: 18
   min_cycle_duration:
-    minutes: 3
+    minutes: 1
   keep_alive:
     minutes: 1
   initial_operation_mode: "auto"
   away_temp: 16
+  precision: 0.5
 - platform: generic_thermostat
   name: Spare Room
   heater: switch.spare_room_heater
@@ -21,8 +22,9 @@
   ac_mode: false
   target_temp: 18
   min_cycle_duration:
-    minutes: 3
+    minutes: 1
   keep_alive:
     minutes: 1
   initial_operation_mode: "auto"
   away_temp: 16
+  precision: 0.5
