@@ -88,12 +88,12 @@ cards:
             green: 75
             yellow: 45
             red: 0
-  # - type: entities
-  #   title: DNS Resolutions
-  #   entities:
-  #     - entity: !secret sensor_ha
-  #       icon: mdi:ip
-  #       name: !secret url_ha
-  #     - entity: sensor.myipopendnscom
-  #       icon: mdi:ip
-  #       name: External IP
+  - type: entities
+    title: DNS Resolutions
+    entities:
+      - entity: !secret sensor_ha
+        icon: mdi:ip
+        name: !secret url_ha
+      - entity: sensor.myip
+        icon: mdi:ip
+        name: External IP
