@@ -91,9 +91,9 @@ cards:
   - type: entities
     title: DNS Resolutions
     entities:
-      - entity: !secret sensor_ha
+      - entity: sensor.public_url
         icon: mdi:ip
-        name: !secret url_ha
+        name: Public URL
       - entity: sensor.myip
         icon: mdi:ip
         name: External IP
