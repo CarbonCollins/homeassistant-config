@@ -1,0 +1,7 @@
+- name: julklappar Landing
+  icon: mdi:gift
+  entities:
+    light.landing_ceiling_1:
+      state: on
+      rgb_color: [91,199.202]
+      brightness: 254

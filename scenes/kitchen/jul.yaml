@@ -1,0 +1,11 @@
+- name: julklappar Kitchen
+  icon: mdi:gift
+  entities:
+    light.kitchen_lamp:
+      state: on
+      rgb_color: [91,199.202]
+      brightness: 254
+    light.kitchen_ceiling:
+      state: on
+      rgb_color: [224,228.,105]
+      brightness: 254

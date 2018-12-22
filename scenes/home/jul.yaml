@@ -1,0 +1,57 @@
+- name: julklappar Home
+  icon: mdi:gift
+  entities:
+    light.bedroom_ceiling_1:
+      state: on
+      rgb_color: [91,199.202]
+      brightness: 254
+    light.bedroom_ceiling_2:
+      state: on
+      rgb_color: [224,228.,105]
+      brightness: 254
+    light.bedroom_lamp:
+      state: on
+      rgb_color: [206,148,189]
+      brightness: 254
+    light.kitchen_lamp:
+      state: on
+      rgb_color: [124,67,108]
+      brightness: 254
+    light.kitchen_ceiling:
+      state: on
+      rgb_color: [221,67,79]
+      brightness: 254
+    light.living_room_ceiling_1:
+      state: on
+      rgb_color: [91,199.202]
+      brightness: 254
+    light.living_room_ceiling_2:
+      state: on
+      rgb_color: [224,228.,105]
+      brightness: 254
+    light.living_room_lamp_1:
+      state: on
+      rgb_color: [206,148,189]
+      brightness: 254
+    light.living_room_lamp_2:
+      state: on
+      rgb_color: [124,67,108]
+      brightness: 254
+    light.spare_room_ceiling_1:
+      state: on
+      rgb_color: [221,67,79]
+      brightness: 254
+    light.spare_room_ceiling_2:
+      state: on
+      rgb_color: [91,199.202]
+      brightness: 254
+    light.spare_room_lamp:
+      state: on
+      rgb_color: [224,228.,105]
+      brightness: 254
+    light.landing_ceiling_1:
+      state: on
+      rgb_color: [206,148,189]
+      brightness: 254
+    switch.butt_plug_lamp:
+      state: on

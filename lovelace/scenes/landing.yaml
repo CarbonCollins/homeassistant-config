@@ -38,3 +38,8 @@
   icon: mdi:weather-sunny
   name: Tangled
   service: scene.turn_on
+- entity: scene.jul_landing 
+  tap_action: call-service
+  icon: mdi:gift
+  name: julklappar
+  service: scene.turn_on
