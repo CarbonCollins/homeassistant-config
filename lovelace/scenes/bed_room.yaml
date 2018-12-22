@@ -38,7 +38,7 @@
   icon: mdi:weather-sunny
   name: Tangled
   service: scene.turn_on
-- entity: scene.jul_bed_room 
+- entity: scene.julklappar_bed_room 
   tap_action: call-service
   icon: mdi:gift
   name: julklappar

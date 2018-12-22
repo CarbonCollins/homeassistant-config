@@ -168,7 +168,7 @@
     },
     {
       "name": "julklappar",
-      "id": "jul",
+      "id": "julklappar",
       "button": "julklappar",
       "icon": "mdi:gift",
       "colors": [
