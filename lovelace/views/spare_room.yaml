@@ -58,6 +58,9 @@ cards:
       - entity: light.spare_room_lamp
         icon: mdi:lava-lamp
         name: Lamp
+      - entity: switch.butt_plug_lamp
+        icon: mdi:lava-lamp
+        name: Butt Plug Lamp
   - type: glance
     title: Scenes
     show_state: false

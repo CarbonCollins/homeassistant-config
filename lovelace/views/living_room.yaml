@@ -23,9 +23,6 @@ cards:
       - entity: light.living_room_lamp_2
         icon: mdi:floor-lamp
         name: Small Floor Lamp
-      - entity: switch.butt_plug_lamp
-        icon: mdi:lava-lamp
-        name: Butt Plug Lamp
       - entity: light.living_room_ceiling_1
         icon: mdi:ceiling-light
         name: Ceiling 1

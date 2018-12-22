@@ -53,5 +53,3 @@
       state: on
       rgb_color: [155,79,150]
       brightness: 254
-    switch.butt_plug_lamp:
-      state: on
