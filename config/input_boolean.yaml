@@ -2,3 +2,7 @@ cooking:
   name: Is Cooking
   initial: off
   icon: mdi:stove
+late_night:
+  name: Late Night
+  initial: off
+  icon: mdi:clock-outline

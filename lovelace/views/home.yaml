@@ -8,7 +8,7 @@ cards:
       entities:
         - device_tracker.steven
         - device_tracker.kelsey
-        - device_tracker.visitoe_1
+        - device_tracker.visitor_1
         - device_tracker.visitor_2
       state_filter:
         - 'home'
@@ -161,3 +161,10 @@ cards:
           - sensor.bedroom_temperature
           - sensor.spare_room_temperature
           - sensor.landing_temperature
+  - type: entities
+    title: House Options
+    show_header_toggle: false
+    entities:
+      - entity: input_boolean.late_night
+        icon: mdi:clock-outline
+        name: Late Night

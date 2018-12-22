@@ -7,7 +7,9 @@ kitchen_lights_on:
         kelvin: 6410
         brightness: >
           {%- if is_state('input_boolean.cooking', 'on') %}
-            255
+            225
+          {%- elif is_state('input_boolean.late_night', 'on') %}
+            128
           {%- elif now().hour| int >= 22 %}
             50
           {%- elif now().hour| int < 6 %}
