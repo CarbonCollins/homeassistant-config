@@ -1,0 +1,4 @@
+- platform: pollenkoll
+    sensors:
+      - city: !secret pollenkoll_city
+        state: !secret pollenkoll_city
