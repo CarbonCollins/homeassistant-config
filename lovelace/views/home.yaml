@@ -17,6 +17,12 @@ cards:
         title: Who's home
     - type: weather-forecast
       entity: weather.dark_sky
+    - type: glance
+      title: Environment
+      entities:
+        - entity: sensor.us_air_pollution_level
+          icon: mdi:scale
+          name: Pollution Level
     - type: media-control  
       title: Spotify
       entity: media_player.spotify
