@@ -1,0 +1,4 @@
+- platform: airvisual
+  api_key: !secret air_visual_token
+  monitored_conditions:
+    - us
