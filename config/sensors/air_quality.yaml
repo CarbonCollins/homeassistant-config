@@ -1,0 +1,4 @@
+- platform: waqi
+    token: !secret air_quality_index_api_token
+    locations:
+      - !secret air_quality_index_location
