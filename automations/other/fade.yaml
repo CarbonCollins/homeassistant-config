@@ -1,0 +1,23 @@
+- id: fate_counter_reset
+  alias: global fade counter reset
+  trigger:
+    - platform: time
+      at: '18:00:00'
+  action:
+    - service: counter.reset
+      data:
+        entity_id: counter.global_fade_counter
+
+- id: fate_counter_incriment
+  alias: Global fade counter incriment
+  trigger:
+    - platform: time
+      seconds: '/5'
+  condition:
+    - condition: time
+      after: '20:00:00'
+      before: '23:59:59'
+  action:
+    - service: counter.increment
+      data:
+        entity_id: counter.global_fade_counter

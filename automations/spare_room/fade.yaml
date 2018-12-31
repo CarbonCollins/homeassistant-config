@@ -1,5 +1,5 @@
-- id: living_room_fade_light
-  alias: Living Room Fade Lights
+- id: spare_room_fade_light
+  alias: Spare Room Fade Lights
   trigger:
     - platform: state
       entity_id: counter.global_fade_counter
@@ -10,7 +10,7 @@
           after: '20:00:00'
           before: '23:59:59'
         - condition: state
-          entity_id: light.living_room
+          entity_id: light.spare_room
           state: 'on'
   action:
-    - service: script.living_room_lights_on
+    - service: script.spare_room_lights_on
