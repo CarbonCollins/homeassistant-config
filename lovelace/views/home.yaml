@@ -56,7 +56,6 @@ cards:
         - light.bedroom
         - entity: switch.bedroom_heater
           icon: mdi:radiator
-        - input_number.target_bedroom_temperature
         - sensor.bedroom_temperature
         - sensor.bedroom_light_level
         - sensor.bedroom_motion_sensor
@@ -70,7 +69,6 @@ cards:
       aspect_ratio: 16:9
       entities:
         - light.living_room
-        - input_number.target_living_room_temperature
         - sensor.living_room_temperature
         - sensor.living_room_light_level
         - sensor.living_room_motion_sensor
@@ -118,27 +116,6 @@ cards:
         graph: line
         icon: mdi:lightbulb-on-outline
         detail: 2
-    # - type: entities
-    #   title: Room Temperatures
-    #   entities:
-    #     - entity: sensor.house_average_temperature
-    #       icon: mdi:thermometer-lines
-    #       name: Average
-    #     - entity: sensor.living_room_temperature
-    #       icon: mdi:sofa
-    #       name: Living Room
-    #     - entity: sensor.kitchen_temperature
-    #       icon: mdi:fridge
-    #       name: Kicthen
-    #     - entity: sensor.bedroom_temperature
-    #       icon: mdi:hotel
-    #       name: Bedroom
-    #     - entity: sensor.spare_room_temperature
-    #       icon: mdi:desk-lamp
-    #       name: Spare Room
-    #     - entity: sensor.landing_temperature
-    #       icon: mdi:hanger
-    #       name: Landing
       - type: glance
         title: Motion
         entities:

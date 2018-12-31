@@ -41,6 +41,7 @@ weather: !include config/weather.yaml
 binary_sensor: !include config/binary_sensors.yaml
 climate: !include config/climate.yaml
 cloud: !include config/cloud.yaml
+counter: !include config/counter.yaml
 device_tracker: !include config/device_trackers.yaml
 group: !include config/groups.yaml
 history: !include config/history.yaml

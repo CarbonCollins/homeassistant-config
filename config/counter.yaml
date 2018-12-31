@@ -1,0 +1,4 @@
+living_room_fade_counter:
+  name: Living Room Light Counter
+  initial: 0
+  step: 1
