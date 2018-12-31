@@ -8,19 +8,3 @@ living_room_lights_on:
           {%- if true %}
             {{ states('counter.living_room_fade_counter') | round(0) | int }}
           {%- endif %}
-
-          # {%- if is_state('input_boolean.late_night', 'on') %}
-          #   128
-          # {%- elif now().hour| int >= 22 %}
-          #   50
-          # {%- elif now().hour| int >= 21 %}
-          #   125
-          # {%- elif now().hour| int < 6 %}
-          #   5
-          # {%- elif now().hour| int < 7 %}
-          #   50
-          # {%- elif now().hour| int < 8 %}
-          #   128
-          # {%- else %}
-          #   200
-          # {%- endif %}
