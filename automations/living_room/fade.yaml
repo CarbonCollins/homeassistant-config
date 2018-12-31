@@ -12,7 +12,7 @@
   alias: Living Room counter incriment
   trigger:
     - platform: time
-      seconds: /1
+      seconds: '/1'
   condition:
     - condition: and
       conditions:
