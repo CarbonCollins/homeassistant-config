@@ -5,8 +5,7 @@
       at: '18:00:00'
   action:
     - service: counter.reset
-      data:
-        entity_id: counter.living_room_fade_counter
+      entity_id: counter.living_room_fade_counter
 
 - id: living_room_fade_incriment
   alias: Living Room counter incriment
@@ -24,5 +23,4 @@
           state: on
   action:
     - service: counter.increment
-      data:
-        entity_id: counter.living_room_fade_counter
+      entity_id: counter.living_room_fade_counter
