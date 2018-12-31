@@ -14,11 +14,17 @@
   alias: Global fade counter incriment
   trigger:
     - platform: time
-      seconds: '/5'
+      minutes: '/1'
+      seconds: '00'
   condition:
-    - condition: time
-      after: '20:00:00'
-      before: '02:00:00'
+    - condition: or
+      conditions:
+      - condition: time
+        after: '20:00:00'
+        before: '02:00:00'
+      - condition: time
+        after: '05:00:00'
+        before: '11:00:00'
   action:
     - service: counter.increment
       data:
