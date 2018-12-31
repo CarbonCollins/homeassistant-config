@@ -3,6 +3,8 @@
   trigger:
     - platform: time
       at: '15:00:00'
+    - platform: time
+      at: '03:00:00'
   action:
     - service: counter.reset
       data:
