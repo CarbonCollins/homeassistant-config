@@ -1,0 +1,28 @@
+- id: living_room_counter reset
+  alias: Living Room counter incriment
+  trigger:
+    - platform: time
+      at: '18:00:00'
+  action:
+    - service: counter.reset
+      data:
+        entity_id: counter.living_room_fade_counter
+
+- id: living_room_fade_incriment
+  alias: Living Room counter incriment
+  trigger:
+    - platform: time
+      seconds: /1
+  condition:
+    - condition: and
+      conditions:
+        - condition: time
+          after: '20:00:00'
+          before: '23:59:59'
+        - condition: state
+          entity_id: light.living_room
+          state: on
+  action:
+    - service: counter.increment
+      data:
+        entity_id: counter.living_room_fade_counter
