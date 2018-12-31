@@ -2,7 +2,7 @@
   alias: global fade counter reset
   trigger:
     - platform: time
-      at: '18:00:00'
+      at: '15:00:00'
   action:
     - service: counter.reset
       data:
@@ -16,7 +16,7 @@
   condition:
     - condition: time
       after: '20:00:00'
-      before: '23:59:59'
+      before: '02:00:00'
   action:
     - service: counter.increment
       data:
