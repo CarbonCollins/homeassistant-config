@@ -20,8 +20,8 @@
           after: '20:00:00'
           before: '23:59:59'
         - condition: state
-          entity_id: light.living_room_ceiling_1
-          state: on
+          entity_id: light.living_room
+          state: 'on'
   action:
     - service: counter.increment
       data:
