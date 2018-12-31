@@ -4,6 +4,6 @@
       friendly_name: Global Light Brightness
       value_template: >
         {% set mapped_counter = ((((states('counter.global_fade_counter')|int,360) | min) / 360) * 255) | round(0) | int %}
-        {%- if now().hour | int >= 15 or if now().hour | int < 03 %}
+        {%- if now().hour | int >= 15 or now().hour | int < 3 %}
           {{ (255 - mapped_counter) | int }}
         {%- endif %}
