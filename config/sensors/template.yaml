@@ -6,4 +6,4 @@
         {% set mapped_counter = ((((states('counter.global_fade_counter')|int,360) | min) / 360) * 255) | round(0) | int %}
         {% set early_value = (0 + mapped_counter) | int %}
         {% set late_value = (255 - mapped_counter)|int,5 | max | int %}
-        {{ late_value | int }}
+        {{ (255 - mapped_counter) | int }}
