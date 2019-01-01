@@ -3,6 +3,8 @@
   trigger:
     - platform: state
       entity_id: counter.global_fade_counter
+    - platform: state
+      entity_id: input_boolean.late_night
   condition:
     - condition: and
       conditions:
