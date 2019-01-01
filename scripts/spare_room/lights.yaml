@@ -4,7 +4,4 @@ spare_room_lights_on:
     - service: light.turn_on
       data_template:
         entity_id: light.spare_room
-        brightness: >
-          {%- if true %}
-            {{ states('counter.global_fade_counter') | round(0) | int * 5 }}
-          {%- endif %}
+        brightness: "{{ states(' sensor.global_light_brightness') | int }}"
