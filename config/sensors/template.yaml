@@ -4,10 +4,15 @@
       friendly_name: Global Light Brightness
       value_template: >
         {% set mapped_counter = ((((states('counter.global_fade_counter')|int,360) | min) / 360) * 255) | round(0) | int %}
-        {%- if now().hour | int >= 15 or now().hour | int < 3 %}
-          {{ ((255 - mapped_counter)|int,5) | max | int }}
-        {%- elif is_state('input_boolean.late_night', 'on') %}
-          {{ ((0 + mapped_counter)|int,128) | max | int }}
+
+        {%- if is_state('input_boolean.late_night', 'on') %}
+          {% set min_value = 128 | int %}
         {%- else %}
-          {{ ((0 + mapped_counter)|int,5) | max | int }}
+          {% set min_value = 5 | int %}
+        {%- endif %}
+
+        {%- if now().hour | int >= 15 or now().hour | int < 3 %}
+          {{ ((255 - mapped_counter)|int,min_value|int) | max | int }}
+        {%- else %}
+          {{ ((0 + mapped_counter)|int,min_value|int) | max | int }}
         {%- endif %}
