@@ -3,7 +3,9 @@
   trigger:
     platform: webhook
     webhook_id: !secret webhook_build_trigger_id
-  condition: []
+  condition:
+    - condition: template
+      value_template: '{{ trigger.json.test == booop }}'
   action:
     - data:
         message: test
