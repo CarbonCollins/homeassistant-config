@@ -4,7 +4,7 @@
     platform: webhook
     webhook_id: !secret webhook_build_trigger_id
     # trigger.json
-  conditions: []
+  condition: []
   action:
     - data:
         message: test
