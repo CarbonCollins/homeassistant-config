@@ -3,14 +3,14 @@
   trigger:
     platform: webhook
     webhook_id: !secret webhook_build_trigger_id
-    # trigger.json
   condition: []
   action:
     - data:
         message: test
         title: test
       service: !secret notify_steven
-    - data:
-        message: trigger.data
+    - data_template:
+        message: >
+          {{ trigger.data }}
         title: Webhook received
       service: !secret notify_steven
