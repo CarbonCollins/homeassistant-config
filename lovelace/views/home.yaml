@@ -157,3 +157,9 @@ cards:
       - entity: input_boolean.late_night
         icon: mdi:clock-outline
         name: Late Night
+      - entity: input_boolean.visitor_living_room
+        icon: mdi:account-question
+        name: Visitor in Living Room
+      - entity: input_boolean.visitor_spare_room
+        icon: mdi:account-question
+        name: Visitor in Spare Room

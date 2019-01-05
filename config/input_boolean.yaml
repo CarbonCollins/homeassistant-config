@@ -6,3 +6,11 @@ late_night:
   name: Late Night
   initial: off
   icon: mdi:clock-outline
+visitor_living_room:
+  name: Visitor in Living Room
+  initial: off
+  icon: mdi:account-question
+visitor_spare_room:
+  name: Visitor in Spare Room
+  initial: off
+  icon: mdi:account-question

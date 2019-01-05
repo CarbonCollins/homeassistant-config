@@ -5,7 +5,20 @@
       entity_id: sensor.living_room_motion_sensor
       from: 'off'
       to: 'on'
-  condition: []
+  condition:
+    - condition: or
+      conditions:
+      - condition: time
+        after: '09:00:00'
+        before: '21:00:00'
+      - condition: and
+        conditions:
+          - condition: state
+            entity_id: input_boolean.visitor_living_room
+            state: 'off'
+          - condition: time
+            before: '09:00:00'
+            after: '21:00:00'
   action:
     - service: script.living_room_lights_on
 
