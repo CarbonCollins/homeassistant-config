@@ -1,27 +1,11 @@
-# experimenting with this currently
-- id: slave_response
-  alias: Slave response
+- id: home_assistant_started
+  alias: Home Assistant has started
   trigger:
-    - platform: event
-      event_data:
-        actionName: PRESS_YES
-      event_type: ios.notification_action_fired
+    platform: homeassistant
+    event: start
   condition: []
   action:
     - data:
-        message: You are now a slave to your robot overlords
-        title: Slave
-      service: !secret notify_steven
-- id: rebel_response
-  alias: Rebel Response
-  trigger:
-    - platform: event
-      event_data:
-        actionName: PRESS_NO
-      event_type: ios.notification_action_fired
-  condition: []
-  action:
-    - data:
-        message: I like you
-        title: You're a rebel
+        message: Home Assistant is now online
+        title: Home Assistant Online
       service: !secret notify_steven

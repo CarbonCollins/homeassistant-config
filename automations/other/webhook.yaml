@@ -1,0 +1,16 @@
+- id: gitlab_build_trigger
+  alias: GitLab build trigger 
+  trigger:
+    platform: webhook
+    webhook_id: !secret webhook_build_trigger_id
+    # trigger.json
+  conditions: []
+  action:
+    - data:
+        message: test
+        title: test
+      service: !secret notify_steven
+    - data:
+        message: trigger.data
+        title: Webhook received
+      service: !secret notify_steven
