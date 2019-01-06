@@ -56,7 +56,7 @@
     - service: climate.set_temperature
       data_template:
         entity_id: climate.spare_room
-        temperature: "{{ (climate.spare_room.temperature|float + 0.5)|float,25|float | min }}"
+        temperature: "{{ climate.spare_room.temperature|float + 0.5 }}"
 - id: spare_room_temperature_down
   alias: Spare Room temperature_down
   trigger:
@@ -75,4 +75,4 @@
     - service: climate.set_temperature
       data_template:
         entity_id: climate.spare_room
-        temperature: "{{ (climate.spare_room.temperature|float - 0.5)|float,15|float | max }}"
+        temperature: "{{ climate.spare_room.temperature|float - 0.5 }}"
