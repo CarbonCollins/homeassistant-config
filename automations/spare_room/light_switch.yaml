@@ -56,7 +56,9 @@
     - service: climate.set_temperature
       data_template:
         entity_id: climate.spare_room
-        temperature: "{{ (state_attr('climate.spare_room', 'temperature')|int + 1),25|int | min | int}}"
+        temperature: >
+          {% set newTemp = (state_attr('climate.spare_room', 'temperature')|int + 1)|int,25|int %}
+          {{ newTemp|min|int }}
 
 - id: spare_room_temperature_down
   alias: Spare Room temperature_down
