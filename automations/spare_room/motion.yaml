@@ -13,7 +13,7 @@
           before: '21:00:00'
         - condition: state
           entity_id: input_boolean.visitor_spare_room
-          state: 'on'
+          state: 'off'
   action:
     - service: script.spare_room_lights_on
 

@@ -3,11 +3,10 @@
 set -e
 
 scriptname=$(basename $0)
-lock="/var/run/${scriptname}"
+pidfile="/var/run/${scriptname}"
 
-exec 200>$lock
+exec 200>$pidfile
 flock -n 200 || exit 1
-
 pid=$$
 echo $pid 1>&200
 
