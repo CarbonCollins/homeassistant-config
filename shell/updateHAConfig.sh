@@ -22,7 +22,7 @@ git pull
 # check config is valid and get its exit code
 result=$(hass --script check_config -c . && echo $?)
 
-if [ "result" -eq "0" ]; then
+if [ "$result" -eq "0" ]; then
   echo "config is valid"
 
   # update lovelace
