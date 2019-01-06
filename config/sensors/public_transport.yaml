@@ -1,0 +1,17 @@
+- platform: gtfs
+  origin: !secret skane_home_stop
+  destination: !secret skane_uni_stop
+  data: "skane.zip"
+- platform: gtfs
+  origin: !secret skane_uni_stop
+  destination: !secret skane_home_stop
+  data: "skane.zip"
+
+- platform: gtfs
+  origin: !secret skane_home_stop
+  destination: !secret skane_work_stop
+  data: "skane.zip"
+- platform: gtfs
+  origin: !secret skane_work_stop
+  destination: !secret skane_home_stop
+  data: "skane.zip"
