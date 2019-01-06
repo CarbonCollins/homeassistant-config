@@ -1,4 +1,4 @@
 lovelace_gen: 'python3 ./lovelace-gen.py'
 git_pull: 'git pull'
 download_skane_gtfs: !secret shell_download_skane_gtfs
-updateHAConfig: './shell/updateHAConfig.sh'
+update_ha_config: './shell/updateHAConfig.sh'
