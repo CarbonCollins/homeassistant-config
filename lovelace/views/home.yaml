@@ -92,7 +92,6 @@ cards:
         - light.spare_room
         - entity: switch.spare_room_heater
           icon: mdi:radiator
-        - input_number.target_spare_room_temperature
         - sensor.spare_room_temperature
         - sensor.spare_room_light_level
         - sensor.spare_room_motion_sensor
