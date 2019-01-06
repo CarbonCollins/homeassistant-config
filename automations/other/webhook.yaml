@@ -13,6 +13,6 @@
       service: !secret notify_steven
     - data_template:
         message: >
-          {{ trigger.json.test }}
+          {{ trigger.json.message }}
         title: Webhook received
       service: !secret notify_steven
