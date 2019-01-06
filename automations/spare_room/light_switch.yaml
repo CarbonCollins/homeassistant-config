@@ -56,7 +56,8 @@
     - service: climate.set_temperature
       data_template:
         entity_id: climate.spare_room
-        temperature: "{{ (state_attr('climate.spare_room', 'temperature')|int + 1) | int}}"
+        temperature: "{{ (state_attr('climate.spare_room', 'temperature')|int + 1),25|int | min | int}}"
+
 - id: spare_room_temperature_down
   alias: Spare Room temperature_down
   trigger:
@@ -73,6 +74,6 @@
           state: 3_click_up
   action:
     - service: climate.set_temperature
-      data:
+      data_template:
         entity_id: climate.spare_room
-        temperature: "{{ (state_attr('climate.spare_room', 'temperature')|int - 1) | int}}"
+        temperature: "{{ (state_attr('climate.spare_room', 'temperature')|int - 1),15|int | max | int}}"
