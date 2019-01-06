@@ -78,4 +78,6 @@
     - service: climate.set_temperature
       data_template:
         entity_id: climate.spare_room
-        temperature: "{{ (state_attr('climate.spare_room', 'temperature')|int - 1),15|int | max | int}}"
+        temperature: >
+          {% set newTemp = (state_attr('climate.spare_room', 'temperature')|int - 1)|int,15|int %}
+          {{ newTemp|max|int }}
