@@ -20,7 +20,8 @@ git reset --hard
 git pull
 
 # check config is valid and check its exit code
-hass --script check_config -c .
+result=$(hass --script check_config -c .)
+
 if [ "$?" -eq "0" ]; then
   echo "config is valid. regenerating lovelace config"
 
