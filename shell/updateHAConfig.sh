@@ -19,10 +19,9 @@ currentHash=$(git rev-parse HEAD)
 git reset --hard
 git pull
 
-# check config is valid and get its exit code
-result=$(hass --script check_config -c . && echo $?)
-
-if [ "$result" -eq "0" ]; then
+# check config is valid and check its exit code
+hass --script check_config -c .
+if [ "$?" -eq "0" ]; then
   echo "config is valid"
 
   # update lovelace
