@@ -21,7 +21,7 @@
 - id: spare_room_lights_off
   alias: Spare Room lights off
   trigger:
-  - entity_id: sensor.spare_room_switch_last_updated
+  - entity_id: sensor.spare_room_switch
     platform: state
   condition:
     - condition: or
@@ -54,9 +54,9 @@
           state: 2_click_up
   action:
     - service: climate.set_temperature
-      data:
+      data_template:
         entity_id: climate.spare_room
-        temperature: "20"
+        temperature: "{{ (state_attr('climate.spare_room', 'temperature')|float + 0.5)|float,25|float | min }}"
 - id: spare_room_temperature_down
   alias: Spare Room temperature_down
   trigger:
@@ -75,4 +75,4 @@
     - service: climate.set_temperature
       data:
         entity_id: climate.spare_room
-        temperature: "16"
+        temperature: "{{ (state_attr('climate.spare_room', 'temperature')|float - 0.5)|float,15|float | max }}"
