@@ -1,9 +1,20 @@
 #!/bin/bash
 
+set -e
+
+scriptname=$(basename $0)
+lock="/var/run/${scriptname}"
+
+exec 200>$lock
+flock -n 200 || exit 1
+
+pid=$$
+echo $pid 1>&200
+
 if [ $# -eq 0 ]
   then
     echo "Argument for API key not provided"
-    exit 1
+    exit 2
 fi
 
 # set cwd to the script location
@@ -17,5 +28,5 @@ if curl --fail -o "../gtfs/skane.zip.tmp" "https://gtfs-pp.samtrafiken.se/skane/
   exit 0
 else
   echo "Failed to download skåne GTFS zip"
-  exit 1
+  exit 3
 fi;
