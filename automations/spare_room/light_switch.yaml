@@ -1,0 +1,78 @@
+# Lights
+- id: spare_room_lights_on
+  alias: Spare Room lights on
+  trigger:
+  - entity_id: sensor.spare_room_switch
+    platform: state
+  condition:
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: sensor.spare_room_switch
+          state: 1_click
+        - condition: state
+          entity_id: sensor.spare_room_switch
+          state: 1_click_up
+  action:
+    - service: light.turn_on
+      data:
+        entity_id: light.spare_room
+
+- id: spare_room_lights_off
+  alias: Spare Room lights off
+  trigger:
+  - entity_id: sensor.spare_room_switch_last_updated
+    platform: state
+  condition:
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: sensor.spare_room_switch
+          state: 4_click
+        - condition: state
+          entity_id: sensor.spare_room_switch
+          state: 4_click_up
+  action:
+    - service: light.turn_off
+      data:
+        entity_id: light.spare_room
+
+# Temperature
+- id: spare_room_temperature_up
+  alias: Spare Room temperature_up
+  trigger:
+  - entity_id: sensor.spare_room_switch
+    platform: state
+  condition:
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: sensor.spare_room_switch
+          state: 2_click
+        - condition: state
+          entity_id: sensor.spare_room_switch
+          state: 2_click_up
+  action:
+    - service: climate.set_temperature
+      data_template:
+        entity_id: climate.spare_room
+        temperature: "{{ (climate.spare_room.temperature|float + 0.5)|float,25|float | min }}"
+- id: spare_room_temperature_down
+  alias: Spare Room temperature_down
+  trigger:
+  - entity_id: sensor.spare_room_switch
+    platform: state
+  condition:
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: sensor.spare_room_switch
+          state: 3_click
+        - condition: state
+          entity_id: sensor.spare_room_switch
+          state: 3_click_up
+  action:
+    - service: climate.set_temperature
+      data_template:
+        entity_id: climate.spare_room
+        temperature: "{{ (climate.spare_room.temperature|float - 0.5)|float,15|float | max }}"
