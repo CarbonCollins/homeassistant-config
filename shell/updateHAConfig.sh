@@ -22,11 +22,12 @@ git pull
 # check config is valid and check its exit code
 hass --script check_config -c .
 if [ "$?" -eq "0" ]; then
-  echo "config is valid"
+  echo "config is valid. regenerating lovelace config"
 
   # update lovelace
   python3 ./lovelace-gen.py
 
+  echo "done"
   exit 0
 else
   echo "config is invalid. rolling config back"
