@@ -54,9 +54,9 @@
           state: 2_click_up
   action:
     - service: climate.set_temperature
-      data_template:
+      data:
         entity_id: climate.spare_room
-        temperature: "{{ climate.spare_room.temperature|float + 0.5 }}"
+        temperature: "20"
 - id: spare_room_temperature_down
   alias: Spare Room temperature_down
   trigger:
@@ -73,6 +73,6 @@
           state: 3_click_up
   action:
     - service: climate.set_temperature
-      data_template:
+      data:
         entity_id: climate.spare_room
-        temperature: "{{ climate.spare_room.temperature|float - 0.5 }}"
+        temperature: "16"
