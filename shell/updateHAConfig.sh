@@ -31,7 +31,9 @@ if [ "$?" -eq "0" ]; then
   echo "done"
   exit 0
 else
-  echo "config is invalid. rolling config back"
+  echo "config is invalid:\n $result"
+  
+  echo "rolling config back"
   git reset --hard "$currentHash"
 
   exit 1
