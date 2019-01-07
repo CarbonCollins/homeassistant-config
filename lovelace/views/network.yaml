@@ -33,6 +33,26 @@ cards:
           - entity: sensor.speedtest_ping
             name: Ping
             icon: mdi:av-timer
+      - type: horizontal-stack
+        cards:
+          - type: sensor
+            entity: sensor.speedtest_download
+            name: Download
+            height: 75
+            graph: line
+            icon: mdi:speedometer
+            detail: 2
+            unit: "Mbit/s"
+            hours_to_show: 24
+          - type: sensor
+            entity: sensor.speedtest_upload
+            name: Upload
+            height: 75
+            graph: line
+            icon: mdi:speedometer
+            detail: 2
+            unit: "Mbit/s"
+            hours_to_show: 24
       - type: history-graph
         hours_to_show: 24
         refresh: 90
