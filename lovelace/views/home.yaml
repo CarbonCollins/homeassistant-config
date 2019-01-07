@@ -10,6 +10,9 @@ cards:
         - device_tracker.kelsey
         - device_tracker.visitor_1
         - device_tracker.visitor_2
+        - device_tracker.visitor_3
+        - device_tracker.visitor_4
+        - device_tracker.visitor_5
       state_filter:
         - 'home'
       card:
