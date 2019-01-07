@@ -20,19 +20,9 @@ cards:
       title: Internet Route
   - type: vertical-stack
     cards:
-      - type: glance
-        title: Internet Stats
-        show_name: false
-        entities:
-          - entity: sensor.speedtest_download
-            name: Download
-            icon: mdi:download
-          - entity: sensor.speedtest_upload
-            name: Upload
-            icon: mdi:upload
-          - entity: sensor.speedtest_ping
-            name: Ping
-            icon: mdi:av-timer
+      - type: markdown
+        content: >
+          ## Internet Stats
       - type: horizontal-stack
         cards:
           - type: sensor
@@ -53,38 +43,6 @@ cards:
             detail: 2
             unit: "Mbit/s"
             hours_to_show: 24
-      - type: history-graph
-        hours_to_show: 24
-        refresh: 90
-        entities:
-          - entity: sensor.speedtest_download
-            name: Download
-          - entity: sensor.speedtest_upload
-            name: Upload
-          - entity: sensor.speedtest_ping
-            name: Ping
-  - type: entity-filter
-    entities:
-      - entity: device_tracker.living_room_echo
-        name: Living Room Echo
-      - entity: device_tracker.spare_room_echo
-        name: Spare Room Echo
-      - entity: device_tracker.kitchen_echo
-        name: Kitchen Echo
-      - entity: device_tracker.butt_plug_lamp_switch
-        name: Butt Plug Switch
-      - entity: device_tracker.spare_room_heater_switch
-        name: Spare Room Heater
-      - entity: device_tracker.bedroom_heater_switch
-        name: Bedroom Heater
-    state_filter:
-      - 'home'
-      - 'not_home'
-    card:
-      type: glance
-      title: Devices
-      columns: 3
-      theme: binary
   - type: vertical-stack
     cards:
       - type: markdown
@@ -108,6 +66,28 @@ cards:
             green: 75
             yellow: 45
             red: 0
+  - type: entity-filter
+    entities:
+      - entity: device_tracker.living_room_echo
+        name: Living Room Echo
+      - entity: device_tracker.spare_room_echo
+        name: Spare Room Echo
+      - entity: device_tracker.kitchen_echo
+        name: Kitchen Echo
+      - entity: device_tracker.butt_plug_lamp_switch
+        name: Butt Plug Switch
+      - entity: device_tracker.spare_room_heater_switch
+        name: Spare Room Heater
+      - entity: device_tracker.bedroom_heater_switch
+        name: Bedroom Heater
+    state_filter:
+      - 'home'
+      - 'not_home'
+    card:
+      type: glance
+      title: Devices
+      columns: 3
+      theme: binary
   - type: entities
     title: DNS Resolutions
     entities:
