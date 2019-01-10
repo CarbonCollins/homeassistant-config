@@ -43,3 +43,8 @@
   icon: mdi:gift
   name: julklappar
   service: scene.turn_on
+- entity: scene.jobby_living_room 
+  tap_action: call-service
+  icon: mdi:duck
+  name: jobby
+  service: scene.turn_on

@@ -1,55 +1,55 @@
-- name: julklappar Home
-  icon: mdi:gift
+- name: jobby Home
+  icon: mdi:duck
   entities:
     light.bedroom_ceiling_1:
       state: on
-      rgb_color: [91,199.202]
+      rgb_color: [191,29,255]
       brightness: 254
     light.bedroom_ceiling_2:
       state: on
-      rgb_color: [224,228,105]
+      rgb_color: [255,128,25]
       brightness: 254
     light.bedroom_lamp:
       state: on
-      rgb_color: [206,148,189]
+      rgb_color: [117,255,72]
       brightness: 254
     light.kitchen_lamp:
       state: on
-      rgb_color: [124,67,108]
+      rgb_color: [38,255,190]
       brightness: 254
     light.kitchen_ceiling:
       state: on
-      rgb_color: [221,67,79]
+      rgb_color: [191,29,255]
       brightness: 254
     light.living_room_ceiling_1:
       state: on
-      rgb_color: [91,199.202]
+      rgb_color: [255,128,25]
       brightness: 254
     light.living_room_ceiling_2:
       state: on
-      rgb_color: [224,228,105]
+      rgb_color: [117,255,72]
       brightness: 254
     light.living_room_lamp_1:
       state: on
-      rgb_color: [206,148,189]
+      rgb_color: [38,255,190]
       brightness: 254
     light.living_room_lamp_2:
       state: on
-      rgb_color: [124,67,108]
+      rgb_color: [191,29,255]
       brightness: 254
     light.spare_room_ceiling_1:
       state: on
-      rgb_color: [221,67,79]
+      rgb_color: [255,128,25]
       brightness: 254
     light.spare_room_ceiling_2:
       state: on
-      rgb_color: [91,199.202]
+      rgb_color: [117,255,72]
       brightness: 254
     light.spare_room_lamp:
       state: on
-      rgb_color: [224,228,105]
+      rgb_color: [38,255,190]
       brightness: 254
     light.landing_ceiling_1:
       state: on
-      rgb_color: [206,148,189]
+      rgb_color: [191,29,255]
       brightness: 254

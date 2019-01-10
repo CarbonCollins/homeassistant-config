@@ -1,15 +1,15 @@
-- name: julklappar Bed Room
-  icon: mdi:gift
+- name: jobby Bed Room
+  icon: mdi:duck
   entities:
     light.bedroom_ceiling_1:
       state: on
-      rgb_color: [91,199.202]
+      rgb_color: [191,29,255]
       brightness: 254
     light.bedroom_ceiling_2:
       state: on
-      rgb_color: [224,228,105]
+      rgb_color: [255,128,25]
       brightness: 254
     light.bedroom_lamp:
       state: on
-      rgb_color: [206,148,189]
+      rgb_color: [117,255,72]
       brightness: 254

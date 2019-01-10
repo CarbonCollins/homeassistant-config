@@ -1,0 +1,7 @@
+- name: jobby Landing
+  icon: mdi:duck
+  entities:
+    light.landing_ceiling_1:
+      state: on
+      rgb_color: [191,29,255]
+      brightness: 254

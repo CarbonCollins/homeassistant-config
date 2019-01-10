@@ -1,17 +1,17 @@
-- name: julklappar Spare Room
-  icon: mdi:gift
+- name: jobby Spare Room
+  icon: mdi:duck
   entities:
     light.spare_room_ceiling_1:
       state: on
-      rgb_color: [91,199.202]
+      rgb_color: [191,29,255]
       brightness: 254
     light.spare_room_ceiling_2:
       state: on
-      rgb_color: [224,228,105]
+      rgb_color: [255,128,25]
       brightness: 254
     light.spare_room_lamp:
       state: on
-      rgb_color: [206,148,189]
+      rgb_color: [117,255,72]
       brightness: 254
     switch.butt_plug_lamp:
       state: off
