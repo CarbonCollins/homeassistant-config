@@ -15,7 +15,7 @@
       brightness: 254
     light.living_room_lamp_2:
       state: on
-      rgb_color: [38,255,190]
+      rgb_color: [61,126,255]
       brightness: 254
     switch.butt_plug_lamp:
       state: off
