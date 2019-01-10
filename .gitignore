@@ -46,6 +46,8 @@ home-assistant.*
 secrets.yaml
 known_devices.yaml
 entity_registry.yaml
+.shopping_list.json
+ui-lovelace.yaml
 
 # Linux
 .directory
