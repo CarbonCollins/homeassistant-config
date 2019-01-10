@@ -1,0 +1,4 @@
+- name: states
+  sidebar_title: States
+  sidebar_icon: mdi:dip-switch
+  url_path: /states

@@ -10,22 +10,22 @@
       data:
         entity_id: counter.global_fade_counter
 
-- id: fate_counter_incriment
-  alias: Global fade counter incriment
-  trigger:
-    - platform: time
-      minutes: '/1'
-      seconds: '00'
-  condition:
-    - condition: or
-      conditions:
-      - condition: time
-        after: '18:00:00'
-        before: '23:59:59'
-      - condition: time
-        after: '05:00:00'
-        before: '11:00:00'
-  action:
-    - service: counter.increment
-      data:
-        entity_id: counter.global_fade_counter
+# - id: fate_counter_incriment
+#   alias: Global fade counter incriment
+#   trigger:
+#     - platform: time
+#       minutes: '/1'
+#       seconds: '00'
+#   condition:
+#     - condition: or
+#       conditions:
+#       - condition: time
+#         after: '18:00:00'
+#         before: '23:59:59'
+#       - condition: time
+#         after: '05:00:00'
+#         before: '11:00:00'
+#   action:
+#     - service: counter.increment
+#       data:
+#         entity_id: counter.global_fade_counter

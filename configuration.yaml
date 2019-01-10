@@ -52,6 +52,7 @@ light: !include config/lights.yaml
 logbook: !include config/logbook.yaml
 media_player: !include config/media_players.yaml
 openuv: !include config/openuv.yaml
+panel_custom: !include config/panel_custom.yaml
 shell_command: !include config/shell_command.yaml
 shopping_list:
 sun:
