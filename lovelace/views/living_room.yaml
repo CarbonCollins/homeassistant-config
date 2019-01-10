@@ -2,6 +2,14 @@ title: Living Room
 icon: mdi:sofa
 theme: dark-mode
 cards:
+  - type: horizontal-stack
+    cards:
+      - type: light
+        entity: light.living_room_ceiling
+        name: Ceiling
+      - type: light
+        entity: light.living_room_lamp
+        name: Lamp
   - type: entities
     title: Environment
     entities:
