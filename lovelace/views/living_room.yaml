@@ -11,6 +11,14 @@ cards:
         entity: light.living_room_lamp
         name: Lamp
   - type: entities
+    title: Room Settings
+    show_header_toggle: true
+    entities:
+      - entity: automation.detect_living_room_lamp
+        name: Motion detection lamps
+      - entity: automation.detect_living_room_ceiling
+        name: Motion detection ceiling
+  - type: entities
     title: Environment
     entities:
       - entity: sensor.living_room_temperature

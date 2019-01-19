@@ -1,5 +1,5 @@
-- id: detect_living_room
-  alias: Motion detected in Living Room
+- id: detect_living_room_lamp
+  alias: Motion detected in Living Room lamps
   trigger:
     - platform: state
       entity_id: sensor.living_room_motion_sensor
@@ -15,7 +15,26 @@
           entity_id: input_boolean.visitor_living_room
           state: 'off'
   action:
-    - service: script.living_room_lights_on
+    - service: script.living_room_lamp_lights_on
+
+- id: detect_living_room_ceiling
+  alias: Motion detected in Living Room Ceiling
+  trigger:
+    - platform: state
+      entity_id: sensor.living_room_motion_sensor
+      from: 'off'
+      to: 'on'
+  condition:
+    - condition: or
+      conditions:
+        - condition: time
+          after: '09:00:00'
+          before: '21:00:00'
+        - condition: state
+          entity_id: input_boolean.visitor_living_room
+          state: 'off'
+  action:
+    - service: script.living_room_ceiling_lights_on
 
 - id: no_detect_motion_living_room_day
   alias: No motion detected in Living Room day
