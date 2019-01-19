@@ -6,14 +6,19 @@
       from: 'off'
       to: 'on'
   condition:
-    - condition: or
+    - condition: and
       conditions:
-        - condition: time
-          after: '09:00:00'
-          before: '21:00:00'
         - condition: state
-          entity_id: input_boolean.visitor_living_room
-          state: 'off'
+          entity_id: input_boolean.living_room_motion_lamp
+          state: 'on'
+        - condition: or
+          conditions:
+            - condition: time
+              after: '09:00:00'
+              before: '21:00:00'
+            - condition: state
+              entity_id: input_boolean.visitor_living_room
+              state: 'off'
   action:
     - service: script.living_room_lamp_lights_on
 
@@ -25,14 +30,19 @@
       from: 'off'
       to: 'on'
   condition:
-    - condition: or
+    - condition: and
       conditions:
-        - condition: time
-          after: '09:00:00'
-          before: '21:00:00'
         - condition: state
-          entity_id: input_boolean.visitor_living_room
-          state: 'off'
+          entity_id: input_boolean.living_room_motion_ceiling
+          state: 'on'
+        - condition: or
+          conditions:
+            - condition: time
+              after: '09:00:00'
+              before: '21:00:00'
+            - condition: state
+              entity_id: input_boolean.visitor_living_room
+              state: 'off'
   action:
     - service: script.living_room_ceiling_lights_on
 
