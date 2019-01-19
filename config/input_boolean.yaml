@@ -17,8 +17,8 @@ visitor_spare_room:
 living_room_motion_lamp:
   name: Living Room Motion Lamps
   initial: off
-  icon: mdi:account-question
+  icon: mdi:run-fast
 living_room_motion_ceiling:
   name: Living Room Motion Ceiling Lights
   initial: off
-  icon: mdi:account-question
+  icon: mdi:run-fast
