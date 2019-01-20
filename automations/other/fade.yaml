@@ -41,8 +41,8 @@
     - service: input_number.set_value
       data_template:
         entity_id: input_number.global_fade
-        value: "{{ ((-153 * sin((now().minutes + (now().hour * 60) + 250) / 238)) + 160) | round(0) | int }}"
+        value: "{{ ((-153 * sin((now().minute + (now().hour * 60) + 250) / 238)) + 160) | round(0) | int }}"
     - service: !secret notify_steven
       data_template:
         title: "Triggered"
-        message: "REEEEEEEEEEEEEEEEEEEEEEEEEEEE {{ ((-153 * sin((now().minutes + (now().hour * 60) + 250) / 238)) + 160) | round(0) | int }}"
+        message: "REEEEEEEEEEEEEEEEEEEEEEEEEEEE {{ ((-153 * sin((now().minute + (now().hour * 60) + 250) / 238)) + 160) | round(0) | int }}"
