@@ -16,8 +16,10 @@ cards:
     entities:
       - entity: input_boolean.living_room_motion_lamp
         name: Motion detection lamps
+        icon: mdi:run-fast
       - entity: input_boolean.living_room_motion_ceiling
         name: Motion detection ceiling
+        icon: mdi:run-fast
   - type: entities
     title: Environment
     entities:

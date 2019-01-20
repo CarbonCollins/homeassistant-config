@@ -14,6 +14,21 @@ cards:
       - entity: sensor.bedroom_motion_sensor
         icon: mdi:run-fast
         name: Motion
+  - type: horizontal-stack
+    cards:
+      - type: light
+        entity: light.bedroom_ceiling
+        name: Ceiling
+      - type: light
+        entity: light.bedroom_lamp
+        name: Lamp
+  - type: entities
+    title: Room Settings
+    show_header_toggle: true
+    entities:
+      - entity: input_boolean.bedroom_motion
+        name: Motion detection
+        icon: mdi:run-fast
   - type: entities
     title: Lights
     show_header_toggle: true

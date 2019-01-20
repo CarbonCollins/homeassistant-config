@@ -22,3 +22,7 @@ living_room_motion_ceiling:
   name: Living Room Motion Ceiling Lights
   initial: off
   icon: mdi:run-fast
+bedroom_motion:
+  name: Bedroom Motion Lights
+  initial: off
+  icon: mdi:run-fast

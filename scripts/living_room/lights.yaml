@@ -1,13 +1,20 @@
 living_room_lamp_lights_on:
   alias: Turn Living Room Lamp Lights On
   sequence:
+    - condition: state
+      entity_id: input_boolean.living_room_motion_lamp
+      state: 'on'
     - service: light.turn_on
       data_template:
         entity_id: light.living_room_lamp
         brightness: "{{ states('sensor.global_light_brightness') | int }}"
+
 living_room_ceiling_lights_on:
   alias: Turn Living Room Ceiling Lights On
   sequence:
+    - condition: state
+      entity_id: input_boolean.living_room_motion_ceiling
+      state: 'on'
     - service: light.turn_on
       data_template:
         entity_id: light.living_room_ceiling
