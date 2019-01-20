@@ -48,4 +48,4 @@
     - service: !secret notify_steven
       data_template:
         title: "Triggered"
-        message: "REEEEEEEEEEEEEEEEEEEEEEEEEEEE {{ state('input_number.global_fade') }}"
+        message: "REEEEEEEEEEEEEEEEEEEEEEEEEEEE {{ states('input_number.global_fade') }}"
