@@ -41,7 +41,10 @@
     - service: input_number.set_value
       data_template:
         entity_id: input_number.global_fade
-        value_template: "{{ ((-153 * sin((now().minute + (now().hour * 60) + 250) / 238)) + 160) | round(0) | int }}"
+        value: >
+          {% set rawLightLevel = ((-153 * sin((now().minute + (now().hour * 60) + 250) / 238)) + 160) | round(0)|int,50|int %}
+          {% set minLevel = rawLightLevel|max|int,255|int %}
+          {{ minLevel|min|int }}
     - service: !secret notify_steven
       data_template:
         title: "Triggered"
