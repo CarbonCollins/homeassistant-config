@@ -3,3 +3,4 @@ global_fade:
   min: 50
   max: 255
   step: 1
+  mode: box
