@@ -1,0 +1,5 @@
+global_fade:
+  name: Global Fade
+  min: 50
+  max: 255
+  step: 1

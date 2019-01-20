@@ -1,14 +1,16 @@
-- id: fate_counter_reset
-  alias: global fade counter reset
-  trigger:
-    - platform: time
-      at: '15:00:00'
-    - platform: time
-      at: '03:00:00'
-  action:
-    - service: counter.reset
-      data:
-        entity_id: counter.global_fade_counter
+# - id: fate_counter_reset
+#   alias: global fade counter reset
+#   trigger:
+#     - platform: time
+#       at: '15:00:00'
+#     - platform: time
+#       at: '03:00:00'
+#   action:
+#     - service: counter.reset
+#       data:
+#         entity_id: counter.global_fade_counter
+
+
 
 # - id: fate_counter_incriment
 #   alias: Global fade counter incriment
@@ -29,3 +31,14 @@
 #     - service: counter.increment
 #       data:
 #         entity_id: counter.global_fade_counter
+
+- id: fade_counter_calculation
+  alias: Global Fade counter calculation
+  trigger:
+    - platform: state
+      entity_id: sensor.time
+  action:
+    - service: input_number.set_value
+      data_template:
+        entity_id: input_number.global_fade
+        value: "{{ ((-153 * sin((now().minutes + (now().hour * 60) + 250) / 238)) + 160) | int }}"
