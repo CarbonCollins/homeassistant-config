@@ -41,4 +41,4 @@
     - service: input_number.set_value
       data_template:
         entity_id: input_number.global_fade
-        value: "{{ ((-153 * sin((now().minutes + (now().hour * 60) + 250) / 238)) + 160) | int }}"
+        value: "{{ ((-153 * sin((now().minutes + (now().hour * 60) + 250) / 238)) + 160) | round(0) | int }}"
