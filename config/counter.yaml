@@ -2,3 +2,4 @@ global_fade_counter:
   name: Global Fade Counter
   initial: 0
   step: 1
+  restore: true

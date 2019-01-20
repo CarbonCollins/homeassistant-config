@@ -1,8 +1,0 @@
-kitchen_last_motion:
-  name: Motion Last Detected In Kitchen
-  initial: 0
-  min: 0
-  max: 2147000000
-  step: 1
-  mode: box
-  unit_of_measurement: seconds
