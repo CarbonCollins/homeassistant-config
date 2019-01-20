@@ -48,4 +48,4 @@
     - service: !secret notify_steven
       data_template:
         title: "Triggered"
-        message: "REEEEEEEEEEEEEEEEEEEEEEEEEEEE {{ ((-153 * sin((now().minute + (now().hour * 60) + 250) / 238)) + 160) | round(0) | int }}"
+        message: "REEEEEEEEEEEEEEEEEEEEEEEEEEEE {{ state('input_number.global_fade') }}"
