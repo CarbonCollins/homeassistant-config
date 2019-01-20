@@ -9,5 +9,5 @@ kitchen_lights_on:
           {%- if is_state('input_boolean.cooking', 'on') %}
             255
           {%- else %}
-            {{ states('sensor.global_light_brightness') | int }}
+            {{ states('input_number.global_fade') | int }}
           {%- endif %}

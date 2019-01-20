@@ -4,4 +4,4 @@ landing_lights_on:
     - service: light.turn_on
       data_template:
         entity_id: light.landing
-        brightness: "{{ states('sensor.global_light_brightness') | int }}"
+        brightness: "{{ states('input_number.global_fade') | int }}"
