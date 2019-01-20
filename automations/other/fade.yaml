@@ -37,6 +37,15 @@
   trigger:
     - platform: state
       entity_id: sensor.time
+  condition:
+    - condition: or
+      conditions:
+      - condition: time
+        after: '18:00:00'
+        before: '23:59:59'
+      - condition: time
+        after: '05:00:00'
+        before: '11:00:00'
   action:
     - service: input_number.set_value
       data_template:
