@@ -1,5 +1,10 @@
 exclude:
   domains:
     - history_graph
+    - automation
+    - scene
+    - zone
+    - sun
   entities:
     - sensor.outside_temperature
+    - sun.sun
