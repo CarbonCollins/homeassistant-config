@@ -55,7 +55,7 @@ media_player: !include config/media_players.yaml
 panel_custom: !include config/panel_custom.yaml
 recorder: !include config/recorder.yaml
 shell_command: !include config/shell_command.yaml
-shopping_list:
+# shopping_list:
 sun:
 switch: !include config/switches.yaml
 zone: !include config/zones.yaml

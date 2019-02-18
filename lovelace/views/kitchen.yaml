@@ -34,6 +34,6 @@ cards:
     title: Scenes
     show_state: false
     entities: !include scenes/kitchen.yaml
-  - type: shopping-list
-    title: Shopping List
+  # - type: shopping-list
+  #   title: Shopping List
 
