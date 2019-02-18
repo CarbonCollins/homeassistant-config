@@ -22,18 +22,18 @@ cards:
         title: Who's home
     - type: weather-forecast
       entity: weather.dark_sky
-    - type: glance
-      title: Environment
-      entities:
-        - entity: sensor.us_air_pollution_level
-          icon: mdi:scale
-          name: Pollution Level
-        - entity: sensor.current_uv_level
-          name: UV Level
-        - entity: sensor.current_ozone_level
-          name: Ozone Level
-        - entity: binary_sensor.protection_window
-          name: Sun Protection
+    # - type: glance
+    #   title: Environment
+    #   entities:
+    #     - entity: sensor.us_air_pollution_level
+    #       icon: mdi:scale
+    #       name: Pollution Level
+    #     - entity: sensor.current_uv_level
+    #       name: UV Level
+    #     - entity: sensor.current_ozone_level
+    #       name: Ozone Level
+    #     - entity: binary_sensor.protection_window
+    #       name: Sun Protection
     - type: media-control  
       title: Spotify
       entity: media_player.spotify
