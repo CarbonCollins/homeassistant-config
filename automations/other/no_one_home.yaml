@@ -13,6 +13,21 @@
     - platform: state
       entity_id: device_tracker.visitor_2
       to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.visitor_3
+      to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.visitor_4
+      to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.visitor_5
+      to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.visitor_6
+      to: 'not_home'
+    - platform: state
+      entity_id: device_tracker.visitor_7
+      to: 'not_home'
   condition:
     - condition: state
       entity_id: device_tracker.steven
@@ -25,6 +40,21 @@
       state: 'not_home'
     - condition: state
       entity_id: device_tracker.visitor_2
+      state: 'not_home'
+    - condition: state
+      entity_id: device_tracker.visitor_3
+      state: 'not_home'
+    - condition: state
+      entity_id: device_tracker.visitor_4
+      state: 'not_home'
+    - condition: state
+      entity_id: device_tracker.visitor_5
+      state: 'not_home'
+    - condition: state
+      entity_id: device_tracker.visitor_6
+      state: 'not_home'
+    - condition: state
+      entity_id: device_tracker.visitor_7
       state: 'not_home'
   action:
     - service: light.turn_off

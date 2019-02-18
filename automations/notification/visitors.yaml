@@ -7,6 +7,21 @@
     - platform: state
       entity_id: device_tracker.visitor_2
       to: 'home'
+    - platform: state
+      entity_id: device_tracker.visitor_3
+      to: 'home'
+    - platform: state
+      entity_id: device_tracker.visitor_4
+      to: 'home'
+    - platform: state
+      entity_id: device_tracker.visitor_5
+      to: 'home'
+    - platform: state
+      entity_id: device_tracker.visitor_6
+      to: 'home'
+    - platform: state
+      entity_id: device_tracker.visitor_7
+      to: 'home'
   condition: []
   action:
     - service: !secret notify_steven
