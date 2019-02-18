@@ -16,6 +16,12 @@
     radius: 100
     icon: mdi:cart
 
+  - name: Retail Park
+    latitude: !secret rp_latitude
+    longitude: !secret rp_longitude
+    radius: 200
+    icon: mdi:cart
+
   - name: University
     latitude: !secret uni_latitude
     longitude: !secret uni_longitude
