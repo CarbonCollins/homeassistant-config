@@ -1,0 +1,17 @@
+- name: daylight Spare Room
+  icon: mdi:weather-sunny
+  entities:
+    light.spare_room_ceiling_1:
+      state: on
+      rgb_color: [250,195,135]
+      brightness: 254
+    light.spare_room_ceiling_2:
+      state: on
+      rgb_color: [250,195,135]
+      brightness: 254
+    light.spare_room_lamp:
+      state: on
+      rgb_color: [250,195,135]
+      brightness: 254
+    switch.butt_plug_lamp:
+      state: off

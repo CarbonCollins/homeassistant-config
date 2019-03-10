@@ -20,10 +20,12 @@
       to: 'off'
       for:
         minutes: 5
-  condition: []
+  condition:
+    - condition: state
+      entity_id: input_boolean.bedroom_motion
+      state: 'on'
   action:
     - service: light.turn_off
       data:
         entity_id: light.bedroom
         transition: 10
-

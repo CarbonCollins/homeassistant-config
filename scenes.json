@@ -192,6 +192,16 @@
         "[117,255,72]"
       ],
       "switch": false
+    },
+    {
+      "name": "daylight",
+      "id": "daylight",
+      "button": "daylight",
+      "icon": "mdi:weather-sunny",
+      "colors": [
+        "[250,195,135]"
+      ],
+      "switch": false
     }
   ]
 }

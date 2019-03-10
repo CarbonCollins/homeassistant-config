@@ -1,0 +1,7 @@
+- name: daylight Landing
+  icon: mdi:weather-sunny
+  entities:
+    light.landing_ceiling_1:
+      state: on
+      rgb_color: [250,195,135]
+      brightness: 254

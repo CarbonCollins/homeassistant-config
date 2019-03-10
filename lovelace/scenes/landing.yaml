@@ -48,3 +48,8 @@
   icon: mdi:duck
   name: jobby
   service: scene.turn_on
+- entity: scene.daylight_landing 
+  tap_action: call-service
+  icon: mdi:weather-sunny
+  name: daylight
+  service: scene.turn_on
