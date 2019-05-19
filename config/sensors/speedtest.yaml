@@ -1,13 +1,13 @@
-- platform: speedtest
-  minute:
-    - 0
-    # - 15
-    - 30
-    # - 45
-  monitored_conditions:
-    - ping
-    - download
-    - upload
+# - platform: speedtest
+#   minute:
+#     - 0
+#     # - 15
+#     - 30
+#     # - 45
+#   monitored_conditions:
+#     - ping
+#     - download
+#     - upload
 
 - platform: dnsip
   hostname: !secret http_url
