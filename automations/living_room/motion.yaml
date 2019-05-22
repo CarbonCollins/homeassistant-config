@@ -2,7 +2,7 @@
   alias: Motion detected in Living Room
   trigger:
     - platform: state
-      entity_id: sensor.living_room_motion_sensor
+      entity_id: binary_sensor.living_room_sensor_motion
       from: 'off'
       to: 'on'
   condition:
@@ -22,7 +22,7 @@
   alias: No motion detected in Living Room day
   trigger:
     - platform: state
-      entity_id: sensor.living_room_motion_sensor
+      entity_id: binary_sensor.living_room_sensor_motion
       to: 'off'
       for:
         minutes: 30
@@ -39,7 +39,7 @@
   alias: No motion detected in Living Room night
   trigger:
     - platform: state
-      entity_id: sensor.living_room_motion_sensor
+      entity_id: binary_sensor.living_room_sensor_motion
       to: 'off'
       for:
         minutes: 5

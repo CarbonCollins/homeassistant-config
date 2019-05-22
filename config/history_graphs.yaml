@@ -5,19 +5,19 @@ gr1:
   entities:
     - sensor.air_temp
     - sensor.road_temp
-    - sensor.living_room_temperature
-    - sensor.kitchen_temperature
-    - sensor.bedroom_temperature
-    - sensor.spare_room_temperature
+    - sensor.living_room_sensor_temperature
+    - sensor.kitchen_sensor_temperature
+    - sensor.bedroom_sensor_temperature
+    - sensor.spare_room_sensor_temperature
 gr2:
   name: Light Level
   hours_to_show: 24
   refresh: 90
   entities:
-    - sensor.living_room_light_level
-    - sensor.kitchen_light_level
-    - sensor.bedroom_light_level
-    - sensor.spare_room_light_level
+    - sensor.living_room_sensor_light_level
+    - sensor.kitchen_sensor_light_level
+    - sensor.bedroom_sensor_light_level
+    - sensor.spare_room_sensor_light_level
 gr3:
   name: Internet
   hours_to_show: 24

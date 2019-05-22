@@ -8,7 +8,6 @@ homeassistant:
   customize: !include customize.yaml
 
 http:
-  api_password: !secret http_password
   base_url: !secret http_url
   trusted_proxies: !secret trusted_proxy
   trusted_networks:
@@ -17,6 +16,7 @@ http:
   login_attempts_threshold: 3
 
 updater:
+  include_used_components: true
 
 # Frontend
 frontend:
@@ -34,7 +34,6 @@ script: !include_dir_merge_named scripts
 scene: !include_dir_merge_list scenes
 
 # Other
-# alexa: !include config/alexa.yaml
 homekit: !include config/homekit.yaml
 weather: !include config/weather.yaml
 binary_sensor: !include config/binary_sensors.yaml

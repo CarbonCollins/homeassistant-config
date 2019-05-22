@@ -2,7 +2,7 @@
   alias: Motion detected in kitchen
   trigger:
     - platform: state
-      entity_id: sensor.kitchen_motion_sensor
+      entity_id: binary_sensor.kitchen_sensor_motion
       from: 'off'
       to: 'on'
     - platform: state
@@ -17,7 +17,7 @@
   alias: No motion detected in kitchen
   trigger:
     - platform: state
-      entity_id: sensor.kitchen_motion_sensor
+      entity_id: binary_sensor.kitchen_sensor_motion
       to: 'off'
       for:
         minutes: 10
@@ -30,7 +30,7 @@
       entity_id: input_boolean.cooking
       state: 'off'
     - condition: state
-      entity_id: sensor.kitchen_motion_sensor
+      entity_id: binary_sensor.kitchen_sensor_motion
       state: 'off'
       for:
         minutes: 10

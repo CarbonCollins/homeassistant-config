@@ -1,9 +1,0 @@
-title: LabSE
-views:
-  - !include views/home.yaml
-  - !include views/living_room.yaml
-  - !include views/kitchen.yaml
-  - !include views/bedroom.yaml
-  - !include views/landing.yaml
-  - !include views/spare_room.yaml
-  - !include views/network.yaml

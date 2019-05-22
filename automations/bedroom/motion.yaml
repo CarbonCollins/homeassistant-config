@@ -2,7 +2,7 @@
   alias: Motion detected in Bedroom
   trigger:
     - platform: state
-      entity_id: sensor.bedroom_motion_sensor
+      entity_id: binary_sensor.bedroom_sensor_motion
       from: 'off'
       to: 'on'
   condition:
@@ -16,7 +16,7 @@
   alias: No motion detected in bedroom day
   trigger:
     - platform: state
-      entity_id: sensor.bedroom_motion_sensor
+      entity_id: binary_sensor.bedroom_sensor_motion
       to: 'off'
       for:
         minutes: 5

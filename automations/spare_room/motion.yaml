@@ -2,7 +2,7 @@
   alias: Motion detected in Spare Room
   trigger:
     - platform: state
-      entity_id: sensor.spare_room_motion_sensor
+      entity_id: binary_sensor.spare_room_sensor_motion
       from: 'off'
       to: 'on'
   condition:
@@ -21,7 +21,7 @@
   alias: No motion detected in Spare Room day
   trigger:
     - platform: state
-      entity_id: sensor.spare_room_motion_sensor
+      entity_id: binary_sensor.spare_room_sensor_motion
       to: 'off'
       for:
         minutes: 30

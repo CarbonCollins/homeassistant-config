@@ -2,7 +2,7 @@
   alias: Turn on landing light when there is movement
   trigger:
     - platform: state
-      entity_id: sensor.landing_motion_sensor
+      entity_id: binary_sensor.landing_sensor_motion
       from: 'off'
       to: 'on'
   condition:
@@ -16,7 +16,7 @@
   alias: Turn off landing light 1 minutes after last movement
   trigger:
     - platform: state
-      entity_id: sensor.landing_motion_sensor
+      entity_id: binary_sensor.landing_sensor_motion
       to: 'off'
       for:
         minutes: 1
